@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  // base: '/mobility-dash',
+  // base: '/dash',
 })
