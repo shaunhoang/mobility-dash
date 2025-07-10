@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'; // Or use next/link if using Next.js
 import logo from '../assets/logo.png'; // Adjust the path to your logo image
 
 const navItems = [
-  // { label: 'Home', path: '/' },
+  { label: 'Home', path: '/' },
   { label: 'Stats', path: '/smart-mobility-goals' },
   { label: 'Data', path: '/data-catalogue' },
   { label: 'About', path: '/about' },
