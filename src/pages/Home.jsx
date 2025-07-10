@@ -2,6 +2,7 @@ import CstmAccordion from '../components/CstmAccordion';
 import ActionAreaCard from '../components/ActionAreaCard';
 import Button from '@mui/material/Button';
 import { Box, Typography, Grid  } from '@mui/material';
+import NavRow from '../components/NavRow';
 
 
 const images = [
@@ -54,18 +55,10 @@ const Home = () => {
   return (
     <div style={{ padding: '4rem' ,alignItems: 'center' }}>
       <div style={{marginBottom : '2rem',display: 'flex', flexDirection: 'column', gap: '0.75rem'}}>
-        <Box sx={{ height: 15, display: 'flex'}} >
-          <img 
-            src="\home-icon-silhouette.svg" 
-            style={{maxHeight: '100%'}}
-          />
-          <Typography
-            sx={{ ml: 0.5 }}
-            fontSize="0.8rem" 
-            >
-          {/* / Hello */}
-          </Typography>
-        </Box>
+        
+        <NavRow
+          label="" />
+
         <Box component="section">
           <Typography
             variant="h4"

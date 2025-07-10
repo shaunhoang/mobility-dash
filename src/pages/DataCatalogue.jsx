@@ -2,46 +2,38 @@ import CstmAccordion from '../components/CstmAccordion';
 import Button from '@mui/material/Button';
 import React from 'react';
 import { Box, Typography, Grid  } from '@mui/material';
+import NavRow from '../components/NavRow';
+
 
 const DataCatalogue = () => {
   return (
     <div style={{ padding: '4rem' ,alignItems: 'center' }}>
       
       <div style={{marginBottom : '2rem',display: 'flex', flexDirection: 'column', gap: '0.75rem'}}>
-              <Box sx={{ height: 15, display: 'flex'}} >
-          <img 
-            src="\home-icon-silhouette.svg" 
-            style={{maxHeight: '100%'}}
-          />
+        <NavRow label="/ Data Catalogue" />
+
+        <Box component="section">
           <Typography
-            sx={{ ml: 0.5 }}
-            fontSize="0.8rem" 
-            >
-          / Data Catalogue
+            variant="h4"
+            sx={{ color: 'roseShades.dark', fontWeight: 'bold'}}
+          >
+            Data Catalogue
           </Typography>
         </Box>
-              <Box component="section">
-                <Typography
-                  variant="h4"
-                  sx={{ color: 'roseShades.dark', fontWeight: 'bold'}}
-                >
-                  Data Catalogue
-                </Typography>
-              </Box>
-              
-              <Box component="section">
-                <Typography variant="body1" color="text.secondary">
-                  What you expect to find here...
-                </Typography>
-              </Box> 
-            </div>
-      
-            <div style={{marginBottom : '2rem',display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem'}}>
-            <Typography>
-              [insert index list with filter]
-            </Typography>
-            </div>
-    
+        
+        <Box component="section">
+          <Typography variant="body1" color="text.secondary">
+            What you expect to find here...
+          </Typography>
+        </Box> 
+      </div>
+
+      <div style={{marginBottom : '2rem',display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem'}}>
+      <Typography>
+        [insert index list with filter]
+      </Typography>
+      </div>
+
       
 
 
