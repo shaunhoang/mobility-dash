@@ -1,8 +1,9 @@
-import CstmAccordion from '../components/CstmAccordion';
-import Button from '@mui/material/Button';
-import React from 'react';
-import { Box, Typography, Grid  } from '@mui/material';
+import { 
+  Box, 
+  Typography, 
+} from '@mui/material';
 import NavRow from '../components/NavRow';
+
 
 const SmartMobilityGoals = () => {
   return (

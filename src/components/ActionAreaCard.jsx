@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -11,13 +10,14 @@ export default function ActionAreaCard({
   image, 
   title, 
   description, 
-  altText = "image", 
-  maxWidth = 345, 
+  altText = 'image',
   onClick 
 }) {
   return (
-    <Card sx={{ maxWidth, height: 280}} onClick={onClick}>
-      <CardActionArea>
+    <Card sx={{ maxWidth: 325, height: '100%', margin: 'auto', display: 'flex', flexDirection: 'column' }}>
+      <CardActionArea onClick={onClick} sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+        
+
         <CardMedia
           component="img"
           height="140"
@@ -30,7 +30,7 @@ export default function ActionAreaCard({
           </Typography>
           <Box
             sx={{
-              maxHeight: 80,
+              maxHeight: '4.5em',
               overflow: 'hidden',
               position: 'relative',
               maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)',
