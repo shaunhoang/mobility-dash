@@ -9,17 +9,17 @@
     <title>Smart Mobility Hub - Jaipur</title>
   </head>
   <body>
+
     <script>
       (function(){
-        // Check if we were redirected from the 404 page
         var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
         if (redirect && redirect != location.href) {
-          // If so, replace the current history state with the correct URL
           history.replaceState(null, null, redirect);
         }
       })();
     </script>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

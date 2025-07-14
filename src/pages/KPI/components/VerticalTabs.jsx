@@ -60,8 +60,8 @@ export default function VerticalTabs({ tabs }) {
             bgcolor: 'background.paper', 
             display: 'flex', 
             height: containerHeight, 
-            border: '1px solid #ddd',
             borderRadius: '8px',
+            boxShadow: 1,
             overflow: 'hidden' 
             }}>
     <Tabs
@@ -76,7 +76,7 @@ export default function VerticalTabs({ tabs }) {
           borderRight: 1,
           borderColor: 'divider',
           flexShrink: 0,    // Prevent the tab list from shrinking
-          minWidth: 160, // Give the tab list a consistent width
+          minWidth: 160, 
         }}
       >
         {tabs.map((tab, index) => (
@@ -85,6 +85,8 @@ export default function VerticalTabs({ tabs }) {
                 label={tab.label}
                 {...a11yProps(index)}
                 sx={{
+                    textTransform: 'none',
+                    fontSize: '1rem',
                     bgcolor: value === index ? 'primary.main' : 'transparent',
                     color: value === index ? '#fff' : 'text.primary',
                     '&:hover': {bgcolor: value === index ? 'primary.dark' : 'action.hover'},
@@ -100,7 +102,7 @@ export default function VerticalTabs({ tabs }) {
         <Grid container direction="column" justifyContent="space-between" sx={{ flexGrow: 1, height: '100%' }}>
 
             <Grid item>
-                <Typography variant="body2" gutterBottom>
+                <Typography variant="body1" gutterBottom>
                     {tab.contentText}
                 </Typography>
             </Grid>
@@ -126,7 +128,7 @@ export default function VerticalTabs({ tabs }) {
                     },
                     }}
                 >
-                    See progress
+                    Explore
                 </Box>
             </Grid>
         </Grid>
@@ -142,7 +144,7 @@ VerticalTabs.propTypes = {
       label: PropTypes.string.isRequired,
       contentText: PropTypes.string.isRequired,
       backgroundImage: PropTypes.string.isRequired,
-      learnMoreLink: PropTypes.string.isRequired,
+      exploreLink: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

@@ -12,7 +12,7 @@ const FilterBar = ({ filters, onFilterChange, filterOptions }) => {
   };
 
   return (
-<Box sx={{ display: 'flex', flexDirection:'horizontal',gap: 1, my: 2, flexWrap: 'wrap' }}>
+<Box sx={{ display: 'flex',gap: 1, my: 2, flexWrap: 'nowrap' }}>
         <FormControl fullWidth size="small">
           <InputLabel id="format-select-label">File Format</InputLabel>
           <Select
