@@ -24,6 +24,7 @@ const theme = createTheme({
     },
     background: {
       default: '#FEF6F5', // A very light, warm off-white
+      selected: roseShades.lightest, // Lighter shade for selected items
       paper: '#FFFFFF',
     },
     text: {

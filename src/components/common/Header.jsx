@@ -7,7 +7,7 @@ const Header = () => {
   const theme = useTheme();
 
   return (
-    <AppBar position="static" elevation={0} sx={{ backgroundColor: theme.palette.roseShades.dark }}>
+    <AppBar position="static" sx={{ backgroundColor: theme.palette.roseShades.dark }}>
       <Toolbar sx={{ justifyContent: 'space-between' }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <Box
@@ -32,7 +32,7 @@ const Header = () => {
               fontWeight: 'bold',
             }}
           >
-            Smart Mobility
+            {/* Smart Mobility */}
           </Typography          >
         </Box>
       </Toolbar>

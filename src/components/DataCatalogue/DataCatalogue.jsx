@@ -11,7 +11,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { coverages, fileFormats, generateMockData, themes } from '../../data/mockData';
 
 import CatalogueList from './components/CatalogueList';
-import DetailsDrawer from './components/DetailsDrawer';
+import DetailsDrawer from '../common/DetailsDrawer';
 import FilterBar from './components/FilterBar';
 import ResultsSummary from './components/ResultsSummary';
 import SearchBar from './components/SearchBar';

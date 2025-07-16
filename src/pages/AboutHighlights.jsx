@@ -9,7 +9,7 @@ import {
   Typography
 } from '@mui/material';
 
-import { keyMembers, } from '../data/aboutData';
+import { keyMembers, } from '../data/teamData';
 import { highlightCards } from '../data/highlightsData';
 
 

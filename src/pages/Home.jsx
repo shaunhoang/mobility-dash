@@ -1,6 +1,6 @@
 
 
-import { Divider } from '@mui/material';
+import { Divider, AppBar } from '@mui/material';
 import { useState } from 'react';
 
 import NavigationButtons from '../components/common/NavigationButtons';
@@ -28,12 +28,22 @@ function Home() {
         <div style={{ padding: '4rem', alignItems: 'center' }}>
 
             <Title />
-            <NavigationButtons
-                buttons={mapNavigationButtons}
-                onButtonClick={handleLayerChange}
-                activeButtonId={activeLayer}
-            />
+            <AppBar position="sticky" sx={{
+                backgroundColor: 'background.default',
+                boxShadow: 0,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                // padding: '1rem',
 
+            }}
+            >
+                <NavigationButtons
+                    buttons={mapNavigationButtons}
+                    onButtonClick={handleLayerChange}
+                    activeButtonId={activeLayer}
+                />
+            </AppBar>
             <Divider style={{ margin: '1rem' }} />
 
             <div>

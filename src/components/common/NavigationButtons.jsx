@@ -3,8 +3,8 @@ import { Button, Grid } from '@mui/material';
 // The component now accepts an 'onButtonClick' function as a prop.
 const NavigationButtons = ({ buttons = [], onButtonClick, activeButtonId }) => {
   return (
-    <div style={{ marginBottom: '2rem' }}>
-      <Grid container spacing={1} sx={{ justifyContent: 'center' }}>
+    <div >
+      <Grid container spacing={1} sx={{ p: 2}}>
         {buttons.map((button) => (
           <Grid item key={button.id}>
             <Button

@@ -1,0 +1,46 @@
+export const kpiDomains = [
+  {
+    label: "Public Transport Supply",
+    title: "Domain: Public Transport Supply",
+    description: "Focuses on the availability and coverage of public transport services.",
+    kpis: ["A01", "A02"],
+  },
+  {
+    label: "Safety and Comfort",
+    title: "Domain: Safety and Comfort",
+    description: "Ensures that public transport is safe, comfortable, and user-friendly for all passengers.",
+    kpis: ["A03", "A04", "A05", "A06"]
+  },
+  {
+    label: "Sustainable Funding",
+    title: "Domain: Sustainable Transport Funding",
+    description: "Concerns the financial viability and investment in sustainable transport infrastructure.",
+    kpis: ["A07"],
+  },
+  {
+    label: "Effective Enforcement",
+    title: "Domain: Effective Enforcement",
+    description: "Focuses on the application of traffic rules and regulations to ensure smooth and safe transit.",
+    kpis: ["A08", "A09", "A10"]
+  },
+  {
+    label: "Sustainable Mobility",
+    title: "Domain: Sustainable Mobility",
+    description: "Promoting transport systems that are beneficial for both people and the environment.",
+    kpis: ["B01", "B02"]
+
+  },
+  {
+    label: "Health and Safety",
+    title: "Domain: Health and Safety",
+    description: "Pertains to the safety of the transport system and its users, aiming to minimize accidents.",
+    kpis: ["B03"]
+
+  },
+  {
+    label: "Inclusive Mobility",
+    title: "Domain: Inclusive Mobility",
+    description: "Ensuring transport is accessible and affordable for all segments of the population.",
+    kpis: ["B04", "B05", "B06"]
+  }
+];

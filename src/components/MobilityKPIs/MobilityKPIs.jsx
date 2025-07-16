@@ -1,22 +1,37 @@
-import { Box, Grid, Typography } from '@mui/material';
-import { useState } from 'react';
-import { kpiDomainData } from '../../data/kpiData';
+import { Box, Button, Grid, Typography } from '@mui/material';
+import { useState , useEffect} from 'react';
+import { kpiDetails } from '../../data/kpiDetails';
+import { kpiDomains } from '../../data/kpiDomains';
 import InfoAreaRow from './components/InfoAreaRow';
-import InfoAreaCarousel from './components/InfoAreaCarousel';
 import VerticalTabs from './components/VerticalTabs';
+import KpiDetailBox from './components/KpiDetailBox';
 
 const MobilityKPIs = () => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const handleKpiSelect = (kpi) => {
+    console.log('Selected KPI:', kpi);
+    setSelectedKpi(kpi);
+  };
 
+  const selectedTab = kpiDomains[activeTabIndex];
+  const selectedKpis = selectedTab?.kpis.map(code => kpiDetails[code]).filter(Boolean);
+
+  const [selectedKpi, setSelectedKpi] = useState(null);
   const handleTabChange = (event, newIndex) => {
     console.log('Parent knows the new tab index is:', newIndex);
     setActiveTabIndex(newIndex);
   };
 
-  const selectedTab = kpiDomainData[activeTabIndex];
+  useEffect(() => {
+    if (selectedKpis.length > 0) {
+      setSelectedKpi(selectedKpis[0]);
+    } else {
+      setSelectedKpi(null);
+    }
+  }, [activeTabIndex]);
 
   return (
-    <Box sx={{ p: { xs: 2, sm: 4 }}}>
+    <Box sx={{ p: { xs: 2, sm: 4 } }}>
       <Box component="section" sx={{ mb: 4 }}>
         <Typography variant="h5" sx={{ color: 'primary.dark', fontWeight: 'bold', mb: 2 }}>
           What makes the city move?
@@ -31,15 +46,21 @@ const MobilityKPIs = () => {
         {/* Left Column for Tabs */}
         <Grid item size={2.25}>
           <VerticalTabs
-            tabs={kpiDomainData}
+            tabs={kpiDomains}
             onTabChange={handleTabChange}
           />
         </Grid>
 
-        {/* Right Column for Additional Content */}
+        {/* Right Column */}
         <Grid item size={9.75}>
-          <Box sx={{ height: '100%' }}>
-            <InfoAreaRow kpis={selectedTab?.kpis} />
+          <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column', gap: 1 }}>
+            <InfoAreaRow
+              kpis={selectedKpis}
+              onKpiSelect={handleKpiSelect}
+              selectedKpiCode={selectedKpi?.code}
+            />
+
+            <KpiDetailBox kpi={selectedKpi} />
           </Box>
         </Grid>
       </Grid>

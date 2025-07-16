@@ -1,10 +1,12 @@
 import {
   Paper,
   Tab,
-  Tabs
+  Tabs,
+
 } from '@mui/material';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+
 
 const VerticalTabs = ({ tabs, onTabChange }) => {
   const [value, setValue] = useState(0);
