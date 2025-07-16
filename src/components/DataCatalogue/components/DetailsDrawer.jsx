@@ -9,7 +9,7 @@ import {
   useTheme,
   useMediaQuery,
 } from '@mui/material';
-import { Close, Download, Description, Public , Widgets } from '@mui/icons-material';
+import { Close, Download, Description, Public, Widgets } from '@mui/icons-material';
 
 const DetailsDrawer = ({ item, open, onClose }) => {
   const theme = useTheme();
@@ -43,11 +43,17 @@ const DetailsDrawer = ({ item, open, onClose }) => {
           <Typography variant="body1" color="text.secondary">
             {item.description}
           </Typography>
-          <Box sx={{ display: 'flex', flexDirection:'column', gap: 1, my: 2 }}>
-            <Box> 
+          <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+            Last Updated: {new Date(item.latest_year).getFullYear()}
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
+            Source: {item.provider}
+          </Typography>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, my: 2 }}>
+            <Box>
               <Chip icon={<Widgets />} label={item.theme} variant="filled" />
             </Box>
-            <Box sx={{ display: 'flex', gap: 1 }}> 
+            <Box sx={{ display: 'flex', gap: 1 }}>
               <Chip icon={<Description />} label={item.format} variant="filled" />
               <Chip icon={<Public />} label={item.coverage} variant="filled" />
             </Box>

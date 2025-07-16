@@ -1,41 +1,56 @@
+import { Description, Download, Public, Widgets } from '@mui/icons-material';
 import {
   Box,
+  Button,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
   Typography,
-  Button,
 } from '@mui/material';
-import { Download, Description, Public, Widgets  } from '@mui/icons-material';
 
 const CatalogueListItem = ({ item, onClick, isMobile }) => (
   <ListItem disablePadding divider>
     <ListItemButton onClick={() => onClick(item)} sx={{ p: 2, alignItems: 'flex-start' }}>
-      <Box sx={{ display: 'flex', width: '100%', alignItems: 'flex-start', gap: 10 }}>
-        <Box sx={{ flexGrow: 1 }}>
-          <Typography variant="h6" gutterBottom>
-            {item.name}
-          </Typography>
-          <Typography
-            variant="body"
-            color="text.secondary"
-            sx={{
-              mb: 1.5,
-              display: '-webkit-box',
-              WebkitLineClamp: '3',
-              WebkitBoxOrient: 'vertical',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-            }}
-          >
-            {item.description}
-          </Typography>
-        </Box>
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1,minWidth: 200, flexShrink: 0 }}>
-          
+      <Box sx={{ display: 'flex', height: 150, width: '100%', alignItems: 'flex-start', gap: 10 }}>
+        <Box sx={{ height: '100%', flexGrow: 1, justifyContent: 'space-between', display: 'flex', flexDirection: 'column' }}>
           <Box>
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 0.5}}>
+            <Typography variant="h6" gutterBottom>
+              {item.name}
+            </Typography>
+            <Typography
+              variant="body"
+              color="text.secondary"
+              sx={{
+                mb: 1.5,
+                display: '-webkit-box',
+                WebkitLineClamp: '2',
+                WebkitBoxOrient: 'vertical',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+              }}
+            >
+              {item.description}
+            </Typography>
+          </Box>
+          <Box>
+            <Typography variant="body2" color="text.secondary">
+              Last Updated: {new Date(item.latest_year).getFullYear()}
+
+            </Typography>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ mt: 0.5, display: isMobile ? 'none' : 'block' }}
+            >
+              Source: {item.provider}
+            </Typography>
+          </Box>
+        </Box>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, minWidth: 200, flexShrink: 0 }}>
+
+          <Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 0.5 }}>
               <Widgets fontSize="small" color="secondary" />
               <Typography variant="inherit" color="text.secondary">
                 Theme: {item.theme}

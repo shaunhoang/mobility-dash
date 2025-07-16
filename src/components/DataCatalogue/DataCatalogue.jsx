@@ -14,7 +14,7 @@ import {
 import { useEffect, useMemo, useState } from 'react';
 
 // These components would be in their own files in a real project
-import DetailsDrawer from '../common/DetailsDrawer';
+import DetailsDrawer from './components/DetailsDrawer';
 import CatalogueList from './components/CatalogueList';
 import FilterBar from './components/FilterBar';
 import ResultsSummary from './components/ResultsSummary';
@@ -85,7 +85,7 @@ const DataCatalogue = () => {
       coverages: [...coverages].sort(),
       themes: [...themes].sort(),
     };
-  }, [datasets]); // This memo will only re-run when the datasets array changes
+  }, [datasets]); // re-run when the datasets array changes
 
   const handleItemClick = (item) => {
     setSelectedDataset(item);
