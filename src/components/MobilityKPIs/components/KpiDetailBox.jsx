@@ -1,4 +1,5 @@
-import { Box, Divider, Paper, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
+import KpiChart from './KpiChart';
 
 
 const KpiDetailBox = ({ kpi }) => {
@@ -12,31 +13,42 @@ const KpiDetailBox = ({ kpi }) => {
     }
 
     return (
-        <Paper sx={{ p: 2, mt: 1 }}>
+        <Paper sx={{ p: 2, mt: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <Typography variant="h6" component="h3" sx={{ fontWeight: 'bold', fontSize: '1.25rem', mb: 2, textAlign: 'center' }}>
                 {kpi.title}
             </Typography>
-            {/* <Divider sx={{ my: 2 }} /> */}
+            <Box sx={{
+                width:'100%',
+                height: 500,
+                display: 'flex',
+                flexDirection: 'column',
+                }}
+                >
 
-            {/* Display the image if it exists */}
-            {kpi.image && (
-                <Box
-                    component="img"
-                    src={kpi.image}
-                    alt={kpi.title}
-                    sx={{
-                        width: '100%',
-                        height: 'auto',
-                        aspectRatio: '16/9',
-                        mb:2,
-                    }}
-                />
-            )}
+                {/* Display the image if it exists */}
+                {kpi.image && (
+                    <Box
+                        component="img"
+                        src={kpi.image}
+                        alt={kpi.title}
+                        sx={{
+                            width: 'auto',
+                            height: '100%',
+                        }}
+                    />
+                )}
 
-            {/* <Typography sx={{ textAlign: 'center' }}>
+                {/* Conditionally render the chart if data exists */}
+                {kpi.graphData && (
+                    <KpiChart data={kpi.graphData} />
+                )}
+
+                {/* Description of the KPI */}
+                {/* <Typography sx={{ textAlign: 'center' }}>
                 {kpi.description}
             </Typography> */}
-            
+            </Box>
+
         </Paper>
     );
 };
