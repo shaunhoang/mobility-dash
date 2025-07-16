@@ -26,7 +26,7 @@ const MobilityKPIs = () => {
         </Typography>
       </Box>
 
-      <Grid container spacing={2} sx={{alignItems: 'center'}}>
+      <Grid container spacing={2} >
 
         {/* Left Column for Tabs */}
         <Grid item size={2.25}>

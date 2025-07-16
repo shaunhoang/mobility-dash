@@ -6,7 +6,7 @@ export const kpiDomainData = [
     kpis: [
       { 
         code: "A01", 
-        title: "Supply of public transport vehicles", 
+        title: "Public transport fleet", 
         description: "The supply of public buses indicates the capacity of public transport given the population.",
         src:"",
         alt:"",
@@ -84,7 +84,7 @@ export const kpiDomainData = [
       { 
         code: "A09", 
         title: "Organised road use", 
-        description: "Commercial and other encroachments on foothpaths and carriageways cause local traffic disorder, which affect non-motorised users particularly strongly." ,
+        description: "Commercial and other encroachments on foothpaths and carriageways cause local traffic disorder, which affect non-motorised users." ,
         src:"",
         alt:"",
       },
@@ -104,14 +104,14 @@ export const kpiDomainData = [
     kpis: [
       { 
         code: "B01", 
-        title: "Reduction of Private vehicles", 
+        title: "Reduction of private vehicles", 
         description: "The high ratio of private vehicles (cars and two-wheelers) is a symptom of a malfunctioning transport system" ,
         src:"",
         alt:"",
       },
       { 
         code: "B02", 
-        title: "Reduction of Motor vehicle traffic", 
+        title: "Reduction of motorised traffic", 
         description: "A reduction in motor vehicle traffic reduces the risk of congestion across the network. " ,
         src:"",
         alt:"",
@@ -153,7 +153,7 @@ export const kpiDomainData = [
       },
       { 
         code: "B06", 
-        title: "Last-mile intermediate public transport use", 
+        title: "Last-mile public transport use", 
         description: "Intermediate public transport should fill service gaps and offer last-mile mobility." ,
         src:"",
         alt:"",
