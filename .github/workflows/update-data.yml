@@ -1,45 +1,41 @@
+# .github/workflows/update-data.yml
+
 name: Convert CSV to JSON
 
-# This workflow runs ONLY when you push changes to files inside the data-source/kpi/ directory
 on:
   push:
     branches:
       - main
     paths:
-      - 'data-source/'
+      - 'data-source/**'
+
 permissions:
   contents: write
+
 jobs:
   build-json-from-csv:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checks out your repository's code
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Sets up a Python environment
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      # Step 3: Installs the pandas library
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install pandas
 
-      # Step 4: Executes your Python script
       - name: Convert All CSVs to JSON
         run: python ./scripts/convert_csv_json.py
 
-      # Step 5: Commits ALL new/changed JSON files back to your repository
       - name: Commit and push if data changed
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          # This now adds all .json files in the target directory
-          git add public/data/kpi/*.json
-          # This command checks if there are any changes to commit
-          git diff --staged --quiet || (git commit -m "Automated: Update KPI JSON data" && git push)
+          git add public/data/**/*.json
+          git diff --staged --quiet || (git commit -m "Automated: Update JSON data from CSV" && git push)
