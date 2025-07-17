@@ -7,8 +7,8 @@
     "provider":"JDA",
     "latest_year":2011.0,
     "coverage":"district",
-    "theme":"Administrative Context",
-    "fileUrl":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "theme":"Administrative",
+    "fileUrl":"https:\/\/github.com\/shaunhoang\/mobility-dash\/releases\/download\/v1.0-data\/HLPCA-08110-2011_H14_census.xlsx"
   },
   {
     "id":2,
@@ -18,8 +18,8 @@
     "provider":"JDA",
     "latest_year":2011.0,
     "coverage":"region",
-    "theme":"Administrative Context",
-    "fileUrl":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "theme":"Administrative",
+    "fileUrl":"Jagatpura.Zone.Details.Swachhtam.Portal.2024.pdf"
   },
   {
     "id":3,
@@ -29,7 +29,7 @@
     "provider":"JDA",
     "latest_year":2014.0,
     "coverage":"region",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"Document not yet published"
   },
   {
@@ -40,7 +40,7 @@
     "provider":"JDA",
     "latest_year":2001.0,
     "coverage":"district",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
   },
   {
@@ -51,7 +51,7 @@
     "provider":"JDA",
     "latest_year":2001.0,
     "coverage":"district",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
   },
   {
@@ -62,7 +62,7 @@
     "provider":"JDA",
     "latest_year":2011.0,
     "coverage":"district",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"Document not yet published"
   },
   {
@@ -73,7 +73,7 @@
     "provider":"JDA",
     "latest_year":2018.0,
     "coverage":"region",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"Document not yet published"
   },
   {
@@ -84,7 +84,7 @@
     "provider":"JDA",
     "latest_year":2011.0,
     "coverage":"region",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"Document not yet published"
   },
   {
@@ -95,7 +95,7 @@
     "provider":"JDA",
     "latest_year":2011.0,
     "coverage":"district",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
   },
   {
@@ -106,7 +106,7 @@
     "provider":"JDA",
     "latest_year":2018.0,
     "coverage":"region",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/zonal-development-plan.html"
   },
   {
@@ -117,7 +117,7 @@
     "provider":"JDA",
     "latest_year":2019.0,
     "coverage":"region",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html"
   },
   {
@@ -128,7 +128,7 @@
     "provider":"JDA",
     "latest_year":2019.0,
     "coverage":"region",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html"
   },
   {
@@ -139,7 +139,7 @@
     "provider":"JDA",
     "latest_year":2019.0,
     "coverage":"region",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html"
   },
   {
@@ -150,7 +150,7 @@
     "provider":"JDA",
     "latest_year":2019.0,
     "coverage":"region",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html"
   },
   {
@@ -161,7 +161,7 @@
     "provider":"Directorate of Census Operations, Rajasthan",
     "latest_year":2011.0,
     "coverage":"district",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf"
   },
   {
@@ -172,7 +172,7 @@
     "provider":"Bhunaksha, rajasthan",
     "latest_year":2024.0,
     "coverage":"state",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"https:\/\/bhunaksha.rajasthan.gov.in\/"
   },
   {
@@ -183,7 +183,7 @@
     "provider":"Survey of india",
     "latest_year":2023.0,
     "coverage":"cd block \/ town",
-    "theme":"Administrative Context",
+    "theme":"Administrative",
     "fileUrl":"https:\/\/onlinemaps.surveyofindia.gov.in\/Digital_Product_Show.aspx"
   },
   {
