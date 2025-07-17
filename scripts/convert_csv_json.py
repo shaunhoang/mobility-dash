@@ -1,42 +1,45 @@
 import pandas as pd
 import os
 
-# Define the directories to process
-dir_names = ['datacatalogue', 'kpiviz']
+source_root = 'data-source'
+destination_root = 'public/data'
 
-# Construct the source and destination paths
-source_dirs = [f'data-source/{d}' for d in dir_names]
-json_dirs = [f'public/data/{d}' for d in dir_names]
+# --- Script ---
 
-# Loop through each source and destination pair
-for csv_source_dir, json_output_dir in zip(source_dirs, json_dirs):
+# Check if the source directory exists to prevent errors
+if not os.path.isdir(source_root):
+    print(f"Error: Source directory '{source_root}' not found. Please create it and add your CSV files.")
+    exit()
 
-    print(f"Starting conversion from '{csv_source_dir}' to '{json_output_dir}'...")
+print(f"Starting conversion from '{source_root}' to '{destination_root}'...")
 
-    # Check if the source directory exists before proceeding
-    if not os.path.isdir(csv_source_dir):
-        print(f"  - Warning: Source directory not found, skipping: {csv_source_dir}")
-        continue
+for dirpath, dirnames, filenames in os.walk(source_root):
+    # Preserves the folder structure (e.g., 'data-source/kpi' -> 'public/data/kpi')
+    relative_path = os.path.relpath(dirpath, source_root)
+    destination_dir = os.path.join(destination_root, relative_path)
 
-    # Create the output directory if it doesn't exist
-    os.makedirs(json_output_dir, exist_ok=True)
+    # Create the destination folder if it doesn't already exist
+    os.makedirs(destination_dir, exist_ok=True)
 
-    # Loop through all files in the source directory
-    for filename in os.listdir(csv_source_dir):
+    # Loop through all files found in the current directory
+    for filename in filenames:
+        # Process only the .csv files
         if filename.endswith('.csv'):
-            csv_file_path = os.path.join(csv_source_dir, filename)
-            json_filename = filename.replace('.csv', '.json')
-            json_output_path = os.path.join(json_output_dir, json_filename)
+            source_file_path = os.path.join(dirpath, filename)
             
-            print(f"  - Converting '{csv_file_path}' to '{json_output_path}'")
+            # Create the new JSON filename
+            json_filename = filename.replace('.csv', '.json')
+            destination_file_path = os.path.join(destination_dir, json_filename)
+            
+            print(f"  - Converting '{source_file_path}' to '{destination_file_path}'")
 
             try:
-                # Read the CSV file
-                df = pd.read_csv(csv_file_path)
+                # Read the CSV file using pandas
+                df = pd.read_csv(source_file_path)
                 
-                # Convert and save to JSON
-                df.to_json(json_output_path, orient='records', indent=2)
+                # Convert and save the DataFrame to a JSON file
+                df.to_json(destination_file_path, orient='records', indent=2)
             except Exception as e:
-                print(f"    Error converting file {filename}: {e}")
+                print(f"    An error occurred with {filename}: {e}")
 
-print("Conversion complete.")
+print("\nConversion complete.")
