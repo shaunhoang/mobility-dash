@@ -61,14 +61,11 @@ const DataCatalogue = () => {
       });
   }, []); // The empty array means this effect runs only once
 
-    // FIX: Dynamically generate filter options from the fetched data.
   const filterOptions = useMemo(() => {
-    // Return empty arrays if data hasn't loaded yet
     if (!datasets || datasets.length === 0) {
       return { fileFormats: [], coverages: [], themes: [] };
     }
 
-    // Use a Set to automatically handle unique values
     const formats = new Set();
     const coverages = new Set();
     const themes = new Set();
@@ -154,13 +151,13 @@ const DataCatalogue = () => {
   }
 
   return (
-    <Box sx={{ p: { xs: 2, sm: 4 } }}>
-      <Box component="section">
-        <Typography variant="h5" sx={{ color: 'primary.dark', fontWeight: 'bold', mb: 2 }}>
-          Open Mobility Data Repository
+    <Box sx={{ px: 4 }}>
+      <Box component="section" sx={{ mb: 4,textAlign: 'center' }}>
+        <Typography variant="body1">
+          Explore and download geospatial datasets from the open repository
         </Typography>
-        <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <Typography variant="body2">
+          Search by keywords, or filter by format, coverage, or theme
         </Typography>
       </Box>
 

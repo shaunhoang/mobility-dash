@@ -1,15 +1,15 @@
+import { Close, Description, Download, Public, Widgets } from '@mui/icons-material';
 import {
   Box,
-  Typography,
-  Drawer,
-  IconButton,
   Button,
   Chip,
   Divider,
-  useTheme,
+  Drawer,
+  IconButton,
+  Typography,
   useMediaQuery,
+  useTheme,
 } from '@mui/material';
-import { Close, Download, Description, Public, Widgets } from '@mui/icons-material';
 
 const DetailsDrawer = ({ item, open, onClose }) => {
   const theme = useTheme();
@@ -22,8 +22,10 @@ const DetailsDrawer = ({ item, open, onClose }) => {
       anchor="right"
       open={open}
       onClose={onClose}
-      PaperProps={{
-        sx: { width: isMobile ? '90%' : '40%', minWidth: 320, maxWidth: 600 },
+      slotProps={{
+        paper: {
+          sx: { width: isMobile ? '90%' : '40%', minWidth: 320, maxWidth: 600 },
+        },
       }}
     >
       <Box sx={{ p: 3, display: 'flex', flexDirection: 'column', height: '100%' }}>
@@ -65,9 +67,18 @@ const DetailsDrawer = ({ item, open, onClose }) => {
             size="large"
             startIcon={<Download />}
             fullWidth
-            onClick={() => alert(`Downloading ${item.name}`)}
+            onClick={(e) => {
+              e.stopPropagation();
+              const link = document.createElement('a');
+              link.href = item.fileUrl;
+              const fileName = item.fileUrl.split('/').pop(); // file name
+              link.setAttribute('download', fileName || 'download');
+              document.body.appendChild(link);    // Append the link to the body, necessary for Firefox
+              link.click();
+              document.body.removeChild(link);
+            }}
           >
-            Download {item.format}
+            Download
           </Button>
         </Box>
       </Box>

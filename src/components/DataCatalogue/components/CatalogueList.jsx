@@ -15,7 +15,7 @@ const CatalogueListItem = ({ item, onClick, isMobile }) => (
       <Box sx={{ display: 'flex', height: 150, width: '100%', alignItems: 'flex-start', gap: 10 }}>
         <Box sx={{ height: '100%', flexGrow: 1, justifyContent: 'space-between', display: 'flex', flexDirection: 'column' }}>
           <Box>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h5" gutterBottom>
               {item.name}
             </Typography>
             <Typography
@@ -76,8 +76,15 @@ const CatalogueListItem = ({ item, onClick, isMobile }) => (
             startIcon={<Download />}
             onClick={(e) => {
               e.stopPropagation();
-              alert(`Downloading ${item.name}`);
+              const link = document.createElement('a');
+              link.href = item.fileUrl;
+              const fileName = item.fileUrl.split('/').pop(); // file name
+              link.setAttribute('download', fileName || 'download');
+              document.body.appendChild(link);               // Append the link to the body, necessary for Firefox
+              link.click();
+              document.body.removeChild(link);
             }}
+            // href={item.fileUrl}
             sx={{ flexShrink: 0, mt: 0.5 }}
           >
             Download

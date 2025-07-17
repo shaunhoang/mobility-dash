@@ -1,13 +1,12 @@
 
 
-import { Divider, AppBar } from '@mui/material';
+import { Box, Divider } from '@mui/material';
 import { useState } from 'react';
-
+import AboutHighlights from '../components/common/AboutHighlights';
 import NavigationButtons from '../components/common/NavigationButtons';
 import Title from '../components/common/Title';
 import DataCatalogue from '../components/DataCatalogue/DataCatalogue';
 import MobilityKPIs from '../components/MobilityKPIs/MobilityKPIs';
-import AboutHighlights from './AboutHighlights';
 
 
 function Home() {
@@ -15,8 +14,7 @@ function Home() {
     const mapNavigationButtons = [
         { id: 'goals', text: 'Mobility Goals' },
         { id: 'catalogue', text: 'Data Catalogue' },
-        // { id: 'highlights', text: 'Highlights' },
-        // { id: 'explore', text: 'Explore Map' },
+
     ];
     const handleLayerChange = (layerId) => {
         console.log('Button clicked, changing active layer to:', layerId);
@@ -25,41 +23,30 @@ function Home() {
 
 
     return (
-        <div style={{ padding: '4rem', alignItems: 'center' }}>
+        <div>
+            <Box sx={{mb:2}}>
+                <Title />
+            </Box>
 
-            <Title />
-            <AppBar position="sticky" sx={{
-                backgroundColor: 'background.default',
-                boxShadow: 0,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                // padding: '1rem',
+            <NavigationButtons
+                buttons={mapNavigationButtons}
+                onButtonClick={handleLayerChange}
+                activeButtonId={activeLayer}
+            />
 
-            }}
-            >
-                <NavigationButtons
-                    buttons={mapNavigationButtons}
-                    onButtonClick={handleLayerChange}
-                    activeButtonId={activeLayer}
-                />
-            </AppBar>
-            <Divider style={{ margin: '1rem' }} />
+            <Box sx={{ display: 'flex', flexDirection: 'column', mx: 10, mb:5 }}>
 
-            <div>
-                {activeLayer === 'goals' && <MobilityKPIs />}
-                {activeLayer === 'catalogue' && <DataCatalogue />}
-            </div>
+                <Box >
+                    {activeLayer === 'goals' && <MobilityKPIs />}
+                    {activeLayer === 'catalogue' && <DataCatalogue />}
+                </Box>
 
-            {/* Debugging */}
+                <Divider style={{ margin: '1.5rem' }} />
 
-
-            <Divider style={{ margin: '1rem' }} />
-
-            <AboutHighlights />
+                <AboutHighlights />
+            </Box>
 
         </div>
-
     );
 }
 

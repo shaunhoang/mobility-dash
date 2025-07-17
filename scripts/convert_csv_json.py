@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Define the directories to process
-dir_names = ['datacatalogue', 'kpi']
+dir_names = ['datacatalogue', 'kpiviz']
 
 # Construct the source and destination paths
 source_dirs = [f'data-source/{d}' for d in dir_names]

@@ -1,7 +1,7 @@
-import { Box, Divider, Paper, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
 
 
-const InfoAreaRow = ({ kpis = [], onKpiSelect, selectedKpiCode }) => {
+const KpiRow = ({ kpis = [], onKpiSelect, selectedKpiCode }) => {
 
   if (!kpis || kpis.length === 0) {
     return (
@@ -24,8 +24,8 @@ const InfoAreaRow = ({ kpis = [], onKpiSelect, selectedKpiCode }) => {
             onClick={() => onKpiSelect(kpi)}
             sx={{
               p: 2,
-              maxWidth: 270,
-              height: 200,
+              width: 200,
+              height: 75,
               flexShrink: 0,
               display: 'flex',
               flexDirection: 'column',
@@ -41,17 +41,14 @@ const InfoAreaRow = ({ kpis = [], onKpiSelect, selectedKpiCode }) => {
               }
             }}
           >
-            <Box>
+            <Box sx={{ display: 'flex', flexDirection: 'row', gap: 1 }}>
               <Typography variant="caption" color="text.secondary">
                 {kpi.code}
               </Typography>
-              <Typography variant="h5" component="h3" sx={{ fontWeight: 'bold', fontSize: '1rem', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold', fontSize: '1rem' }}>
                 {kpi.title}
               </Typography>
-              <Divider sx={{ my: 1 }} />
-              <Typography variant="body2" component="p" color="text.secondary" sx={{ overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical' }}>
-                {kpi.description}
-              </Typography>
+
             </Box>
           </Paper>
         ))}
@@ -60,4 +57,4 @@ const InfoAreaRow = ({ kpis = [], onKpiSelect, selectedKpiCode }) => {
   );
 };
 
-export default InfoAreaRow;
+export default KpiRow;

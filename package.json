@@ -23,6 +23,7 @@
     "@radix-ui/react-accordion": "^1.2.11",
     "@tailwindcss/vite": "^4.1.11",
     "gh-pages": "^6.3.0",
+    "icons-material": "^0.0.1-security",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-material-ui-carousel": "^3.4.2",

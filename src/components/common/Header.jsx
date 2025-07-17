@@ -21,19 +21,7 @@ const Header = () => {
               style={{ width: '40px', height: '40px', marginRight: '8px' }}
             />
           </Box>
-
-          <Typography
-            variant="h6"
-            component="a"
-            href="/"
-            sx={{
-              textDecoration: 'none',
-              color: theme.palette.roseShades.lightest,
-              fontWeight: 'bold',
-            }}
-          >
-            {/* Smart Mobility */}
-          </Typography          >
+   
         </Box>
       </Toolbar>
     </AppBar>

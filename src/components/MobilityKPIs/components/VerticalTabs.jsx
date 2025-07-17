@@ -40,11 +40,8 @@ const VerticalTabs = ({ tabs, onTabChange }) => {
             key={index}
             label={tab.label}
             sx={{
-              textTransform: 'none',
-              fontSize: '1rem',
-              alignItems: 'flex-start',
-              p: 2,
-              opacity: 0.8,
+              textTransform: 'none', // Prevents uppercase transformation
+              opacity: 0.5,
               '&.Mui-selected': {
                 fontWeight: 'bold',
                 opacity: 1
