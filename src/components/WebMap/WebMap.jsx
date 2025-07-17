@@ -12,7 +12,7 @@ const baseLayers = [
 ];
 
 const WebMap = ({ kpi }) => {
-	const [mapStyle, setMapStyle] = useState(baseLayers[0].value);
+	const [mapStyle, setMapStyle] = useState(baseLayers[2].value);
 	const mapRef = useRef(null);
 	const [viewport, setViewport] = useState({
 		longitude: 75.7873,
