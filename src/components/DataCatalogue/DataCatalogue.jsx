@@ -76,13 +76,12 @@ const DataCatalogue = () => {
       if (item.theme) themes.add(item.theme);
     });
 
-    // Convert sets to sorted arrays for the dropdowns
     return {
       fileFormats: [...formats].sort(),
       coverages: [...coverages].sort(),
       themes: [...themes].sort(),
     };
-  }, [datasets]); // re-run when the datasets array changes
+  }, [datasets]); 
 
   const handleItemClick = (item) => {
     setSelectedDataset(item);
@@ -152,9 +151,7 @@ const DataCatalogue = () => {
 
   return (
     <Box sx={{ px: 4 }}>
-
-
-      <Box sx={{ p: 2, backgroundColor: 'white', boxShadow: 1 }}>
+      <Box sx={{ p: 2, backgroundColor: 'white', boxShadow: 1 , borderRadius: '8px' }}>
         <SearchBar query={searchQuery} onQueryChange={setSearchQuery} />
 
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
