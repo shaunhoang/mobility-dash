@@ -43,7 +43,7 @@ const DataCatalogue = () => {
 
   // 2. useEffect to fetch data when the component mounts
   useEffect(() => {
-    fetch('data/datacatalogue.json')
+    fetch('data/datacatalogue/datacatalogue.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Cannot connnect to the server');
