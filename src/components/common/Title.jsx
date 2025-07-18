@@ -31,7 +31,7 @@ const Title = () => {
         left: 0,
         right: 0,
         bottom: 0,
-        background: 'linear-gradient(to right, rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0))',
+        background: 'linear-gradient(to right, rgba(0, 0, 0, 0.79), rgba(98, 0, 0, 0.26))',
         zIndex: 1,
       }
     }}>
