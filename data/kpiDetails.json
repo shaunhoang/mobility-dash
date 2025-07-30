@@ -1,7 +1,7 @@
 {
   "A01": {
     "code": "A01",
-    "title": "Public transport fleet",
+    "title": "Public transport fleet supply",
     "description": "Measures the number of public transport vehicles relative to the population. A sufficient supply is crucial for reducing wait times, preventing overcrowding, and ensuring the system can meet public demand.",
     "target": {
       "metric": "500 buses per 1 million people",
@@ -19,7 +19,7 @@
   },
   "A03": {
     "code": "A03",
-    "title": "Walkability",
+    "title": "Walkable streets",
     "description": "Assesses the quality and availability of pedestrian infrastructure like footpaths and safe crossings. Good walkability encourages active transport, improves public health, and is essential for first and last-mile connectivity to public transport.",
     "target": {
       "metric": "85% of major roads equipped with continuous footpaths",
@@ -28,7 +28,7 @@
   },
   "A04": {
     "code": "A04",
-    "title": "Cycling coverage",
+    "title": "Cycling path coverage",
     "description": "Measures the extent of safe and high-quality cycling facilities. A comprehensive cycling network promotes a healthy, zero-emission mode of transport and reduces reliance on motor vehicles.",
     "target": {
       "metric": "200km of protected cycling lanes",
@@ -37,7 +37,7 @@
   },
   "A05": {
     "code": "A05",
-    "title": "Drainage coverage",
+    "title": "Quality drainage coverage",
     "description": "Indicates the resilience of the transport network to weather events. Proper drainage prevents flooding that disproportionately affects pedestrians and cyclists, ensuring system reliability.",
     "target": {
       "metric": "90% coverage of arterial roads with modern drainage",
@@ -56,7 +56,7 @@
   "A07": {
     "code": "A07",
     "title": "Transport investment",
-    "description": "Represents the financial commitment to developing and maintaining the transport system. Consistent investment is vital for long-term improvements, modernization, and meeting future mobility needs.",
+    "description": "Represents the financial commitment to developing and maintaining the transport system. Consistent investment is vital for long-term improvements, modernisation, and meeting future mobility needs.",
     "target": {
       "metric": "15% of municipal budget allocated to sustainable transport",
       "timeline": "Annual"
@@ -64,7 +64,7 @@
   },
   "A08": {
     "code": "A08",
-    "title": "Local traffic flow",
+    "title": "Local traffic flows",
     "description": "Measures traffic efficiency and congestion at key locations. Effective enforcement of traffic rules helps maintain smooth flow, reducing travel times and fuel consumption.",
     "target": {
       "metric": "10% reduction in peak hour congestion in city center",
@@ -73,7 +73,7 @@
   },
   "A09": {
     "code": "A09",
-    "title": "Organised road use",
+    "title": "Road obstructions",
     "description": "Assesses the impact of encroachments (e.g., street vendors, illegal parking) on road space. Keeping footpaths and carriageways clear is critical for the safety and efficiency of non-motorised transport.",
     "target": {
       "metric": "75% reduction in footpath encroachments on major routes",
