@@ -1,4 +1,4 @@
-import { Description, Download, Public, Widgets } from '@mui/icons-material';
+import { Description, ExitToApp, Public, Widgets } from '@mui/icons-material';
 import {
   Box,
   Button,
@@ -69,20 +69,20 @@ const CatalogueListItem = ({ item, onClick, isMobile }) => (
           <Button
             variant="contained"
             size="small"
-            startIcon={<Download />}
+            startIcon={<ExitToApp />}
             onClick={(e) => {
               e.stopPropagation();
               const link = document.createElement('a');
               link.href = item.url;
               const fileName = item.url.split('/').pop(); // file name
               link.setAttribute('download', fileName || 'download');
-              document.body.appendChild(link);               // Append the link to the body, necessary for Firefox
+              document.body.appendChild(link);               
               link.click();
               document.body.removeChild(link);
             }}
             sx={{ flexShrink: 0, mt: 0.5 }}
           >
-            Download
+            Go to Source
           </Button>
 
         </Box>

@@ -30,7 +30,7 @@ const DataCatalogue = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filters, setFilters] = useState({
     format: '',
-    coverage: '',
+    resolution: '',
     theme: '',
   });
   const [showFilters, setShowFilters] = useState(false);
@@ -63,22 +63,22 @@ const DataCatalogue = () => {
 
   const filterOptions = useMemo(() => {
     if (!datasets || datasets.length === 0) {
-      return { fileFormats: [], coverages: [], themes: [] };
+      return { fileFormats: [], resolutions: [], themes: [] };
     }
 
     const formats = new Set();
-    const coverages = new Set();
+    const resolutions = new Set();
     const themes = new Set();
 
     datasets.forEach(item => {
       if (item.format) formats.add(item.format);
-      if (item.coverage) coverages.add(item.coverage);
+      if (item.resolution) resolutions.add(item.resolution);
       if (item.theme) themes.add(item.theme);
     });
 
     return {
       fileFormats: [...formats].sort(),
-      coverages: [...coverages].sort(),
+      resolutions: [...resolutions].sort(),
       themes: [...themes].sort(),
     };
   }, [datasets]); 
@@ -110,7 +110,7 @@ const DataCatalogue = () => {
     return datasets.filter((item) => {
       // Dropdown filter logic
       const formatMatch = filters.format ? item.format === filters.format : true;
-      const coverageMatch = filters.coverage ? item.coverage === filters.coverage : true;
+      const resolutionMatch = filters.resolution ? item.resolution === filters.resolution : true;
       const themeMatch = filters.theme ? item.theme === filters.theme : true;
 
       // Search query logic (searches name and description)
@@ -119,7 +119,7 @@ const DataCatalogue = () => {
         item.description.toLowerCase().includes(query)
         : true;
 
-      return formatMatch && coverageMatch && themeMatch && searchMatch;
+      return formatMatch && resolutionMatch && themeMatch && searchMatch;
     });
   }, [searchQuery, filters, datasets]);
 

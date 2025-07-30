@@ -1,8 +1,8 @@
-import { Box, Grid, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { Box, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
 const FilterBar = ({ filters, onFilterChange, filterOptions }) => {
-  const { format, coverage, theme } = filters;
-  const { fileFormats, coverages, themes } = filterOptions;
+  const { format, resolution, theme } = filters;
+  const { fileFormats, resolutions, themes } = filterOptions;
 
   const handleChange = (event) => {
     onFilterChange({
@@ -14,13 +14,13 @@ const FilterBar = ({ filters, onFilterChange, filterOptions }) => {
   return (
 <Box sx={{ display: 'flex',gap: 1, my: 2, flexWrap: 'nowrap' }}>
         <FormControl fullWidth size="small">
-          <InputLabel id="format-select-label">File Format</InputLabel>
+          <InputLabel id="format-select-label">Format</InputLabel>
           <Select
             labelId="format-select-label"
             id="format-select"
             name="format"
             value={format}
-            label="File Format"
+            label="Format"
             onChange={handleChange}
           >
             <MenuItem value="">
@@ -33,19 +33,19 @@ const FilterBar = ({ filters, onFilterChange, filterOptions }) => {
         </FormControl>
  
         <FormControl fullWidth size="small">
-          <InputLabel id="coverage-select-label">Coverage</InputLabel>
+          <InputLabel id="resolution-select-label">Resolution</InputLabel>
           <Select
-            labelId="coverage-select-label"
-            id="coverage-select"
-            name="coverage"
-            value={coverage}
-            label="Coverage"
+            labelId="resolution-select-label"
+            id="resolution-select"
+            name="resolution"
+            value={resolution}
+            label="resolution"
             onChange={handleChange}
           >
             <MenuItem value="">
-              <em>All Coverages</em>
+              <em>All Resolutions</em>
             </MenuItem>
-            {coverages.map((option) => (
+            {resolutions.map((option) => (
               <MenuItem key={option} value={option}>{option}</MenuItem>
             ))}
           </Select>

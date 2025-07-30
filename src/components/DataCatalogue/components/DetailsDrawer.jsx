@@ -1,4 +1,4 @@
-import { Close, Description, Download, Public, Widgets } from '@mui/icons-material';
+import { Close, Description, ExitToApp, Public, Widgets } from '@mui/icons-material';
 import {
   Box,
   Button,
@@ -32,32 +32,23 @@ const DetailsDrawer = ({ item, open, onClose }) => {
         <Box>
           <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
             <Typography variant="h5" component="h2">
-              Dataset Metadata
+              Metadata
             </Typography>
             <IconButton onClick={onClose}>
               <Close />
             </IconButton>
           </Box>
           <Divider sx={{ mb: 3 }} />
-          <Typography variant="h6" gutterBottom>
-            {item.name}
-          </Typography>
-          <Typography variant="body1" color="text.secondary">
-            {item.description}
-          </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-            Last Updated: {new Date(item.latest_year).getFullYear()}
-          </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
-            Source: {item.provider}
-          </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
-            Reference: {item.reference || 'N/A'}, {item.reference_detail || 'N/A'}
-          </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
-            Update Frequency: {item.update_frequency || 'N/A'}
-          </Typography>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, my: 2 }}>
+
+          <Box sx={{ flexGrow: 1, overflowY: 'auto', mb: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              {item.name}
+            </Typography>
+            <Typography variant="body1" color="text.secondary">
+              {item.description}
+            </Typography>
+          </Box>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 2 }}>
             <Box>
               <Chip icon={<Widgets />} label={item.theme} variant="filled" />
             </Box>
@@ -66,12 +57,26 @@ const DetailsDrawer = ({ item, open, onClose }) => {
               <Chip icon={<Public />} label={item.geography} variant="filled" />
             </Box>
           </Box>
+          <Box>
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
+              Source: {item.provider}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
+              Reference: {item.reference || 'N/A'}, {item.reference_detail || 'N/A'}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+              Last Updated: {item.latest_year}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
+              Update Frequency: {item.update_frequency || 'N/A'}
+            </Typography>
+          </Box>
         </Box>
         <Box sx={{ mt: 'auto' }}>
           <Button
             variant="contained"
             size="large"
-            startIcon={<Download />}
+            endIcon={<ExitToApp />}
             fullWidth
             onClick={(e) => {
               e.stopPropagation();
@@ -84,7 +89,7 @@ const DetailsDrawer = ({ item, open, onClose }) => {
               document.body.removeChild(link);
             }}
           >
-            Download
+            Go to Source
           </Button>
         </Box>
       </Box>
