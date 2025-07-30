@@ -58,7 +58,7 @@ const Title = () => {
 
             <Box component="section">
               <Typography variant="body1" sx={{ fontSize: '1.2rem', maxWidth: '75ch' }}>
-                A smarter transport future for all
+                Empowering a more sustainable transport future for all residents with data
               </Typography>
             </Box>
           </Grid>
