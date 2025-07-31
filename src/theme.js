@@ -11,7 +11,7 @@ const roseShades = {
 };
 
 const kpiCategoryColors = {
-  ochre: "#D4A25F",
+  ochre: "#d4a15fff",
   sage: "#9CAF88",
   slate: "#6A8D92",
   terracotta: "#C47A69",
@@ -30,8 +30,8 @@ const theme = createTheme({
       contrastText: "#ffffff",
     },
     background: {
-      default: "#FEF6F5", // A very light, warm off-white
-      selected: roseShades.lightest, // Lighter shade for selected items
+      default: "#FEF6F5", 
+      selected: roseShades.lightest, 
       paper: "#FFFFFF",
     },
     text: {
