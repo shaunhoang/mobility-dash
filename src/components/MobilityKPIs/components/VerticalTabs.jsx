@@ -1,13 +1,6 @@
-import {
-  Box,
-  Button,
-  Paper,
-  Tab,
-  Tabs,
-  Typography
-} from '@mui/material';
-import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { Box, Button, Paper, Tab, Tabs, Typography } from "@mui/material";
+import PropTypes from "prop-types";
+import { useState } from "react";
 
 const VerticalTabs = ({ tabs, onTabChange, activeTab }) => {
   const [value, setValue] = useState();
@@ -27,56 +20,49 @@ const VerticalTabs = ({ tabs, onTabChange, activeTab }) => {
 
   return (
     <Box>
-      <Box sx={{ p: 1, textAlign: 'center' }}>
-        <Typography variant="subtitle1" color="text.secondary">
-          Select a topic to filter
+      <Box sx={{ p: 1 }}>
+        <Typography variant="subtitle2" color="text.secondary">
+          Filter by topic
         </Typography>
       </Box>
       <Paper
         sx={{
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'column',
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         <Tabs
-          orientation='vertical'
+          orientation="vertical"
           variant="scrollable"
           value={activeTab === null ? false : activeTab}
           onChange={handleChange}
-          sx={{
-            borderColor: 'divider',
-            width: '100%',
-          }}
         >
           {tabs.map((tab, index) => (
             <Tab
               key={index}
               label={tab.label}
               sx={{
-                opacity: 1,
-                '&.Mui-selected': {
-                  fontWeight: 'bold',
-                  opacity: 1
-                }
-              }} />
+                alignItems: "flex-end", // Add this line to align text to the left
+                flexShrink: 0,
+                "&.Mui-selected": {
+                  fontWeight: "bold",
+                  opacity: 1,
+                  color: tab.color,
+                },
+              }}
+            />
           ))}
         </Tabs>
-
-
       </Paper>
-      <Box sx={{ p: 1 }}>
+      <Box>
         <Button
-          fullWidth
           onClick={handleShowAll}
-          variant='text'
+          variant="text"
           sx={{
-            color: 'primary.main',
-            // If a tab is selected, the button has 0.5 opacity (like an unselected tab).
-            // If no tab is selected ("Show All" is active), it has full opacity.
+            color: "primary.main",
             opacity: activeTab !== null ? 1 : 0.5,
-            // If "Show All" is active, make the font bold to match selected tabs.
-            fontWeight: activeTab !== null ? 'bold' : 'normal',
+            fontWeight: activeTab !== null ? "bold" : "normal",
           }}
         >
           Show All
@@ -87,8 +73,15 @@ const VerticalTabs = ({ tabs, onTabChange, activeTab }) => {
 };
 
 VerticalTabs.propTypes = {
-  tabs: PropTypes.arrayOf(PropTypes.object).isRequired,
+  tabs: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      color: PropTypes.string, // Color is now an expected prop
+    })
+  ).isRequired,
   onTabChange: PropTypes.func.isRequired,
+  activeTab: PropTypes.number,
 };
 
 export default VerticalTabs;

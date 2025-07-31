@@ -9,23 +9,24 @@ import {
   Select,
   Typography,
   useMediaQuery,
-  useTheme
-} from '@mui/material';
-import { useEffect, useMemo, useState } from 'react';
+  useTheme,
+  Container,
+} from "@mui/material";
+import { useEffect, useMemo, useState } from "react";
 
-import DetailsDrawer from './components/DetailsDrawer';
-import CatalogueList from './components/CatalogueList';
-import FilterBar from './components/FilterBar';
-import ResultsSummary from './components/ResultsSummary';
-import SearchBar from './components/SearchBar';
-import ToggleFilterButton from './components/ToggleFilterButton';
+import DetailsDrawer from "./components/DetailsDrawer";
+import CatalogueList from "./components/CatalogueList";
+import FilterBar from "./components/FilterBar";
+import ResultsSummary from "./components/ResultsSummary";
+import SearchBar from "./components/SearchBar";
+import ToggleFilterButton from "./components/ToggleFilterButton";
 
 const DataCatalogue = () => {
   // useState for the fetched data, loading, and errors
   const [datasets, setDatasets] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [filters, setFilters] = useState({
     format: [],
     resolution: [],
@@ -37,22 +38,22 @@ const DataCatalogue = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(10);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   // useEffect to fetch data when the component mounts
   useEffect(() => {
-    fetch('data/datacatalogue/datacatalogue.json')
-      .then(response => {
+    fetch("data/datacatalogue/datacatalogue.json")
+      .then((response) => {
         if (!response.ok) {
-          throw new Error('Cannot connnect to the server');
+          throw new Error("Cannot connnect to the server");
         }
         return response.json();
       })
-      .then(data => {
+      .then((data) => {
         setDatasets(data);
         setIsLoading(false);
       })
-      .catch(fetchError => {
+      .catch((fetchError) => {
         console.error("Failed to fetch data catalogue:", fetchError);
         setError("Could not load the data catalogue. Please try again later.");
         setIsLoading(false);
@@ -69,7 +70,7 @@ const DataCatalogue = () => {
     const resolutions = new Set();
     const themes = new Set();
 
-    datasets.forEach(item => {
+    datasets.forEach((item) => {
       if (item.format) formats.add(item.format);
       if (item.resolution) resolutions.add(item.resolution);
       if (item.theme) themes.add(item.theme);
@@ -92,7 +93,7 @@ const DataCatalogue = () => {
     setDrawerOpen(false);
   };
   const handleToggleFilters = () => {
-    setShowFilters(prev => !prev);
+    setShowFilters((prev) => !prev);
   };
   const handlePageChange = (event, value) => {
     setCurrentPage(value);
@@ -103,21 +104,24 @@ const DataCatalogue = () => {
     setCurrentPage(1);
   };
 
-
   const filteredDatasets = useMemo(() => {
     const query = searchQuery.toLowerCase();
 
     return datasets.filter((item) => {
       // Dropdown filter logic
-      const formatMatch = filters.format.length === 0 || filters.format.includes(item.format);
-      const resolutionMatch = filters.resolution.length === 0 || filters.resolution.includes(item.resolution);
-      const themeMatch = filters.theme.length === 0 || filters.theme.includes(item.theme);
+      const formatMatch =
+        filters.format.length === 0 || filters.format.includes(item.format);
+      const resolutionMatch =
+        filters.resolution.length === 0 ||
+        filters.resolution.includes(item.resolution);
+      const themeMatch =
+        filters.theme.length === 0 || filters.theme.includes(item.theme);
 
       // Search query logic (searches name and description and theme)
-      const searchMatch = query ?
-        item.name.toLowerCase().includes(query) ||
-        item.description.toLowerCase().includes(query) ||
-        item.theme.toLowerCase().includes(query)
+      const searchMatch = query
+        ? item.name.toLowerCase().includes(query) ||
+          item.description.toLowerCase().includes(query) ||
+          item.theme.toLowerCase().includes(query)
         : true;
 
       return formatMatch && resolutionMatch && themeMatch && searchMatch;
@@ -131,13 +135,23 @@ const DataCatalogue = () => {
   // Pagination logic
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = filteredDatasets.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = filteredDatasets.slice(
+    indexOfFirstItem,
+    indexOfLastItem
+  );
   const pageCount = Math.ceil(filteredDatasets.length / itemsPerPage);
 
   // Conditional rendering for loading and error states
   if (isLoading) {
     return (
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "80vh",
+        }}
+      >
         <CircularProgress />
       </Box>
     );
@@ -145,7 +159,7 @@ const DataCatalogue = () => {
 
   if (error) {
     return (
-      <Box sx={{ p: 4, textAlign: 'center' }}>
+      <Box sx={{ p: 4, textAlign: "center" }}>
         <Typography color="error">{error}</Typography>
       </Box>
     );
@@ -153,16 +167,42 @@ const DataCatalogue = () => {
 
   return (
     <Box sx={{ px: 4 }}>
-      <Box sx={{ p: 2, backgroundColor: 'white', boxShadow: 1, borderRadius: '8px' }}>
+      <Container maxWidth="md" sx={{ textAlign: "center" }}>
+        <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
+          We believe open data empowers innovation. This catalogue provides free
+          access to the geospatial data of interest to researchers, developers, and the public alike to explore.
+        </Typography>
+      </Container>
+      <Box
+        sx={{
+          p: 2,
+          backgroundColor: "white",
+          boxShadow: 1,
+          borderRadius: "8px",
+        }}
+      >
         <SearchBar query={searchQuery} onQueryChange={setSearchQuery} />
 
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
-          <ToggleFilterButton showFilters={showFilters} onClick={handleToggleFilters} />
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <ToggleFilterButton
+            showFilters={showFilters}
+            onClick={handleToggleFilters}
+          />
           <Divider orientation="vertical" flexItem sx={{ mx: 2 }} />
 
           <Box sx={{ flexGrow: 1 }}>
             {showFilters && (
-              <FilterBar filters={filters} onFilterChange={setFilters} filterOptions={filterOptions} />
+              <FilterBar
+                filters={filters}
+                onFilterChange={setFilters}
+                filterOptions={filterOptions}
+              />
             )}
           </Box>
         </Box>
@@ -173,12 +213,13 @@ const DataCatalogue = () => {
         {pageCount > 1 && (
           <Box
             sx={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              flexWrap: 'wrap',
-              gap: 2
-            }}>
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              flexWrap: "wrap",
+              gap: 2,
+            }}
+          >
             <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
               <InputLabel>Items per page</InputLabel>
               <Select
@@ -201,13 +242,19 @@ const DataCatalogue = () => {
               showLastButton
             />
           </Box>
-
         )}
 
-        <CatalogueList items={currentItems} onItemClick={handleItemClick} isMobile={isMobile} />
-        <DetailsDrawer item={selectedDataset} open={isDrawerOpen} onClose={handleDrawerClose} />
+        <CatalogueList
+          items={currentItems}
+          onItemClick={handleItemClick}
+          isMobile={isMobile}
+        />
+        <DetailsDrawer
+          item={selectedDataset}
+          open={isDrawerOpen}
+          onClose={handleDrawerClose}
+        />
       </Box>
-
     </Box>
   );
 };
