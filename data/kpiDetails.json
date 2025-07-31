@@ -3,11 +3,11 @@
     "code": "A01",
     "title": "Public transport fleet supply",
     "description": "Measures the number of public transport vehicles relative to the population. A sufficient supply is crucial for reducing wait times, preventing overcrowding, and ensuring the system can meet public demand.",
-    "stat": "420",
+    "stat": "2000",
     "unit": "buses/1M",
     "target": {
-      "metric": "500 buses per 1 million people",
-      "timeline": "by end of 2026"
+      "metric": "2000 buses per 1 million people",
+      "timeline": ""
     }
   },
   "A02": {
@@ -102,7 +102,7 @@
     "code": "A10",
     "title": "Parking management",
     "description": "Evaluates the effectiveness of parking regulations and enforcement. Proper management prevents traffic obstruction and ensures that road space is used efficiently and fairly.",
-    "stat": "2",
+    "stat": "17",
     "unit": "zones",
     "target": {
       "metric": "Implementation of dynamic pricing in 5 key commercial zones",
