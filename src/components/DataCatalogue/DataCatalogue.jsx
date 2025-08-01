@@ -1,6 +1,7 @@
 import {
   Box,
   CircularProgress,
+  Container,
   Divider,
   FormControl,
   InputLabel,
@@ -10,12 +11,12 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
-  Container,
 } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 
-import DetailsDrawer from "./components/DetailsDrawer";
 import CatalogueList from "./components/CatalogueList";
+import DetailsDrawer from "./components/DetailsDrawer";
+import DownloadButton from "./components/DownloadButton";
 import FilterBar from "./components/FilterBar";
 import ResultsSummary from "./components/ResultsSummary";
 import SearchBar from "./components/SearchBar";
@@ -170,7 +171,8 @@ const DataCatalogue = () => {
       <Container maxWidth="md" sx={{ textAlign: "center" }}>
         <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
           We believe open data empowers innovation. This catalogue provides free
-          access to the geospatial data of interest to researchers, developers, and the public alike to explore.
+          access to the geospatial data of interest to researchers, developers,
+          and the public alike to explore.
         </Typography>
       </Container>
       <Box
@@ -208,7 +210,13 @@ const DataCatalogue = () => {
         </Box>
 
         <Divider sx={{ mb: 2 }} />
-        <ResultsSummary count={filteredDatasets.length} />
+        <Box sx={{ display: "flex", justifyContent: "space-between", mb: 2 }}>
+          <ResultsSummary count={filteredDatasets.length} />
+          <DownloadButton
+            data={filteredDatasets}
+            filename={`datacatalogue_filtered_(${filteredDatasets.length}it).csv`}
+          />
+        </Box>
 
         {pageCount > 1 && (
           <Box
