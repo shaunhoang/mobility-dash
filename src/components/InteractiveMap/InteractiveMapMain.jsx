@@ -3,7 +3,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import { useState } from "react";
 
 import LayerControl from "./components/LayerControl";
-import WebMap from "./components/WebMap";
+import BigMap from "./components/BigMap";
 
 const InteractiveMapMain = () => {
   const [visibleLayers, setVisibleLayers] = useState([]);
@@ -27,7 +27,7 @@ const InteractiveMapMain = () => {
           <LayerControl onLayerToggle={handleLayerToggle} />
         </Grid>
         <Grid item size={10.5} sx={{ height: "100%" }}>
-          <WebMap visibleLayers={visibleLayers} />
+          <BigMap visibleLayers={visibleLayers} />
         </Grid>
       </Grid>
     </Paper>

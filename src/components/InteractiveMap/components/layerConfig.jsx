@@ -13,7 +13,6 @@ export const layerConfig = [
         id: "districts",
         name: "Districts",
         file: "geojson/placeholder2.geojson",
-        color: "#B9473D",
         type: "fill",
       },
     ],

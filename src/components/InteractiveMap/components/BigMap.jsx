@@ -18,7 +18,7 @@ const baseLayers = [
   { label: "Dark", value: "mapbox://styles/mapbox/dark-v11" },
 ];
 
-const WebMap = ({ visibleLayers }) => {
+const BigMap = ({ visibleLayers }) => {
   const [mapStyle, setMapStyle] = useState(baseLayers[0].value);
   const mapRef = useRef(null);
   const [viewport, setViewport] = useState({
@@ -73,15 +73,25 @@ const WebMap = ({ visibleLayers }) => {
   };
 
   const getLayerPaintStyle = (layer) => {
+    // Use the layer's color property or default to grey if not specified
+    const colorProperty = layer.color
+      ? layer.color
+      : ["coalesce", ["get", "color"], "#808080"];
     switch (layer.type) {
       case "fill":
-        return { "fill-color": layer.color, "fill-opacity": 0.4 };
+        return {
+          "fill-color": colorProperty,
+          "fill-opacity": 0.4,
+        };
       case "circle":
-        return { "circle-color": layer.color, "circle-radius": 5 };
+        return {
+          "circle-color": colorProperty,
+          "circle-radius": 5,
+        };
       case "line":
       default:
         return {
-          "line-color": layer.color,
+          "line-color": colorProperty,
           "line-width": 2,
           "line-opacity": 0.7,
         };
@@ -185,7 +195,7 @@ const WebMap = ({ visibleLayers }) => {
         </ToggleButtonGroup>
       </Paper>
 
-      <Paper
+      {/* <Paper
         elevation={4}
         sx={{
           position: "absolute",
@@ -218,9 +228,9 @@ const WebMap = ({ visibleLayers }) => {
             {JSON.stringify(visibleLayers, null, 2)}
           </pre>
         </Box>
-      </Paper>
+      </Paper> */}
     </Box>
   );
 };
 
-export default WebMap;
+export default BigMap;
