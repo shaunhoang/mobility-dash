@@ -21,12 +21,15 @@ function Home() {
 
   return (
     <div>
-      <Box sx={{ mb: 2 }}>
+      <Box sx={{ mb: 4 }}>
         <Title />
       </Box>
       <Box sx={{ mx: 8, my: 4 }}>
         <InteractiveMapMain />
       </Box>
+      <Divider sx={{ my: 4}} />
+      
+      {/* Navigation buttons for different sections */}
       <NavigationButtons
         buttons={mapNavigationButtons}
         onButtonClick={handleLayerChange}

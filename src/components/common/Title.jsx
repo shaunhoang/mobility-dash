@@ -7,7 +7,7 @@ const Title = () => {
     // This Box is the main container with the background image and gradient effect.
     <Box
       sx={{
-        position: "relative", // This is necessary for the overlay to work.
+        position: "relative", 
         color: "white",
         p: 4,
 
@@ -61,8 +61,7 @@ const Title = () => {
                 variant="body1"
                 sx={{ fontSize: "1.2rem", maxWidth: "75ch" }}
               >
-                Empowering a more sustainable transport future for all 
-                with data
+                Empowering a more sustainable transport future for all with data
               </Typography>
             </Box>
           </Grid>
