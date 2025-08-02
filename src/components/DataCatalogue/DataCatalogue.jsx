@@ -1,4 +1,5 @@
 import {
+  Grid,
   Box,
   CircularProgress,
   Container,
@@ -168,13 +169,22 @@ const DataCatalogue = () => {
 
   return (
     <Box sx={{ px: 4 }}>
-      <Container maxWidth="md" sx={{ textAlign: "center" }}>
-        <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
-          We believe open data empowers innovation. This catalogue provides free
-          access to the geospatial data of interest to researchers, developers,
-          and the public alike to explore.
-        </Typography>
-      </Container>
+      <Grid container spacing={2} sx={{ mb: 4 }}>
+        <Grid item size={3}></Grid>
+        <Grid item size={9}>
+          <Container maxWidth="lg" sx={{ textAlign: "center" }}>
+            <Typography variant="body1" color="text.primary" sx={{ mb: 3 }}>
+              <strong>Open data empowers innovation.</strong> This data
+              catalogue provides a comprehensive directory of free-access
+              geospatial data pertaining to the city of Jaipur. Whether you are
+              a researcher, a developer, or a member of the public seeking to
+              stay informed, we invite you to explore, download, and utilise these
+              datasets to help foster a more transparent and data-driven future
+              for the city.
+            </Typography>
+          </Container>
+        </Grid>
+      </Grid>
       <Box
         sx={{
           p: 2,

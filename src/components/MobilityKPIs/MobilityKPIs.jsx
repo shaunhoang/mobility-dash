@@ -130,20 +130,25 @@ const MobilityKPIs = () => {
   }
   return (
     <Box sx={{ px: 4 }}>
-      <Container maxWidth="md" sx={{ textAlign: "center" }}>
-        <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
-          Jaipur is on a journey to build a smarter, more connected transport
-          future. <br/> This dashboard offers an overview of core aspects that
-          drive our strategy and how we progress.
-        </Typography>
-      </Container>
+      <Grid container spacing={2} sx={{ mb: 4 }}>
+        <Grid item size={3}></Grid>
+        <Grid item size={9}>
+          <Container maxWidth="lg" sx={{ textAlign: "center" }}>
+            <Typography variant="body1" color="text.primary" sx={{ mb: 3 }}>
+              <strong>Progress requires transparency.</strong> This dashboard
+              serves as a public window into our efforts, offering a
+              comprehensive overview of the key pillars that constitute the
+              city's strategy. It utlines the core components of our plan and
+              provides crucial data to track our performance against these
+              goals, ensuring accountability as we work towards a more connected
+              and efficient urban future.
+            </Typography>
+          </Container>
+        </Grid>
+      </Grid>
       <Grid container spacing={2}>
         {/* Left Column for Tabs */}
-        <Grid
-          item
-          size={2}
-          sx={{ display: "flex", flexDirection: "column"}}
-        >
+        <Grid item size={2} sx={{ display: "flex", flexDirection: "column" }}>
           <VerticalTabs
             tabs={tabsWithColor}
             activeTab={activeTabIndex}
@@ -152,11 +157,7 @@ const MobilityKPIs = () => {
         </Grid>
 
         {/* Right Column */}
-        <Grid
-          item
-          size={10}
-          sx={{ display: "flex", flexDirection: "column"}}
-        >
+        <Grid item size={10} sx={{ display: "flex", flexDirection: "column" }}>
           <Box
             sx={{
               height: "100%",

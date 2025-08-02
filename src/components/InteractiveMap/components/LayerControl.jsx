@@ -15,7 +15,7 @@ const LayerControl = ({ onLayerToggle }) => {
         gutterBottom
         sx={{ fontWeight: "bold", color: "primary.main" }}
       >
-        EXPLORE
+        THEME
       </Typography>
       {layerConfig.map((themeGroup) => (
         <Box key={themeGroup.theme} mb={2}>

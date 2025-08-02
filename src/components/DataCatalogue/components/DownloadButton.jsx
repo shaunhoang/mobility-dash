@@ -26,7 +26,7 @@ const DownloadButton = ({ data = [], filename = "results.csv" }) => {
       target="_blank"
     >
       <Button variant="outlined" startIcon={<DownloadIcon />}>
-        Export search results
+        Export search results (CSV)
       </Button>
     </CSVLink>
   );
