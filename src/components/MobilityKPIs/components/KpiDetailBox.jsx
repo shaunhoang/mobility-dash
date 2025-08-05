@@ -10,8 +10,8 @@ import {
   Typography,
 } from "@mui/material";
 import { useEffect, useState } from "react";
-import WebMap from "../../KPIViz/WebMap";
-import KpiChart from "../../KPIViz/KpiChart";
+import KpiChart from "./KpiChart";
+import WebMap from "./KpiMap";
 
 const KpiDetailBox = ({ kpi }) => {
   // 1. Add state for loading, data, and errors
@@ -33,7 +33,7 @@ const KpiDetailBox = ({ kpi }) => {
       setChartData(null);
 
       // Fetch the JSON file
-      fetch(`data/kpicharts/${kpi.code}.json`)
+      fetch(`data/kpiCharts/${kpi.code}.json`)
         .then((response) => {
           if (!response.ok) {
             throw new Error("Cannot connect to the server");

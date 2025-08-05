@@ -27,12 +27,11 @@ const BigMap = ({ visibleLayers }) => {
     zoom: 8,
   });
 
-  // Local state of the WebMap component.
+  // Local state of the map component.
   const [geoJsonData, setGeoJsonData] = useState({});
   const [isFetching, setIsFetching] = useState(false);
   const [popupInfo, setPopupInfo] = useState(null);
 
-  // This effect runs whenever the list of visible layers changes.
   useEffect(() => {
     const fetchDataForVisibleLayers = async () => {
       setIsFetching(true);
@@ -76,7 +75,7 @@ const BigMap = ({ visibleLayers }) => {
   const getLayerPaintStyle = (layer) => {
     const colorProperty = layer.color
       ? layer.color
-      : ["coalesce", ["get", "color"], "#808080"]; // Use the layer's color property or default to grey if not specified
+      : ["coalesce", ["get", "color"], "#808080"]; // default to grey if not specified in geojson
 
     switch (layer.type) {
       case "fill":
@@ -99,20 +98,16 @@ const BigMap = ({ visibleLayers }) => {
     }
   };
 
-  // 3. Create a click handler for the map
   const handleMapClick = (event) => {
     const feature = event.features && event.features[0];
     if (!feature) {
       return;
     }
-    // Get the ID of the layer that was clicked (e.g., "us-states-layer")
     const clickedLayerId = feature.layer.id;
-    // Find the original configuration object for that layer
     const layerConfig = visibleLayers.find(
       (l) => `${l.id}-layer` === clickedLayerId
     );
 
-    // If the layer or its tooltipProperty isn't configured, do nothing
     if (!layerConfig || !layerConfig.tooltipProperty) {
       return;
     }
@@ -123,13 +118,11 @@ const BigMap = ({ visibleLayers }) => {
       setPopupInfo({
         longitude: event.lngLat.lng,
         latitude: event.lngLat.lat,
-        // Use the prefix from the config, defaulting to an empty string if it's not set
         content: `${tooltipPrefix || ""}${tooltipValue}`,
       });
     }
   };
 
-  // Generate a list of layer IDs that should be interactive
   const interactiveLayerIds = visibleLayers.map((layer) => `${layer.id}-layer`);
   if (!MAPBOX_TOKEN) {
     return (
@@ -173,8 +166,7 @@ const BigMap = ({ visibleLayers }) => {
       >
         {visibleLayers.map((layer) => {
           const data = geoJsonData[layer.file];
-          if (!data) return null; // Don't render if data hasn't been fetched yet.
-
+          if (!data) return null;
           return (
             <Source key={layer.id} id={layer.id} type="geojson" data={data}>
               <Layer

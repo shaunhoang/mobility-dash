@@ -1,8 +1,6 @@
 import {
   Box,
   CircularProgress,
-  Container,
-  Divider,
   Grid,
   Typography,
   useTheme,
@@ -26,8 +24,10 @@ const MobilityKPIs = () => {
 
   // --- Data Fetching ---
   useEffect(() => {
-    // Use Promise.all to fetch both files concurrently
-    Promise.all([fetch("data/kpiDomains.json"), fetch("data/kpiDetails.json")])
+    Promise.all([
+      fetch("data/kpiDef/kpiDomains.json"),
+      fetch("data/kpiDef/kpiDetails.json"),
+    ])
       .then(async ([domainsResponse, detailsResponse]) => {
         if (!domainsResponse.ok || !detailsResponse.ok) {
           throw new Error("Network response was not ok for one or more files.");
@@ -46,7 +46,7 @@ const MobilityKPIs = () => {
         setError("Could not load required data. Please try again later.");
         setIsLoading(false);
       });
-  }, []); // Run once only
+  }, []); // Run once
 
   // --- Color and Data Augmentation ---
   const domainColorMap = useMemo(
@@ -130,22 +130,6 @@ const MobilityKPIs = () => {
   }
   return (
     <Box sx={{ px: 4 }}>
-      <Grid container spacing={2} sx={{ mb: 4 }}>
-        <Grid item size={3}></Grid>
-        <Grid item size={9}>
-          <Container maxWidth="lg" sx={{ textAlign: "center" }}>
-            <Typography variant="body1" color="text.primary" sx={{ mb: 3 }}>
-              <strong>Progress requires transparency.</strong> This dashboard
-              serves as a public window into our efforts, offering a
-              comprehensive overview of the key pillars that constitute the
-              city's strategy. It utlines the core components of our plan and
-              provides crucial data to track our performance against these
-              goals, ensuring accountability as we work towards a more connected
-              and efficient urban future.
-            </Typography>
-          </Container>
-        </Grid>
-      </Grid>
       <Grid container spacing={2}>
         {/* Left Column for Tabs */}
         <Grid item size={2} sx={{ display: "flex", flexDirection: "column" }}>

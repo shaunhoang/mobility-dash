@@ -1,26 +1,24 @@
-import { Button, Grid, Box, Container, Typography } from "@mui/material";
+import { Box, Button, Grid, Stack } from "@mui/material";
 
-// The component now accepts an 'onButtonClick' function as a prop.
 const NavigationButtons = ({ buttons = [], onButtonClick, activeButtonId }) => {
   return (
     <Box>
-      <Grid
-        container
-        spacing={1}
-        sx={{ p: 2, display: "flex", justifyContent: "center" }}
-      >
+      <Stack direction="row" spacing={1}>
         {buttons.map((button) => (
-          <Grid item key={button.id}>
-            <Button
-              variant={button.id === activeButtonId ? "contained" : "outlined"}
-              sx={{ width: 300, height: "50px", fontSize: "1.2rem" }}
-              onClick={() => onButtonClick(button.id)}
-            >
-              {button.text}
-            </Button>
-          </Grid>
+          <Button
+            key={button.id}
+            variant={button.id === activeButtonId ? "contained" : "outlined"}
+            sx={{
+              flexGrow: 1,
+              height: "50px",
+              fontSize: "1.2rem",
+            }}
+            onClick={() => onButtonClick(button.id)}
+          >
+            {button.text}
+          </Button>
         ))}
-      </Grid>
+      </Stack>
     </Box>
   );
 };

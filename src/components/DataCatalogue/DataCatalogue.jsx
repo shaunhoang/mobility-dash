@@ -33,6 +33,7 @@ const DataCatalogue = () => {
     format: [],
     resolution: [],
     theme: [],
+    latestYear: [],
   });
   const [showFilters, setShowFilters] = useState(true);
   const [selectedDataset, setSelectedDataset] = useState(null);
@@ -65,23 +66,26 @@ const DataCatalogue = () => {
   // useMemo to compute filter options based on the fetched datasets
   const filterOptions = useMemo(() => {
     if (!datasets || datasets.length === 0) {
-      return { fileFormats: [], resolutions: [], themes: [] };
+      return { fileFormats: [], resolutions: [], themes: [], latestYears: [] };
     }
 
     const formats = new Set();
     const resolutions = new Set();
     const themes = new Set();
+    const latestYears = new Set();
 
     datasets.forEach((item) => {
       if (item.format) formats.add(item.format);
       if (item.resolution) resolutions.add(item.resolution);
       if (item.theme) themes.add(item.theme);
+      if (item.latest_year) latestYears.add(item.latest_year);
     });
 
     return {
       fileFormats: [...formats].sort(),
       resolutions: [...resolutions].sort(),
       themes: [...themes].sort(),
+      latestYears: [...latestYears].sort(),
     };
   }, [datasets]);
 
@@ -118,6 +122,8 @@ const DataCatalogue = () => {
         filters.resolution.includes(item.resolution);
       const themeMatch =
         filters.theme.length === 0 || filters.theme.includes(item.theme);
+      const latestYearMatch =
+        filters.latestYear.length === 0 || filters.latestYear.includes(item.latest_year);
 
       // Search query logic (searches name and description and theme)
       const searchMatch = query
@@ -126,7 +132,7 @@ const DataCatalogue = () => {
           item.theme.toLowerCase().includes(query)
         : true;
 
-      return formatMatch && resolutionMatch && themeMatch && searchMatch;
+      return formatMatch && resolutionMatch && themeMatch && latestYearMatch && searchMatch;
     });
   }, [searchQuery, filters, datasets]);
 
@@ -169,22 +175,7 @@ const DataCatalogue = () => {
 
   return (
     <Box sx={{ px: 4 }}>
-      <Grid container spacing={2} sx={{ mb: 4 }}>
-        <Grid item size={3}></Grid>
-        <Grid item size={9}>
-          <Container maxWidth="lg" sx={{ textAlign: "center" }}>
-            <Typography variant="body1" color="text.primary" sx={{ mb: 3 }}>
-              <strong>Open data empowers innovation.</strong> This data
-              catalogue provides a comprehensive directory of free-access
-              geospatial data pertaining to the city of Jaipur. Whether you are
-              a researcher, a developer, or a member of the public seeking to
-              stay informed, we invite you to explore, download, and utilise these
-              datasets to help foster a more transparent and data-driven future
-              for the city.
-            </Typography>
-          </Container>
-        </Grid>
-      </Grid>
+
       <Box
         sx={{
           p: 2,

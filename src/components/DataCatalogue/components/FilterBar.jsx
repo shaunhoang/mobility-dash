@@ -12,14 +12,13 @@ import {
 import ClearAllIcon from "@mui/icons-material/ClearAll";
 
 const FilterBar = ({ filters, onFilterChange, filterOptions }) => {
-  const { format, resolution, theme } = filters;
-  const { fileFormats, resolutions, themes } = filterOptions;
+  const { format, resolution, theme, latestYear } = filters;
+  const { fileFormats, resolutions, themes, latestYears } = filterOptions;
 
   // Handler for filter changes
   const handleDelete = (filterName, valueToDelete) => () => {
     onFilterChange({
       ...filters,
-      // Create a new array for the specified filter, excluding the deleted value.
       [filterName]: filters[filterName].filter(
         (value) => value !== valueToDelete
       ),
@@ -38,6 +37,7 @@ const FilterBar = ({ filters, onFilterChange, filterOptions }) => {
       format: [],
       resolution: [],
       theme: [],
+      latestYear: [],
     });
   };
 
@@ -142,6 +142,39 @@ const FilterBar = ({ filters, onFilterChange, filterOptions }) => {
             ))}
           </Select>
         </FormControl>
+
+        <FormControl fullWidth size="small">
+          <InputLabel id="latestYear-select-label">Last Updated</InputLabel>
+          <Select
+            labelId="latestYear-select-label"
+            id="latestYear-select"
+            name="latestYear"
+            value={latestYear}
+            label="Last Updated"
+            multiple
+            onChange={handleChange}
+            renderValue={(selected) => (
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.2 }}>
+                {selected.map((value) => (
+                  <Chip
+                    key={value}
+                    label={value}
+                    size="small"
+                    onDelete={handleDelete("latestYear", value)}
+                    onMouseDown={(event) => event.stopPropagation()}
+                  />
+                ))}
+              </Box>
+            )}
+          >
+            {latestYears.map((option) => (
+              <MenuItem key={option} value={option}>
+                <Checkbox checked={latestYear.includes(option)} />
+                <ListItemText primary={option} />
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
       </Box>
       <Box>
         <Button
@@ -151,7 +184,8 @@ const FilterBar = ({ filters, onFilterChange, filterOptions }) => {
           disabled={
             filters.format.length === 0 &&
             filters.resolution.length === 0 &&
-            filters.theme.length === 0
+            filters.theme.length === 0 &&
+            filters.latestYear.length === 0
           }
         >
           Clear All

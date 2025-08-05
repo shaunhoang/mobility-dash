@@ -5,14 +5,14 @@ export const layerConfig = [
       {
         id: "jaipur-boundary",
         name: "Boundary",
-        file: "geojson/jaipur_boundary.geojson",
+        file: "data/mapMain/jaipur_boundary.geojson",
         color: "#292263",
         type: "fill"
       },
       {
         id: "districts",
         name: "Districts",
-        file: "geojson/jaipur_districts.geojson",
+        file: "data/mapMain/jaipur_districts.geojson",
         // color: "#6A8D92", // Color by district in data
         type: "fill",
         tooltipPrefix: "District: ",
@@ -26,7 +26,7 @@ export const layerConfig = [
       {
         id: "bus-routes",
         name: "Bus Routes",
-        file: "geojson/bus_routes.geojson",
+        file: "data/mapMain/bus_routes.geojson",
         // color: "#6A8D92", // Color by route in data
         type: "line",
         tooltipPrefix: "Route: ",
@@ -35,7 +35,7 @@ export const layerConfig = [
       {
         id: "bus-stations",
         name: "Bus Stops",
-        file: "geojson/bus_stops.geojson",
+        file: "data/mapMain/bus_stops.geojson",
         color: "#274bef",
         type: "circle",
         tooltipPrefix: "Name: ",

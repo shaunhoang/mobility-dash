@@ -6,17 +6,23 @@ import {
   CardMedia,
   CircularProgress,
   Grid,
+  Link,
   Typography,
 } from "@mui/material";
 import { useEffect, useState } from "react";
+import HighlightsDrawer from "./components/HighlightsDrawer"; // Import the drawer component
 
-const About = () => {
-  // State for the fetched highlight cards
+const Highlights = () => {
+  // --- State Management ---
   const [highlightCards, setHighlightCards] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // useEffect to fetch the highlight cards data when the component mounts
+  // State for the drawer
+  const [isDrawerOpen, setDrawerOpen] = useState(false);
+  const [selectedCard, setSelectedCard] = useState(null);
+
+  // --- Data Fetching ---
   useEffect(() => {
     fetch("data/highlightsData.json")
       .then((response) => {
@@ -26,7 +32,13 @@ const About = () => {
         return response.json();
       })
       .then((data) => {
-        setHighlightCards(data);
+        // Map the API data to match the drawer's expected props
+        const formattedData = data.map((item) => ({
+          ...item,
+          name: item.title,
+          image_url: item.image,
+        }));
+        setHighlightCards(formattedData);
         setIsLoading(false);
       })
       .catch((fetchError) => {
@@ -34,7 +46,17 @@ const About = () => {
         setError("Could not load highlights. Please try again later.");
         setIsLoading(false);
       });
-  }, []); // The empty array ensures this runs only once
+  }, []);
+
+  // --- Event Handlers for the Drawer ---
+  const handleCardClick = (cardData) => {
+    setSelectedCard(cardData);
+    setDrawerOpen(true);
+  };
+
+  const handleDrawerClose = () => {
+    setDrawerOpen(false);
+  };
 
   return (
     <Box>
@@ -53,11 +75,11 @@ const About = () => {
               </Typography>
             )}
 
-            <Grid container spacing={2} sx={{ height: 275 }}>
+            <Grid container spacing={2}>
               {!isLoading &&
                 !error &&
                 highlightCards.map((card) => (
-                  <Grid item size={3} key={card.title} sx={{ height: "100%" }}>
+                  <Grid item size={3} key={card.name}>
                     <Card
                       sx={{
                         height: "100%",
@@ -69,7 +91,9 @@ const About = () => {
                         },
                       }}
                     >
+                      {/* Add onClick handler here */}
                       <CardActionArea
+                        onClick={() => handleCardClick(card)}
                         sx={{
                           height: "100%",
                           display: "flex",
@@ -80,7 +104,7 @@ const About = () => {
                         <CardMedia
                           component="img"
                           height="160"
-                          image={card.image}
+                          image={card.image_url}
                           alt={card.alt}
                         />
                         <CardContent sx={{ flexGrow: 1 }}>
@@ -90,7 +114,7 @@ const About = () => {
                             component="div"
                             sx={{ fontWeight: "bold" }}
                           >
-                            {card.title}
+                            {card.name}
                           </Typography>
                           <Typography
                             variant="body2"
@@ -118,27 +142,41 @@ const About = () => {
 
         {/* --- About Section --- */}
         <Grid item size={3}>
-          <Typography
-            variant="h5"
-            sx={{ color: "primary.dark", fontWeight: "bold", mb: 2 }}
-          >
+          <Typography variant="h5" gutterBottom sx={{ color: "primary.dark" }}>
             About the Initiative
           </Typography>
-          <Typography
-            variant="body1"
-            color="text.secondary"
-            component="p"
-            sx={{ mb: 2 }}
-          >
-            The Smart Mobility Data Hub initiative is led by NMIT (Bangalore,
-            India) to advance smart mobility in Jaipur by promoting open data,
-            informing stakeholders, and ensuring accountable progress towards a
-            sustainable urban future.
+          <Typography variant="body1" color="text.primary">
+            The Smart Mobility Hub is a collaboration between the{" "}
+            <Link
+              href="https://www.ucl.ac.uk/bartlett/casa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Centre for Advanced Spatial Analysis
+            </Link>{" "}
+            (CASA) at the University College London (UCL) and the{" "}
+            <Link
+              href="https://mnit.ac.in/dept_arch/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Department of Architecture and Planning
+            </Link>{" "}
+            at MNIT, Jaipur. Our project aims to facilitate data sharing to
+            shape accountable progress towards smart and inclusive mobility in
+            Jaipur.
           </Typography>
         </Grid>
       </Grid>
+
+      {/* --- Render the Drawer Component --- */}
+      <HighlightsDrawer
+        item={selectedCard}
+        open={isDrawerOpen}
+        onClose={handleDrawerClose}
+      />
     </Box>
   );
 };
 
-export default About;
+export default Highlights;

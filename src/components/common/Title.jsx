@@ -4,7 +4,6 @@ import logo from "../../assets/logo.png";
 
 const Title = () => {
   return (
-    // This Box is the main container with the background image and gradient effect.
     <Box
       sx={{
         position: "relative", 
@@ -61,7 +60,7 @@ const Title = () => {
                 variant="body1"
                 sx={{ fontSize: "1.2rem", maxWidth: "75ch" }}
               >
-                Empowering a more sustainable transport future for all with data
+                Toward a sustainable transport future for all with data
               </Typography>
             </Box>
           </Grid>
