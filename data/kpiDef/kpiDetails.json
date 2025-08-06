@@ -1,0 +1,130 @@
+{
+  "A01": {
+    "code": "A01",
+    "title": "Public transport fleet supply",
+    "description": "Measures the number of public transport vehicles relative to the population. A sufficient supply is crucial for reducing wait times, preventing overcrowding, and ensuring the system can meet public demand.",
+    "stat": "2000",
+    "unit": "buses/1M",
+    "target": "2000 buses per 1 million people"
+  },
+  "A02": {
+    "code": "A02",
+    "title": "Public transport accessibility",
+    "description": "Evaluates how much of the city has easy access to frequent public transport. High accessibility is key to making public transport a viable alternative to private cars for more people.",
+    "stat": "45%",
+    "unit": "",
+    "target": "60% of population within 500m of high-frequency transit"
+  },
+  "A03": {
+    "code": "A03",
+    "title": "Pedestrian friendly streets",
+    "description": "Assesses the quality and availability of pedestrian infrastructure like footpaths and safe crossings. Good walkability encourages active transport, improves public health, and is essential for first and last-mile connectivity to public transport.",
+    "stat": "68%",
+    "unit": "",
+    "target": "85% of major roads equipped with continuous footpaths"
+  },
+  "A04": {
+    "code": "A04",
+    "title": "Cycling path coverage",
+    "description": "Measures the extent of safe and high-quality cycling facilities. A comprehensive cycling network promotes a healthy, zero-emission mode of transport and reduces reliance on motor vehicles.",
+    "stat": "135",
+    "unit": "km",
+    "target": "200km of protected cycling lanes"
+  },
+  "A05": {
+    "code": "A05",
+    "title": "Quality drainage coverage",
+    "description": "Indicates the resilience of the transport network to weather events. Proper drainage prevents flooding that disproportionately affects pedestrians and cyclists, ensuring system reliability.",
+    "stat": "72%",
+    "unit": "",
+    "target": "90% coverage of arterial roads with modern drainage"
+  },
+  "A06": {
+    "code": "A06",
+    "title": "Trained public transport drivers",
+    "description": "Tracks the percentage of public transport drivers who have completed safety and customer service training. Well-trained drivers are fundamental to ensuring passenger safety, comfort, and overall service quality.",
+    "stat": "92%",
+    "unit": "",
+    "target": "100% of public transport drivers certified in safety protocols"
+  },
+  "A07": {
+    "code": "A07",
+    "title": "Transport investment",
+    "description": "Represents the financial commitment to developing and maintaining the transport system. Consistent investment is vital for long-term improvements, modernisation, and meeting future mobility needs.",
+    "stat": "12.5%",
+    "unit": "",
+    "target": "15% of municipal budget allocated to sustainable transport"
+  },
+  "A08": {
+    "code": "A08",
+    "title": "Local traffic congestions",
+    "description": "Measures traffic efficiency and congestion at key locations. Effective enforcement of traffic rules helps maintain smooth flow, reducing travel times and fuel consumption.",
+    "stat": "-4%",
+    "unit": "",
+    "target": "10% reduction in peak hour congestion in city center"
+  },
+  "A09": {
+    "code": "A09",
+    "title": "Roadside obstructions",
+    "description": "Assesses the impact of encroachments (e.g., street vendors, illegal parking) on road space. Keeping footpaths and carriageways clear is critical for the safety and efficiency of non-motorised transport.",
+    "stat": "-30%",
+    "unit": "",
+    "target": "75% reduction in footpath encroachments on major routes"
+  },
+  "A10": {
+    "code": "A10",
+    "title": "Parking space management",
+    "description": "Evaluates the effectiveness of parking regulations and enforcement. Proper management prevents traffic obstruction and ensures that road space is used efficiently and fairly.",
+    "stat": "17",
+    "unit": "zones",
+    "target": "Implementation of dynamic pricing in 5 key commercial zones"
+  },
+  "B01": {
+    "code": "B01",
+    "title": "Reduction of private vehicles",
+    "description": "A high ratio of private vehicles is a symptom of a malfunctioning transport system. Reducing this number is a key outcome of providing attractive, sustainable alternatives.",
+    "stat": "-2.1%",
+    "unit": "",
+    "target": "5% decrease in new private vehicle registrations year-on-year"
+  },
+  "B02": {
+    "code": "B02",
+    "title": "Reduction of motorised traffic",
+    "description": "Measures the overall volume of motor vehicle traffic. Lowering traffic volume is essential for reducing congestion, air pollution, and carbon emissions across the city.",
+    "stat": "-3.5%",
+    "unit": "",
+    "target": "10% reduction in vehicle-kilometers traveled (VKT)"
+  },
+  "B03": {
+    "code": "B03",
+    "title": "Decline in accidents",
+    "description": "Tracks the rate of traffic-related accidents and injuries. A decline in this rate is a primary indicator of a well-managed, safe, and effective transport system for all users.",
+    "stat": "-11%",
+    "unit": "",
+    "target": "25% reduction in serious and fatal accidents"
+  },
+  "B04": {
+    "code": "B04",
+    "title": "Walking and cycling share",
+    "description": "Measures the percentage of trips made by walking and cycling. Increasing this share is a core goal for creating a healthier, more sustainable, and less congested city.",
+    "stat": "24%",
+    "unit": "",
+    "target": "Achieve a 35% modal share for walking and cycling"
+  },
+  "B05": {
+    "code": "B05",
+    "title": "Public transport ridership",
+    "description": "Tracks the number of people using public transport. High ridership signifies that the service is effective and attractive, leading to greater system efficiency and environmental benefits.",
+    "stat": "+8%",
+    "unit": "",
+    "target": "Increase daily ridership by 20%"
+  },
+  "B06": {
+    "code": "B06",
+    "title": "Last-mile public transport use",
+    "description": "Measures the use of intermediate transport (like e-rickshaws or bike shares) for the first and last parts of a journey. Strong last-mile options are crucial for making public transport convenient and accessible.",
+    "stat": "+45%",
+    "unit": "",
+    "target": "Double the number of integrated last-mile service trips"
+  }
+}
