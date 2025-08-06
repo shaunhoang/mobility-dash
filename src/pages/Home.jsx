@@ -1,4 +1,4 @@
-import { Box, Container, Divider, Grid, Typography, Link} from "@mui/material";
+import { Box, Container, Divider, Grid, Typography, Link } from "@mui/material";
 import { useState } from "react";
 
 import NavigationButtons from "../components/common/NavigationButtons";
@@ -112,26 +112,26 @@ function Home() {
                     About the Initiative
                   </Typography>
                   <Typography variant="body1" color="text.primary">
-            The Smart Mobility Hub is a collaboration between the{" "}
-            <Link
-              href="https://www.ucl.ac.uk/bartlett/casa"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Centre for Advanced Spatial Analysis
-            </Link>{" "}
-            (CASA) at the University College London (UCL) and the{" "}
-            <Link
-              href="https://mnit.ac.in/dept_arch/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Department of Architecture and Planning
-            </Link>{" "}
-            at MNIT, Jaipur. Our project aims to facilitate data sharing to
-            shape accountable progress towards smart and inclusive mobility in
-            Jaipur.
-          </Typography>
+                    The Smart Mobility Hub is a collaboration between the{" "}
+                    <Link
+                      href="https://www.ucl.ac.uk/bartlett/casa"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Centre for Advanced Spatial Analysis
+                    </Link>{" "}
+                    (CASA) at the University College London (UCL) and the{" "}
+                    <Link
+                      href="https://mnit.ac.in/dept_arch/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Department of Architecture and Planning
+                    </Link>{" "}
+                    at MNIT, Jaipur. Our project aims to facilitate data sharing
+                    to shape accountable progress towards smart and inclusive
+                    mobility in Jaipur.
+                  </Typography>
                 </Box>
               )}
             </Container>
@@ -139,7 +139,7 @@ function Home() {
         </Grid>
       </Box>
 
-      <Divider sx={{ my: 4 , mx : 4 }} />
+      <Divider sx={{ my: 4, mx: 4 }} />
 
       <Box sx={{ mx: 2 }}>
         <Box>
