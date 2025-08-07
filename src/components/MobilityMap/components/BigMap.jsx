@@ -87,12 +87,15 @@ const BigMap = ({ visibleLayers }) => {
         return {
           "circle-color": colorProperty,
           "circle-radius": 5,
+          "circle-opacity": 0.8,
+          "circle-stroke-color": "#000000",
+          "circle-stroke-width": 1.5,
         };
       case "line":
       default:
         return {
           "line-color": colorProperty,
-          "line-width": 5,
+          "line-width": 4,
           "line-opacity": 0.8,
         };
     }

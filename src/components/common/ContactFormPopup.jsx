@@ -11,9 +11,12 @@ import {
 } from '@mui/material';
 import { useState } from 'react';
 
+const web3formsAccessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
 const ContactFormPopup = () => {
   const [open, setOpen] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false); // To disable button during sending
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -21,15 +24,37 @@ const ContactFormPopup = () => {
 
   const handleClose = () => {
     setOpen(false);
-    setIsSubmitted(false);
+    setTimeout(() => {
+        setIsSubmitted(false);
+    }, 300);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    setSubmitting(true); // Disable submit button
+
     const formData = new FormData(event.currentTarget);
-    const formJson = Object.fromEntries(formData.entries());
-    console.log(formJson); // Note to self: Data processing placeholder
-    setIsSubmitted(true);
+    
+    formData.append("access_key", web3formsAccessKey);
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData,
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setIsSubmitted(true); // Show the success message
+        } else {
+            console.error("Submission Error:", data);
+        }
+    } catch (error) {
+        console.error("Fetch Error:", error);
+    } finally {
+        setSubmitting(false); // Re-enable submit button
+    }
   };
 
   return (
@@ -102,7 +127,9 @@ const ContactFormPopup = () => {
             </DialogContent>
             <DialogActions>
               <Button onClick={handleClose}>Cancel</Button>
-              <Button type="submit">Submit</Button>
+              <Button type="submit" disabled={submitting}>
+                {submitting ? 'Submitting...' : 'Submit'}
+              </Button>
             </DialogActions>
           </form>
         )}

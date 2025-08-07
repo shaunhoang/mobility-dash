@@ -58,7 +58,7 @@ function Home() {
                     Explore public transport in the Jaipur region
                   </Typography>
                   <Typography variant="body1" color="text.primary">
-                    With this interactive map, you can view bus route
+                    With this interactive map, you can view train, metro and bus route
                     information, including stop locations. Layer different
                     networks, such as cycling paths and walkways, to find the
                     best way to travel and plan your journey with confidence.

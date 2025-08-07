@@ -54,7 +54,7 @@ const CatalogueListItem = ({ item, onClick, isMobile }) => (
           >
 
           <Box >
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 0.5 }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 0.5, flexShrink: 0 }}>
               <Widgets fontSize="small" color="secondary" />
               <Typography variant="inherit" color="text.secondary">
                 Theme: {item.theme}
