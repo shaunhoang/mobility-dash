@@ -5,12 +5,41 @@ import {
   FormGroup,
   Typography,
 } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { layerConfig } from "./layerConfig";
 
 const LayerControl = ({ onLayerToggle }) => {
-  // State to hold the checked status of each individual layer by its ID
-  const [checkedState, setCheckedState] = useState({});
+  // Default layers to be checked initially
+  const defaultLayers = useMemo(() => {
+    const defaults = [];
+    layerConfig.forEach((themeGroup) => {
+      themeGroup.layers.forEach((layer) => {
+        if (layer.children) {
+          layer.children.forEach((child) => {
+            if (child.defaultChecked) {
+              defaults.push(child);
+            }
+          });
+        } else if (layer.defaultChecked) {
+          defaults.push(layer);
+        }
+      });
+    });
+    return defaults;
+  }, []);
+
+  const [checkedState, setCheckedState] = useState(() =>
+    defaultLayers.reduce((acc, layer) => {
+      acc[layer.id] = true;
+      return acc;
+    }, {})
+  );
+
+  useEffect(() => {
+    defaultLayers.forEach((layer) => {
+      onLayerToggle(layer, true);
+    });
+  }, []); 
 
   const handleChildChange = (layer, isChecked) => {
     setCheckedState((prev) => ({ ...prev, [layer.id]: isChecked }));
@@ -28,7 +57,7 @@ const LayerControl = ({ onLayerToggle }) => {
 
   return (
     <Box>
-      <Typography variant="caption" sx={{ color: "text.secondary"}}>
+      <Typography variant="caption" sx={{ color: "text.secondary" }}>
         Choose a layer
       </Typography>
 

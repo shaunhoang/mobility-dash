@@ -24,7 +24,7 @@ const BigMap = ({ visibleLayers }) => {
   const [viewport, setViewport] = useState({
     longitude: 75.787,
     latitude: 26.912,
-    zoom: 8,
+    zoom: 11,
   });
 
   // Local state of the map component.
@@ -81,7 +81,8 @@ const BigMap = ({ visibleLayers }) => {
       case "fill":
         return {
           "fill-color": colorProperty,
-          "fill-opacity": 0.4,
+          "fill-opacity": 0.3,
+          "fill-outline-color": "#000000",
         };
       case "circle":
         return {
