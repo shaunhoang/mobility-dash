@@ -20,6 +20,7 @@
 { "type": "Feature", "properties": { "name": "Renwal" }, "geometry": { "type": "Point", "coordinates": [ 75.3565244, 27.1504106 ] } },
 { "type": "Feature", "properties": { "name": "Sanodiya" }, "geometry": { "type": "Point", "coordinates": [ 75.2796539, 27.0131968 ] } },
 { "type": "Feature", "properties": { "name": "Jhir" }, "geometry": { "type": "Point", "coordinates": [ 76.115498, 26.8527227 ] } },
+{ "type": "Feature", "properties": { "name": "Jatwara" }, "geometry": { "type": "Point", "coordinates": [ 76.2171581, 26.8695759 ] } },
 { "type": "Feature", "properties": { "name": "Bhaton-Ki-Gali" }, "geometry": { "type": "Point", "coordinates": [ 75.7133363, 27.103678 ] } },
 { "type": "Feature", "properties": { "name": "Chhota Gudha" }, "geometry": { "type": "Point", "coordinates": [ 75.5893625, 27.3060115 ] } },
 { "type": "Feature", "properties": { "name": "Chomun Samod" }, "geometry": { "type": "Point", "coordinates": [ 75.7027898, 27.1579315 ] } },
@@ -44,6 +45,7 @@
 { "type": "Feature", "properties": { "name": "Jaipur Junction" }, "geometry": { "type": "Point", "coordinates": [ 75.7866539, 26.9207888 ] } },
 { "type": "Feature", "properties": { "name": "Hirnoda" }, "geometry": { "type": "Point", "coordinates": [ 75.3284938, 26.8857175 ] } },
 { "type": "Feature", "properties": { "name": "Shitala Road" }, "geometry": { "type": "Point", "coordinates": [ 75.8976613, 26.6475689 ] } },
+{ "type": "Feature", "properties": { "name": "Bhandana" }, "geometry": { "type": "Point", "coordinates": [ 76.2639329, 26.881689 ] } },
 { "type": "Feature", "properties": { "name": "Dhinda" }, "geometry": { "type": "Point", "coordinates": [ 75.370295, 26.8921491 ] } }
 ]
 }
