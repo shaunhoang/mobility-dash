@@ -51,8 +51,6 @@ export const layerConfig = [
             name: "Routes",
             file: "data/mapMain/bus_routes.geojson",
             type: "line",
-            tooltipPrefix: "Route: ",
-            tooltipProperty: "route",
           },
           {
             id: "bus-stops",
@@ -75,8 +73,6 @@ export const layerConfig = [
             name: "Routes",
             file: "data/mapMain/train_routes.geojson",
             type: "line",
-            tooltipPrefix: "Route: ",
-            tooltipProperty: "operator",
           },
           {
             id: "rail-stations",
@@ -98,9 +94,7 @@ export const layerConfig = [
             id: "metro-routes",
             name: "Routes",
             file: "data/mapMain/metro_routes.geojson",
-            type: "line",
-            tooltipPrefix: "Route: ",
-            tooltipProperty: "route",
+            type: "line"
           },
           {
             id: "metro-stations",
