@@ -7,14 +7,19 @@ import {
   Typography,
 } from "@mui/material";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { useEffect, useRef, useState } from "react";
-import Map, { Layer, Popup, Source } from "react-map-gl/mapbox";
+import { useEffect, useRef, useState, useCallback } from "react";
+import { default as MapGL, Layer, Popup, Source } from "react-map-gl/mapbox";
+import {
+  layerConfig,
+  flattenLayers,
+  getLayerLayoutStyle,
+  getLayerPaintStyle,
+} from "./mapComponents/layerConfig";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 
 const baseLayers = [
-  { label: "Streets", value: "mapbox://styles/mapbox/streets-v11" },
-  { label: "Satellite", value: "mapbox://styles/mapbox/satellite-streets-v12" },
+  { label: "Light", value: "mapbox://styles/mapbox/light-v11" },
   { label: "Dark", value: "mapbox://styles/mapbox/dark-v11" },
 ];
 
@@ -27,116 +32,143 @@ const BigMap = ({ visibleLayers }) => {
     zoom: 11,
   });
 
-  // Local state of the map component.
   const [geoJsonData, setGeoJsonData] = useState({});
   const [isFetching, setIsFetching] = useState(false);
   const [popupInfo, setPopupInfo] = useState(null);
+  const [loadedIconIds, setLoadedIconIds] = useState(new Set());
+  // --- NEW STATE --- to track the selected bus route feature ID
+  const [selectedRouteId, setSelectedRouteId] = useState(null);
 
   useEffect(() => {
     const fetchDataForVisibleLayers = async () => {
-      setIsFetching(true);
       const newLayersToFetch = visibleLayers.filter(
         (layer) => !geoJsonData[layer.file]
       );
+      if (newLayersToFetch.length === 0) return;
 
-      if (newLayersToFetch.length > 0) {
-        try {
-          const promises = newLayersToFetch.map((layer) =>
-            fetch(layer.file)
-              .then((res) => {
-                if (!res.ok) throw new Error(`Failed to fetch ${layer.file}`);
-                return res.json();
-              })
-              .then((data) => ({ file: layer.file, data }))
-          );
-          const results = await Promise.all(promises);
-          const newDataMap = results.reduce((acc, { file, data }) => {
-            acc[file] = data;
-            return acc;
-          }, {});
-
-          setGeoJsonData((prevData) => ({ ...prevData, ...newDataMap }));
-        } catch (error) {
-          console.error("Error fetching GeoJSON data:", error);
-        }
+      setIsFetching(true);
+      try {
+        const promises = newLayersToFetch.map((layer) =>
+          fetch(layer.file)
+            .then((res) => {
+              if (!res.ok) throw new Error(`Failed to fetch ${layer.file}`);
+              return res.json();
+            })
+            .then((data) => ({ file: layer.file, data }))
+        );
+        const results = await Promise.all(promises);
+        const newDataMap = results.reduce((acc, { file, data }) => {
+          acc[file] = data;
+          return acc;
+        }, {});
+        setGeoJsonData((prev) => ({ ...prev, ...newDataMap }));
+      } catch (error) {
+        console.error("Error fetching GeoJSON data:", error);
+      } finally {
+        setIsFetching(false);
       }
-      setIsFetching(false);
     };
-
     fetchDataForVisibleLayers();
-  }, [visibleLayers]); 
+  }, [visibleLayers, geoJsonData]);
 
-  const handleStyleChange = (event, newStyle) => {
-    if (newStyle !== null) {
-      setMapStyle(newStyle);
-    }
-  };
+  const handleMapLoad = useCallback(() => {
+    const map = mapRef.current?.getMap();
+    if (!map) return;
+    map.resize();
 
-  const getLayerPaintStyle = (layer) => {
-    const colorProperty = layer.color
-      ? layer.color
-      : ["coalesce", ["get", "color"], "#808080"]; 
+    const allLayers = flattenLayers(layerConfig);
+    const iconsToLoad = allLayers
+      .filter((layer) => layer.type === "symbol" && layer.icon)
+      .reduce((uniqueIcons, layer) => {
+        if (!uniqueIcons.has(layer.icon.id)) {
+          uniqueIcons.set(layer.icon.id, layer.icon.url);
+        }
+        return uniqueIcons;
+      }, new Map());
 
-    switch (layer.type) {
-      case "fill":
-        return {
-          "fill-color": colorProperty,
-          "fill-opacity": 0.3,
-          "fill-outline-color": "#000000",
-        };
-      case "circle":
-        return {
-          "circle-color": colorProperty,
-          "circle-radius": 5,
-          "circle-opacity": 0.8,
-          "circle-stroke-color": "#000000",
-          "circle-stroke-width": 1.5,
-        };
-      case "line":
-      default:
-        return {
-          "line-color": colorProperty,
-          "line-width": 4,
-          "line-opacity": 0.8,
-        };
-    }
-  };
-
-  const handleMapClick = (event) => {
-    const feature = event.features && event.features[0];
-    if (!feature) {
-      return;
-    }
-    const clickedLayerId = feature.layer.id;
-    const layerConfig = visibleLayers.find(
-      (l) => `${l.id}-layer` === clickedLayerId
+    const iconLoadPromises = Array.from(iconsToLoad.entries()).map(
+      ([id, url]) =>
+        new Promise((resolve, reject) => {
+          map.loadImage(url, (error, image) => {
+            if (error) {
+              console.error(`Failed to load icon: ${id} from ${url}`, error);
+              return reject(error);
+            }
+            if (!map.hasImage(id)) {
+              map.addImage(id, image);
+            }
+            resolve(id);
+          });
+        })
     );
 
-    if (!layerConfig || !layerConfig.tooltipProperty) {
-      return;
-    }
-    const tooltipValue = feature.properties[layerConfig.tooltipProperty];
-    const tooltipPrefix = layerConfig.tooltipPrefix;
-
-    if (tooltipValue !== undefined && tooltipValue !== null) {
-      setPopupInfo({
-        longitude: event.lngLat.lng,
-        latitude: event.lngLat.lat,
-        content: `${tooltipPrefix || ""}${tooltipValue}`,
+    Promise.all(iconLoadPromises)
+      .then((loadedIds) => {
+        setLoadedIconIds((prevIds) => new Set([...prevIds, ...loadedIds]));
+        console.log("All custom icons loaded successfully:", loadedIds);
+      })
+      .catch((error) => {
+        console.error("An error occurred while loading icons.", error);
       });
-    }
-  };
+  }, []);
 
-  const interactiveLayerIds = visibleLayers.map((layer) => `${layer.id}-layer`);
+  const handleMapClick = useCallback(
+    (event) => {
+      const map = mapRef.current?.getMap();
+      if (!map) return;
+
+      const feature = event.features?.[0];
+
+      // If a route was previously selected, unselect it
+      if (selectedRouteId !== null) {
+        map.setFeatureState(
+          { source: "bus-routes", id: selectedRouteId },
+          { selected: false }
+        );
+      }
+
+      // Check if the clicked feature is a bus route
+      if (feature && feature.layer.id === "bus-routes-layer") {
+        const newSelectedRouteId = feature.id;
+        map.setFeatureState(
+          { source: "bus-routes", id: newSelectedRouteId },
+          { selected: true }
+        );
+        setSelectedRouteId(newSelectedRouteId);
+      } else {
+        setSelectedRouteId(null);
+      }
+
+      // Handle popups for any layer
+      if (feature) {
+        const clickedLayer = visibleLayers.find(
+          (l) => `${l.id}-layer` === feature.layer.id
+        );
+
+        if (clickedLayer?.tooltipProperty) {
+          const { tooltipProperty, tooltipPrefix = "" } = clickedLayer;
+          const content = `${tooltipPrefix}${feature.properties[tooltipProperty]}`;
+          setPopupInfo({
+            longitude: event.lngLat.lng,
+            latitude: event.lngLat.lat,
+            content,
+          });
+        }
+      } else {
+        setPopupInfo(null);
+      }
+    },
+    [visibleLayers, selectedRouteId]
+  );
+
   if (!MAPBOX_TOKEN) {
     return (
       <Box
         sx={{
-          width: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "grey.200",
+          height: "100%",
         }}
       >
         <Typography color="error">Mapbox token is missing.</Typography>
@@ -145,38 +177,42 @@ const BigMap = ({ visibleLayers }) => {
   }
 
   return (
-    <Box
-      sx={{
-        height: "100%",
-        width: "100%",
-        overflow: "hidden",
-        position: "relative",
-      }}
-    >
-      <Map
+    <Box sx={{ height: "100%", width: "100%", position: "relative" }}>
+      <MapGL
         ref={mapRef}
         {...viewport}
         onMove={(evt) => setViewport(evt.viewState)}
-        onLoad={() => mapRef.current.resize()}
+        onLoad={handleMapLoad}
         onClick={handleMapClick}
-        style={{
-          width: "100%",
-          height: "100%",
-        }}
+        style={{ width: "100%", height: "100%" }}
         mapStyle={mapStyle}
         mapboxAccessToken={MAPBOX_TOKEN}
-        interactiveLayerIds={interactiveLayerIds}
+        interactiveLayerIds={visibleLayers.map((l) => `${l.id}-layer`)}
         cursor="pointer"
       >
         {visibleLayers.map((layer) => {
           const data = geoJsonData[layer.file];
           if (!data) return null;
+          if (
+            layer.type === "symbol" &&
+            layer.icon &&
+            !loadedIconIds.has(layer.icon.id)
+          ) {
+            return null;
+          }
           return (
-            <Source key={layer.id} id={layer.id} type="geojson" data={data}>
+            <Source
+              key={layer.id}
+              id={layer.id}
+              type="geojson"
+              data={data}
+              generateId={true}
+            >
               <Layer
                 id={`${layer.id}-layer`}
                 type={layer.type}
                 paint={getLayerPaintStyle(layer)}
+                layout={getLayerLayoutStyle(layer)}
               />
             </Source>
           );
@@ -194,7 +230,7 @@ const BigMap = ({ visibleLayers }) => {
             </Typography>
           </Popup>
         )}
-      </Map>
+      </MapGL>
 
       {isFetching && (
         <Box
@@ -210,7 +246,6 @@ const BigMap = ({ visibleLayers }) => {
         </Box>
       )}
 
-      {/* Base Layer Switcher */}
       <Paper
         elevation={3}
         sx={{
@@ -223,7 +258,7 @@ const BigMap = ({ visibleLayers }) => {
         <ToggleButtonGroup
           value={mapStyle}
           exclusive
-          onChange={handleStyleChange}
+          onChange={(e, newStyle) => newStyle && setMapStyle(newStyle)}
           aria-label="map style"
           size="small"
         >
@@ -239,41 +274,6 @@ const BigMap = ({ visibleLayers }) => {
           ))}
         </ToggleButtonGroup>
       </Paper>
-
-      {/* <Paper
-        elevation={4}
-        sx={{
-          position: "absolute",
-          bottom: 10,
-          left: 10,
-          p: 2,
-          backgroundColor: "rgba(255, 255, 255, 0.8)",
-          maxWidth: "300px",
-          maxHeight: "300px",
-          overflowY: "auto",
-          fontFamily: "monospace",
-          fontSize: "0.75rem",
-        }}
-      >
-        <Typography variant="subtitle2" sx={{ fontWeight: "bold" }}>
-          Debug Info
-        </Typography>
-        <Box>
-          <strong>Visible Layers Count:</strong> {visibleLayers.length}
-        </Box>
-        <Box mt={1}>
-          <strong>Visible Layers Array:</strong>
-          <pre
-            style={{
-              margin: 0,
-              whiteSpace: "pre-wrap",
-              wordBreak: "break-all",
-            }}
-          >
-            {JSON.stringify(visibleLayers, null, 2)}
-          </pre>
-        </Box>
-      </Paper> */}
     </Box>
   );
 };

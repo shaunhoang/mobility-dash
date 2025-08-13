@@ -6,7 +6,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useState, useEffect, useMemo } from "react";
-import { layerConfig } from "./layerConfig";
+import { layerConfig } from "./mapComponents/layerConfig";
 
 const LayerControl = ({ onLayerToggle }) => {
   // Default layers to be checked initially
@@ -36,10 +36,12 @@ const LayerControl = ({ onLayerToggle }) => {
   );
 
   useEffect(() => {
+    // On initial load, toggle the default layers to be visible.
     defaultLayers.forEach((layer) => {
       onLayerToggle(layer, true);
     });
-  }, []); 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleChildChange = (layer, isChecked) => {
     setCheckedState((prev) => ({ ...prev, [layer.id]: isChecked }));
@@ -50,6 +52,7 @@ const LayerControl = ({ onLayerToggle }) => {
     const childUpdates = {};
     parentLayer.children.forEach((child) => {
       childUpdates[child.id] = isChecked;
+      // Toggle all child layers on the map
       onLayerToggle(child, isChecked);
     });
     setCheckedState((prev) => ({ ...prev, ...childUpdates }));
@@ -71,7 +74,7 @@ const LayerControl = ({ onLayerToggle }) => {
           </Typography>
           <FormGroup>
             {themeGroup.layers.map((layer) => {
-              // This is a parent layer with children
+              // This is a parent layer with children. It gets one checkbox.
               if (layer.children) {
                 const childIds = layer.children.map((c) => c.id);
                 const checkedChildrenCount = childIds.filter(
@@ -83,61 +86,28 @@ const LayerControl = ({ onLayerToggle }) => {
                 const areAllChecked = checkedChildrenCount === childIds.length;
 
                 return (
-                  <Box key={layer.id}>
-                    {/* Parent Checkbox */}
-                    <FormControlLabel
-                      label={layer.name}
-                      sx={{
-                        my: -0.25, // Keep the condensed spacing
-                      }}
-                      control={
-                        <Checkbox
-                          checked={areAllChecked}
-                          indeterminate={isIndeterminate}
-                          onChange={(e) =>
-                            handleParentChange(layer, e.target.checked)
-                          }
-                        />
-                      }
-                    />
-                    {/* Nested Child Checkboxes */}
-                    <Box
-                      sx={{ display: "flex", flexDirection: "column", ml: 3 }}
-                    >
-                      {layer.children.map((childLayer) => (
-                        <FormControlLabel
-                          key={childLayer.id}
-                          label={childLayer.name}
-                          sx={{
-                            my: -0.75, // Keep the condensed spacing
-                            "& .MuiFormControlLabel-label": {
-                              color: "text.secondary", // Or any color you want
-                            },
-                          }}
-                          control={
-                            <Checkbox
-                              size="small"
-                              checked={!!checkedState[childLayer.id]}
-                              sx={{ textColor: "primary.main" }}
-                              onChange={(e) =>
-                                handleChildChange(childLayer, e.target.checked)
-                              }
-                            />
-                          }
-                        />
-                      ))}
-                    </Box>
-                  </Box>
+                  <FormControlLabel
+                    key={layer.id}
+                    label={layer.name}
+                    sx={{ my: -0.25 }}
+                    control={
+                      <Checkbox
+                        checked={areAllChecked}
+                        indeterminate={isIndeterminate}
+                        onChange={(e) =>
+                          handleParentChange(layer, e.target.checked)
+                        }
+                      />
+                    }
+                  />
                 );
               }
-              // standalone layer with no children
+              // This is a standalone layer with no children.
               return (
                 <FormControlLabel
                   key={layer.id}
                   label={layer.name}
-                  sx={{
-                    my: -0.25, // Keep the condensed spacing
-                  }}
+                  sx={{ my: -0.25 }}
                   control={
                     <Checkbox
                       checked={!!checkedState[layer.id]}

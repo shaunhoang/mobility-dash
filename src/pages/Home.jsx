@@ -39,14 +39,14 @@ function Home() {
             flexDirection: "column",
           }}
         >
-          <Grid item>
+          <Grid>
             <NavigationButtons
               buttons={mapNavigationButtons}
               onButtonClick={handleLayerChange}
               activeButtonId={activeLayer}
             />
           </Grid>
-          <Grid item sx={{ textAlign: "left" }}>
+          <Grid sx={{ textAlign: "left" }}>
             <Container maxWidth="xl">
               {activeLayer === "map" && (
                 <Box>
@@ -55,11 +55,11 @@ function Home() {
                     gutterBottom
                     sx={{ color: "primary.dark" }}
                   >
-                    Explore public transport in the Jaipur region
+                    Explore public transport in the Jaipur District
                   </Typography>
                   <Typography variant="body1" color="text.primary">
-                    With this interactive map, you can view train, metro and bus route
-                    information, including stop locations. Layer different
+                    With this interactive map, you can view train, metro and bus
+                    route information, including stop locations. Layer different
                     networks, such as cycling paths and walkways, to find the
                     best way to travel and plan your journey with confidence.
                   </Typography>

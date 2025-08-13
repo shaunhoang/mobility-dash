@@ -40,10 +40,10 @@ const Title = () => {
           spacing={3}
           sx={{ display: "flex", alignItems: "center",flexWrap: "nowrap"}}
         >
-          <Grid item component="a" href="/" sx={{ flexShrink : 0}}>
+          <Grid  href="/" sx={{ flexShrink : 0}}>
             <img src={logo} alt="Logo" style={{ width: 80, height: 80 }} />
           </Grid>
-          <Grid item >
+          <Grid  >
             <Typography
               variant="h1"
               sx={{
