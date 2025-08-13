@@ -11,7 +11,8 @@
     "reference_detail":"Heading 2.8, map on pg no. 109",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":2,
@@ -25,7 +26,8 @@
     "reference_detail":"Map 3-3, pg. 131",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":3,
@@ -39,7 +41,8 @@
     "reference_detail":"Figure 6-1, Pg 6-2",
     "latest_year":2014.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":4,
@@ -53,7 +56,8 @@
     "reference_detail":"Map 3-2, pg. 130",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":5,
@@ -67,7 +71,8 @@
     "reference_detail":"Table 2-39, pg. 121",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":6,
@@ -81,7 +86,8 @@
     "reference_detail":"Figure 2-8, pg.2-12",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":7,
@@ -95,7 +101,8 @@
     "reference_detail":"Figure 2-6, pg. 2-10",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":8,
@@ -109,7 +116,8 @@
     "reference_detail":"Figure 2-7, pg. 2-11",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":9,
@@ -123,7 +131,8 @@
     "reference_detail":"Map 2-35, pg no. 110",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":10,
@@ -137,7 +146,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/zonal-development-plan.html"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/zonal-development-plan.html",
+    "url_sample":null
   },
   {
     "id":11,
@@ -151,7 +161,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html",
+    "url_sample":null
   },
   {
     "id":12,
@@ -165,7 +176,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html",
+    "url_sample":null
   },
   {
     "id":13,
@@ -179,7 +191,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html",
+    "url_sample":null
   },
   {
     "id":14,
@@ -193,7 +206,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html",
+    "url_sample":null
   },
   {
     "id":15,
@@ -207,7 +221,8 @@
     "reference_detail":"pg. 12",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
+    "url_sample":null
   },
   {
     "id":16,
@@ -221,7 +236,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":null,
-    "url":"https:\/\/bhunaksha.rajasthan.gov.in\/"
+    "url":"https:\/\/bhunaksha.rajasthan.gov.in\/",
+    "url_sample":null
   },
   {
     "id":17,
@@ -235,7 +251,8 @@
     "reference_detail":null,
     "latest_year":2023.0,
     "update_frequency":null,
-    "url":"https:\/\/onlinemaps.surveyofindia.gov.in\/Digital_Product_Show.aspx"
+    "url":"https:\/\/onlinemaps.surveyofindia.gov.in\/Digital_Product_Show.aspx",
+    "url_sample":null
   },
   {
     "id":19,
@@ -249,7 +266,8 @@
     "reference_detail":"Table 3-2, pg. 133",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":20,
@@ -263,7 +281,8 @@
     "reference_detail":"Map 4-5, pg.219",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":21,
@@ -277,7 +296,8 @@
     "reference_detail":"Map 4-6, pg. 219",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":22,
@@ -291,7 +311,8 @@
     "reference_detail":"Table 6-3, pg 6-6",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":23,
@@ -305,7 +326,8 @@
     "reference_detail":"Table 6-5 pg 6-7",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":24,
@@ -319,7 +341,8 @@
     "reference_detail":"Table 2-9, pg.56",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":25,
@@ -333,7 +356,8 @@
     "reference_detail":"Table 2-10, pg. 56",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":26,
@@ -347,7 +371,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/registered-voters-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/registered-voters-jaipur",
+    "url_sample":null
   },
   {
     "id":28,
@@ -361,7 +386,8 @@
     "reference_detail":null,
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/demographic-profile-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/demographic-profile-jaipur",
+    "url_sample":null
   },
   {
     "id":29,
@@ -375,7 +401,8 @@
     "reference_detail":"pg. 14-15",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
+    "url_sample":null
   },
   {
     "id":30,
@@ -389,7 +416,8 @@
     "reference_detail":"pg. 24-25, pg. 30-31",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
+    "url_sample":null
   },
   {
     "id":31,
@@ -403,7 +431,8 @@
     "reference_detail":"pg. 26-27, pg. 32-33",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
+    "url_sample":null
   },
   {
     "id":32,
@@ -417,7 +446,8 @@
     "reference_detail":"pg. 28-29, pg. 34-35",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
+    "url_sample":null
   },
   {
     "id":33,
@@ -431,7 +461,8 @@
     "reference_detail":"pg. 38-189",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
+    "url_sample":null
   },
   {
     "id":63,
@@ -445,7 +476,8 @@
     "reference_detail":"pg.540-551",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
+    "url_sample":null
   },
   {
     "id":64,
@@ -459,7 +491,8 @@
     "reference_detail":"T01_0812",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":68,
@@ -473,7 +506,8 @@
     "reference_detail":"T08_0812",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":71,
@@ -487,7 +521,8 @@
     "reference_detail":"T12_0812",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":72,
@@ -501,7 +536,8 @@
     "reference_detail":"T13_0812",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":73,
@@ -515,7 +551,8 @@
     "reference_detail":"T17_0812",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":74,
@@ -529,7 +566,8 @@
     "reference_detail":"T19_0812",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":77,
@@ -543,7 +581,8 @@
     "reference_detail":"T23_0812",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":84,
@@ -557,7 +596,8 @@
     "reference_detail":"T32_0812",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":87,
@@ -571,7 +611,8 @@
     "reference_detail":"T35_0812",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":88,
@@ -585,7 +626,8 @@
     "reference_detail":"T42_0812",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":89,
@@ -599,7 +641,8 @@
     "reference_detail":"T44_0812",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":90,
@@ -613,7 +656,8 @@
     "reference_detail":"Town Statement-I_0812",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":93,
@@ -627,7 +671,8 @@
     "reference_detail":"Table 2-12, pg.59",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":94,
@@ -641,7 +686,8 @@
     "reference_detail":"Table 2-13, Table 2-14, Table 2-15, pg.60-61",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":95,
@@ -655,7 +701,8 @@
     "reference_detail":"Table 3-10, pg.148",
     "latest_year":2007.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":96,
@@ -669,7 +716,8 @@
     "reference_detail":"Map 2-17 (pg. 69)",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":97,
@@ -683,7 +731,8 @@
     "reference_detail":"Map 2-36 , pg. 112",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":98,
@@ -697,7 +746,8 @@
     "reference_detail":"Map 3-4, pg. 143",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":99,
@@ -711,7 +761,8 @@
     "reference_detail":"Table 2-11, p.g 2-25",
     "latest_year":2016.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":100,
@@ -725,7 +776,8 @@
     "reference_detail":"Town Statement-II_0812",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":101,
@@ -739,7 +791,8 @@
     "reference_detail":null,
     "latest_year":2020.0,
     "update_frequency":"Every Year",
-    "url":"https:\/\/environment.rajasthan.gov.in\/content\/environment\/en\/rajasthan-state-pollution-control-board\/EnvironmentalReport\/DownloadableAirQualityIndexCAAQMS.html"
+    "url":"https:\/\/environment.rajasthan.gov.in\/content\/environment\/en\/rajasthan-state-pollution-control-board\/EnvironmentalReport\/DownloadableAirQualityIndexCAAQMS.html",
+    "url_sample":null
   },
   {
     "id":102,
@@ -753,7 +806,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"Every Month",
-    "url":"https:\/\/environment.rajasthan.gov.in\/content\/environment\/en\/rajasthan-state-pollution-control-board\/NoiseQualityBulletin.html"
+    "url":"https:\/\/environment.rajasthan.gov.in\/content\/environment\/en\/rajasthan-state-pollution-control-board\/NoiseQualityBulletin.html",
+    "url_sample":null
   },
   {
     "id":103,
@@ -767,7 +821,8 @@
     "reference_detail":null,
     "latest_year":2023.0,
     "update_frequency":"Every 15 min",
-    "url":"https:\/\/airquality.cpcb.gov.in\/ccr\/#\/caaqm-dashboard-all\/caaqm-landing\/caaqm-data-repository"
+    "url":"https:\/\/airquality.cpcb.gov.in\/ccr\/#\/caaqm-dashboard-all\/caaqm-landing\/caaqm-data-repository",
+    "url_sample":null
   },
   {
     "id":104,
@@ -781,7 +836,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/natural-landscape-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/natural-landscape-jaipur",
+    "url_sample":null
   },
   {
     "id":105,
@@ -795,7 +851,8 @@
     "reference_detail":"Table 3-25, pg.191",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":106,
@@ -809,7 +866,8 @@
     "reference_detail":null,
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/onlinemaps.surveyofindia.gov.in\/FreeMapSpecification.aspx"
+    "url":"https:\/\/onlinemaps.surveyofindia.gov.in\/FreeMapSpecification.aspx",
+    "url_sample":null
   },
   {
     "id":107,
@@ -823,7 +881,8 @@
     "reference_detail":"Figure 3-14 pg 3-52",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":108,
@@ -837,7 +896,8 @@
     "reference_detail":"Table 2-5, Chart 2-1, pg.48",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":109,
@@ -851,7 +911,8 @@
     "reference_detail":"Mapbook 1",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook1.pdf",
+    "url_sample":null
   },
   {
     "id":110,
@@ -865,7 +926,8 @@
     "reference_detail":"Mapbook 2",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook2.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook2.pdf",
+    "url_sample":null
   },
   {
     "id":111,
@@ -879,7 +941,8 @@
     "reference_detail":"Mapbook 3",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook3.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook3.pdf",
+    "url_sample":null
   },
   {
     "id":112,
@@ -893,7 +956,8 @@
     "reference_detail":"Mapbook 4",
     "latest_year":2025.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook4.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook4.pdf",
+    "url_sample":null
   },
   {
     "id":113,
@@ -907,7 +971,8 @@
     "reference_detail":"Table -9, pg-569",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069",
+    "url_sample":null
   },
   {
     "id":114,
@@ -921,7 +986,8 @@
     "reference_detail":"Table -9, pg-569",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069",
+    "url_sample":null
   },
   {
     "id":115,
@@ -935,7 +1001,8 @@
     "reference_detail":"Table -9, pg-569",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069",
+    "url_sample":null
   },
   {
     "id":116,
@@ -949,7 +1016,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/vehicle-registrations-data-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/vehicle-registrations-data-jaipur",
+    "url_sample":null
   },
   {
     "id":117,
@@ -963,7 +1031,8 @@
     "reference_detail":"Figure 3-8 pg 3-34",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":118,
@@ -977,7 +1046,8 @@
     "reference_detail":"Table 2-30, pg. 94",
     "latest_year":2007.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":119,
@@ -991,7 +1061,8 @@
     "reference_detail":"Table 5.5, Table 5.6",
     "latest_year":2021.0,
     "update_frequency":"Every Year",
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/Statistical%20abstract%202020-21\/Transport_Dept_Year_Book.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/Statistical%20abstract%202020-21\/Transport_Dept_Year_Book.pdf",
+    "url_sample":null
   },
   {
     "id":120,
@@ -1005,7 +1076,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/water-taxjaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/water-taxjaipur",
+    "url_sample":null
   },
   {
     "id":121,
@@ -1019,7 +1091,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/financial-health-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/financial-health-jaipur",
+    "url_sample":null
   },
   {
     "id":122,
@@ -1033,7 +1106,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/budget-open-spaces-development-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/budget-open-spaces-development-jaipur",
+    "url_sample":null
   },
   {
     "id":123,
@@ -1047,7 +1121,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/vat-gst-collection-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/vat-gst-collection-jaipur",
+    "url_sample":null
   },
   {
     "id":124,
@@ -1061,7 +1136,8 @@
     "reference_detail":null,
     "latest_year":2023.0,
     "update_frequency":null,
-    "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=d3doM0tvbjVvNmVEbkJRM2YycHVUdz09"
+    "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=d3doM0tvbjVvNmVEbkJRM2YycHVUdz09",
+    "url_sample":null
   },
   {
     "id":125,
@@ -1075,7 +1151,8 @@
     "reference_detail":null,
     "latest_year":2023.0,
     "update_frequency":null,
-    "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=TXFXZzE0R0RxVlppTmlNVi9PSFlOUT09"
+    "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=TXFXZzE0R0RxVlppTmlNVi9PSFlOUT09",
+    "url_sample":null
   },
   {
     "id":126,
@@ -1089,7 +1166,8 @@
     "reference_detail":null,
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=UUp2TU8ySXR4SDB0QklrbFN6Q084UT09"
+    "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=UUp2TU8ySXR4SDB0QklrbFN6Q084UT09",
+    "url_sample":null
   },
   {
     "id":127,
@@ -1103,7 +1181,8 @@
     "reference_detail":"pg. no 8",
     "latest_year":2017.0,
     "update_frequency":null,
-    "url":"Jaipur City Mobility Plan"
+    "url":"Jaipur City Mobility Plan",
+    "url_sample":null
   },
   {
     "id":128,
@@ -1117,7 +1196,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/crimes-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/crimes-jaipur",
+    "url_sample":null
   },
   {
     "id":129,
@@ -1131,7 +1211,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/mortality-rate-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/mortality-rate-jaipur",
+    "url_sample":null
   },
   {
     "id":130,
@@ -1145,7 +1226,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/injuries-and-fatalities"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/injuries-and-fatalities",
+    "url_sample":null
   },
   {
     "id":131,
@@ -1159,7 +1241,8 @@
     "reference_detail":"ANNEXURE - 2-1, pg. 1 of 2-1",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":132,
@@ -1173,7 +1256,8 @@
     "reference_detail":"ANNEXURE-2-1, pg 1 of 2-1",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":133,
@@ -1187,7 +1271,8 @@
     "reference_detail":"Fig 2-32 (pg 2-56, CMP 2018)",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":134,
@@ -1201,7 +1286,8 @@
     "reference_detail":"Fig 2-31 (pg 2-55, CMP 2018)",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":135,
@@ -1215,7 +1301,8 @@
     "reference_detail":"Table 1.2, pg-17, row no-16",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/roadsafty\/Road%20Accidents%20in%20Rajasthan%202018.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/roadsafty\/Road%20Accidents%20in%20Rajasthan%202018.pdf",
+    "url_sample":null
   },
   {
     "id":136,
@@ -1229,7 +1316,8 @@
     "reference_detail":"Table 1:3, pg-20, row no-16",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/roadsafty\/Road%20Accidents%20in%20Rajasthan%202018.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/roadsafty\/Road%20Accidents%20in%20Rajasthan%202018.pdf",
+    "url_sample":null
   },
   {
     "id":137,
@@ -1243,7 +1331,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":null,
-    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/91e116be-03bd-4f3d-a60b-e9db59bf48f0"
+    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/91e116be-03bd-4f3d-a60b-e9db59bf48f0",
+    "url_sample":null
   },
   {
     "id":138,
@@ -1257,7 +1346,8 @@
     "reference_detail":"fig 0-2",
     "latest_year":2017.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf",
+    "url_sample":null
   },
   {
     "id":139,
@@ -1271,7 +1361,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/jaipur-bus\/schedules-maps\/bus-routes.html"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/jaipur-bus\/schedules-maps\/bus-routes.html",
+    "url_sample":null
   },
   {
     "id":140,
@@ -1285,7 +1376,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/publictransportaccessjaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/publictransportaccessjaipur",
+    "url_sample":null
   },
   {
     "id":141,
@@ -1299,7 +1391,8 @@
     "reference_detail":"ANNEXURE-2-1, pg 1 of 2-1",
     "latest_year":2017.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":142,
@@ -1313,7 +1406,8 @@
     "reference_detail":null,
     "latest_year":null,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/MetroStations.html"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/MetroStations.html",
+    "url_sample":null
   },
   {
     "id":143,
@@ -1327,7 +1421,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/MetroStations.html"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/MetroStations.html",
+    "url_sample":null
   },
   {
     "id":144,
@@ -1341,7 +1436,8 @@
     "reference_detail":"Figure 2-26, pg. 2-44",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":145,
@@ -1355,7 +1451,8 @@
     "reference_detail":"Figure 2-25, pg. 2-43",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":146,
@@ -1369,7 +1466,8 @@
     "reference_detail":"Figure 2-21, pg. 2-35",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":147,
@@ -1383,7 +1481,8 @@
     "reference_detail":"Figure 2-22, pg. 2-38",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":148,
@@ -1397,7 +1496,8 @@
     "reference_detail":"Figure 2-23, pg. 2-39",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":149,
@@ -1411,7 +1511,8 @@
     "reference_detail":"Figure 6-7 pg 6-15",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":150,
@@ -1425,7 +1526,8 @@
     "reference_detail":"Figure 6-8 pg 6-15",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":151,
@@ -1439,7 +1541,8 @@
     "reference_detail":"Figure 7-21, Pg. 7-25",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":152,
@@ -1453,7 +1556,8 @@
     "reference_detail":"Figure 7-59, Pg. 7-85",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":153,
@@ -1467,7 +1571,8 @@
     "reference_detail":"Figure 7-70, Pg. 7-111",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":154,
@@ -1481,7 +1586,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/PASSENGERAMENITIESNEARMETROSTATIONS.html"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/PASSENGERAMENITIESNEARMETROSTATIONS.html",
+    "url_sample":null
   },
   {
     "id":155,
@@ -1495,7 +1601,8 @@
     "reference_detail":null,
     "latest_year":2017.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/buses-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/buses-jaipur",
+    "url_sample":null
   },
   {
     "id":156,
@@ -1509,7 +1616,8 @@
     "reference_detail":null,
     "latest_year":2017.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/earningsfrombustripsjaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/earningsfrombustripsjaipur",
+    "url_sample":null
   },
   {
     "id":157,
@@ -1523,7 +1631,8 @@
     "reference_detail":"Map 3-16, pg. 170",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":158,
@@ -1537,7 +1646,8 @@
     "reference_detail":"ANNEXURE - 2, pg. 113",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":159,
@@ -1551,7 +1661,8 @@
     "reference_detail":null,
     "latest_year":2023.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/jaipurbus\/image\/Jaipur%20Bus%20Map%20Final_01.05.23.jpg"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/jaipurbus\/image\/Jaipur%20Bus%20Map%20Final_01.05.23.jpg",
+    "url_sample":null
   },
   {
     "id":160,
@@ -1565,7 +1676,8 @@
     "reference_detail":null,
     "latest_year":2023.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Passenger%20Information\/Metro%20time%20Table\/Salient%20Features%20of%20Time%20Table%20w.e.f.%2030.01.2023.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Passenger%20Information\/Metro%20time%20Table\/Salient%20Features%20of%20Time%20Table%20w.e.f.%2030.01.2023.pdf",
+    "url_sample":null
   },
   {
     "id":161,
@@ -1579,7 +1691,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/ParkingatMetroStations.html"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/ParkingatMetroStations.html",
+    "url_sample":null
   },
   {
     "id":162,
@@ -1593,7 +1706,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Passenger%20Information\/MetroFares\/Notification%20Fare%20structure%20of%20metro%20operation%20by%20JMRC%20dtd_11.09.2020.pdf.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Passenger%20Information\/MetroFares\/Notification%20Fare%20structure%20of%20metro%20operation%20by%20JMRC%20dtd_11.09.2020.pdf.pdf",
+    "url_sample":null
   },
   {
     "id":163,
@@ -1607,7 +1721,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/jaipur-bus\/fares-tickets\/fare-chart.html"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/jaipur-bus\/fares-tickets\/fare-chart.html",
+    "url_sample":null
   },
   {
     "id":164,
@@ -1621,7 +1736,8 @@
     "reference_detail":"Map 3-15, pg. 169",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":165,
@@ -1635,7 +1751,8 @@
     "reference_detail":"Figure 7-52, Pg. 7-77",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":166,
@@ -1649,7 +1766,8 @@
     "reference_detail":"Figure 7-54, Pg. 7-79",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":167,
@@ -1663,7 +1781,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/electricity-consumption-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/electricity-consumption-jaipur",
+    "url_sample":null
   },
   {
     "id":168,
@@ -1677,7 +1796,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/water-consumption-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/water-consumption-jaipur",
+    "url_sample":null
   },
   {
     "id":169,
@@ -1691,7 +1811,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":"4-5 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":170,
@@ -1705,7 +1826,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":"4-5 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":171,
@@ -1719,7 +1841,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":"4-5 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":172,
@@ -1733,7 +1856,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"4-5 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":173,
@@ -1747,7 +1871,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"4-5 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":174,
@@ -1761,7 +1886,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"4-5 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":175,
@@ -1775,7 +1901,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"4-5 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":176,
@@ -1789,7 +1916,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"4-5 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":177,
@@ -1803,7 +1931,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"4-5 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":178,
@@ -1817,7 +1946,8 @@
     "reference_detail":null,
     "latest_year":2016.0,
     "update_frequency":"25 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":179,
@@ -1831,7 +1961,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"25 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":180,
@@ -1845,7 +1976,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"16 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":181,
@@ -1859,7 +1991,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"3-4 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":182,
@@ -1873,7 +2006,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"24 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":183,
@@ -1887,7 +2021,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"24 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":184,
@@ -1901,7 +2036,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"24 days",
-    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html"
+    "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
+    "url_sample":null
   },
   {
     "id":185,
@@ -1915,7 +2051,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"5 days",
-    "url":"https:\/\/browser.dataspace.copernicus.eu\/?zoom=12&lat=27.21685&lng=75.70583&themeId=DEFAULT-THEME&visualizationUrl=U2FsdGVkX19DjWEnO%2ByGm%2Fp%2FJ%2FAPbVIARGIJNH7KDxkU%2F636Z104oNn9O8dXZZQdUM4lcdcJL1YMbRciKqFP%2BNExhtgTISXD%2FgGjojb12Q7t1BEbR%2BzUxvSG36geiWvC&datasetId=S2_L1C_CDAS&fromTime=2023-01-25T00%3A00%3A00.000Z&toTime=2023-01-25T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE"
+    "url":"https:\/\/browser.dataspace.copernicus.eu\/?zoom=12&lat=27.21685&lng=75.70583&themeId=DEFAULT-THEME&visualizationUrl=U2FsdGVkX19DjWEnO%2ByGm%2Fp%2FJ%2FAPbVIARGIJNH7KDxkU%2F636Z104oNn9O8dXZZQdUM4lcdcJL1YMbRciKqFP%2BNExhtgTISXD%2FgGjojb12Q7t1BEbR%2BzUxvSG36geiWvC&datasetId=S2_L1C_CDAS&fromTime=2023-01-25T00%3A00%3A00.000Z&toTime=2023-01-25T23%3A59%3A59.999Z&layerId=1_TRUE_COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE",
+    "url_sample":null
   },
   {
     "id":186,
@@ -1929,7 +2066,8 @@
     "reference_detail":null,
     "latest_year":1978.0,
     "update_frequency":"18 days",
-    "url":"https:\/\/earthexplorer.usgs.gov\/"
+    "url":"https:\/\/earthexplorer.usgs.gov\/",
+    "url_sample":null
   },
   {
     "id":187,
@@ -1943,7 +2081,8 @@
     "reference_detail":null,
     "latest_year":1982.0,
     "update_frequency":"18 days",
-    "url":"https:\/\/earthexplorer.usgs.gov\/"
+    "url":"https:\/\/earthexplorer.usgs.gov\/",
+    "url_sample":null
   },
   {
     "id":188,
@@ -1957,7 +2096,8 @@
     "reference_detail":null,
     "latest_year":1983.0,
     "update_frequency":"18 days",
-    "url":"https:\/\/earthexplorer.usgs.gov\/"
+    "url":"https:\/\/earthexplorer.usgs.gov\/",
+    "url_sample":null
   },
   {
     "id":189,
@@ -1971,7 +2111,8 @@
     "reference_detail":null,
     "latest_year":1993.0,
     "update_frequency":"16 days",
-    "url":"https:\/\/earthexplorer.usgs.gov\/"
+    "url":"https:\/\/earthexplorer.usgs.gov\/",
+    "url_sample":null
   },
   {
     "id":190,
@@ -1985,7 +2126,8 @@
     "reference_detail":null,
     "latest_year":2013.0,
     "update_frequency":"16 days",
-    "url":"https:\/\/earthexplorer.usgs.gov\/"
+    "url":"https:\/\/earthexplorer.usgs.gov\/",
+    "url_sample":null
   },
   {
     "id":191,
@@ -1999,7 +2141,8 @@
     "reference_detail":null,
     "latest_year":2017.0,
     "update_frequency":"16 days",
-    "url":"https:\/\/earthexplorer.usgs.gov\/"
+    "url":"https:\/\/earthexplorer.usgs.gov\/",
+    "url_sample":null
   },
   {
     "id":192,
@@ -2013,7 +2156,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"16 days",
-    "url":"https:\/\/earthexplorer.usgs.gov\/"
+    "url":"https:\/\/earthexplorer.usgs.gov\/",
+    "url_sample":null
   },
   {
     "id":193,
@@ -2027,7 +2171,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"16 days",
-    "url":"https:\/\/earthexplorer.usgs.gov\/"
+    "url":"https:\/\/earthexplorer.usgs.gov\/",
+    "url_sample":null
   },
   {
     "id":194,
@@ -2041,7 +2186,8 @@
     "reference_detail":"Town Statement-III_0812",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":195,
@@ -2055,7 +2201,8 @@
     "reference_detail":"Town Statement-IV_0812",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":196,
@@ -2069,7 +2216,8 @@
     "reference_detail":"Town Statement-V_0812",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":197,
@@ -2083,7 +2231,8 @@
     "reference_detail":"Town Statement-VI_0812",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":198,
@@ -2097,7 +2246,8 @@
     "reference_detail":"Town Statement-VII_0812",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip"
+    "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
+    "url_sample":null
   },
   {
     "id":199,
@@ -2111,7 +2261,8 @@
     "reference_detail":"Table 3-17, pg.153",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":200,
@@ -2125,7 +2276,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/digital-availability-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/digital-availability-jaipur",
+    "url_sample":null
   },
   {
     "id":201,
@@ -2139,7 +2291,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/culturalheritagejaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/culturalheritagejaipur",
+    "url_sample":null
   },
   {
     "id":202,
@@ -2153,7 +2306,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/digital-payments-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/digital-payments-jaipur",
+    "url_sample":null
   },
   {
     "id":203,
@@ -2167,7 +2321,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/community-facilities-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/community-facilities-jaipur",
+    "url_sample":null
   },
   {
     "id":204,
@@ -2181,7 +2336,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/citizen-facilities-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/citizen-facilities-jaipur",
+    "url_sample":null
   },
   {
     "id":205,
@@ -2195,7 +2351,8 @@
     "reference_detail":"Map 3-6, pg.160",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":206,
@@ -2209,7 +2366,8 @@
     "reference_detail":"Map 3-7, pg. 161",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":207,
@@ -2223,7 +2381,8 @@
     "reference_detail":"Map 3-8, pg. 162",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":208,
@@ -2237,7 +2396,8 @@
     "reference_detail":"Map 3-10, pg.164",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":209,
@@ -2251,7 +2411,8 @@
     "reference_detail":"Map 3-11, pg.165",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":210,
@@ -2265,7 +2426,8 @@
     "reference_detail":"Map 3-12, pg.166",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":211,
@@ -2279,7 +2441,8 @@
     "reference_detail":"Map 3-13, pg. 167",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":212,
@@ -2293,7 +2456,8 @@
     "reference_detail":"Map 3-14, pg. 168",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":213,
@@ -2307,7 +2471,8 @@
     "reference_detail":null,
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=Q2twNXhhZk9IaklESkMwMGxoaTgwdz09"
+    "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=Q2twNXhhZk9IaklESkMwMGxoaTgwdz09",
+    "url_sample":null
   },
   {
     "id":214,
@@ -2321,7 +2486,8 @@
     "reference_detail":"Figure 2-1, pg. 2-3",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":215,
@@ -2335,7 +2501,8 @@
     "reference_detail":"Map 2-41, pg.118",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":216,
@@ -2349,7 +2516,8 @@
     "reference_detail":"Map 2-42, pg.119",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":217,
@@ -2363,7 +2531,8 @@
     "reference_detail":"Map 2-43, pg. 119",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":218,
@@ -2377,7 +2546,8 @@
     "reference_detail":"Map 2-44, pg. 120",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":219,
@@ -2391,7 +2561,8 @@
     "reference_detail":"Map-2-45, pg. 120",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":220,
@@ -2405,7 +2576,8 @@
     "reference_detail":"Figure 6-6 pg 6-14",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":221,
@@ -2419,7 +2591,8 @@
     "reference_detail":"Figure 6-5 pg 6-13",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":222,
@@ -2433,7 +2606,8 @@
     "reference_detail":"Map 2-37, pg. 113",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":223,
@@ -2447,7 +2621,8 @@
     "reference_detail":"Map 2-38, pg. 114",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":224,
@@ -2461,7 +2636,8 @@
     "reference_detail":"Map 2-39, pg. 115",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":225,
@@ -2475,7 +2651,8 @@
     "reference_detail":"Figure 7-8, Pg. 7-12",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":226,
@@ -2489,7 +2666,8 @@
     "reference_detail":"Figure 7-9, Pg. 7-12",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":227,
@@ -2503,7 +2681,8 @@
     "reference_detail":"Figure 7-38, Pg. 7-54",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":228,
@@ -2517,7 +2696,8 @@
     "reference_detail":"Table 4-21, pg.254",
     "latest_year":2007.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":229,
@@ -2531,7 +2711,8 @@
     "reference_detail":"Map 2-25, pg. 89",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":230,
@@ -2545,7 +2726,8 @@
     "reference_detail":"Figure 7-49, Pg. 7-68",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":231,
@@ -2559,7 +2741,8 @@
     "reference_detail":"Figure 6-4 pg 6-11",
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":232,
@@ -2573,7 +2756,8 @@
     "reference_detail":null,
     "latest_year":null,
     "update_frequency":null,
-    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089"
+    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
+    "url_sample":null
   },
   {
     "id":233,
@@ -2587,7 +2771,8 @@
     "reference_detail":"Table 1, Table 4, Fig 1",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/old.ccs.in\/internship_papers\/2011\/245_riddhima_management-of-parking-spaces-in-the-walled-city-of-jaipur_second.pdf"
+    "url":"https:\/\/old.ccs.in\/internship_papers\/2011\/245_riddhima_management-of-parking-spaces-in-the-walled-city-of-jaipur_second.pdf",
+    "url_sample":null
   },
   {
     "id":234,
@@ -2601,7 +2786,8 @@
     "reference_detail":"Table 2, Table 5, Fig 3",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/old.ccs.in\/internship_papers\/2011\/245_riddhima_management-of-parking-spaces-in-the-walled-city-of-jaipur_second.pdf"
+    "url":"https:\/\/old.ccs.in\/internship_papers\/2011\/245_riddhima_management-of-parking-spaces-in-the-walled-city-of-jaipur_second.pdf",
+    "url_sample":null
   },
   {
     "id":235,
@@ -2615,7 +2801,8 @@
     "reference_detail":null,
     "latest_year":null,
     "update_frequency":null,
-    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089"
+    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
+    "url_sample":null
   },
   {
     "id":236,
@@ -2629,7 +2816,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":null,
-    "url":"https:\/\/evyatra.beeindia.gov.in\/public-charging-stations\/"
+    "url":"https:\/\/evyatra.beeindia.gov.in\/public-charging-stations\/",
+    "url_sample":null
   },
   {
     "id":237,
@@ -2643,7 +2831,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/street-lights-data-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/street-lights-data-jaipur",
+    "url_sample":null
   },
   {
     "id":238,
@@ -2657,7 +2846,8 @@
     "reference_detail":null,
     "latest_year":2022.0,
     "update_frequency":null,
-    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/e2e88fc3-95b2-4fcf-91d1-7c81a9a461d6"
+    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/e2e88fc3-95b2-4fcf-91d1-7c81a9a461d6",
+    "url_sample":null
   },
   {
     "id":239,
@@ -2671,7 +2861,8 @@
     "reference_detail":null,
     "latest_year":null,
     "update_frequency":null,
-    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089"
+    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
+    "url_sample":null
   },
   {
     "id":240,
@@ -2685,7 +2876,8 @@
     "reference_detail":null,
     "latest_year":null,
     "update_frequency":null,
-    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089"
+    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
+    "url_sample":null
   },
   {
     "id":241,
@@ -2699,7 +2891,8 @@
     "reference_detail":null,
     "latest_year":null,
     "update_frequency":null,
-    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089"
+    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
+    "url_sample":null
   },
   {
     "id":242,
@@ -2713,7 +2906,8 @@
     "reference_detail":null,
     "latest_year":null,
     "update_frequency":null,
-    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089"
+    "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
+    "url_sample":null
   },
   {
     "id":243,
@@ -2727,7 +2921,8 @@
     "reference_detail":null,
     "latest_year":2023.0,
     "update_frequency":"yearly",
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/Statistical-abstract2022-23\/prashasnik%20prativedan%202022-23.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/Statistical-abstract2022-23\/prashasnik%20prativedan%202022-23.pdf",
+    "url_sample":null
   },
   {
     "id":244,
@@ -2741,7 +2936,8 @@
     "reference_detail":null,
     "latest_year":2021.0,
     "update_frequency":"yearly",
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/Statistical%20abstract%202020-21\/Transport_Dept_Year_Book.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/Statistical%20abstract%202020-21\/Transport_Dept_Year_Book.pdf",
+    "url_sample":null
   },
   {
     "id":245,
@@ -2755,7 +2951,8 @@
     "reference_detail":null,
     "latest_year":2020.0,
     "update_frequency":"yearly",
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/statistical2015-16\/Transport%20Dept.%20Statistical%20Year%20Book.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/statistical2015-16\/Transport%20Dept.%20Statistical%20Year%20Book.pdf",
+    "url_sample":null
   },
   {
     "id":246,
@@ -2769,7 +2966,8 @@
     "reference_detail":null,
     "latest_year":2019.0,
     "update_frequency":"yearly",
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/statistical-abstract2018-19\/Trasport%20Department%20Abstract%20Book%2018-19.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/statistical-abstract2018-19\/Trasport%20Department%20Abstract%20Book%2018-19.pdf",
+    "url_sample":null
   },
   {
     "id":247,
@@ -2783,7 +2981,8 @@
     "reference_detail":null,
     "latest_year":2022.0,
     "update_frequency":"yearly",
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/transport\/organisation\/AnnualProgressReport.html.html#annualProgressReport"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/transport\/organisation\/AnnualProgressReport.html.html#annualProgressReport",
+    "url_sample":null
   },
   {
     "id":248,
@@ -2797,7 +2996,8 @@
     "reference_detail":null,
     "latest_year":2020.0,
     "update_frequency":"yearly",
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/transport\/organisation\/statistical-information.html"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/transport\/organisation\/statistical-information.html",
+    "url_sample":null
   },
   {
     "id":249,
@@ -2811,7 +3011,8 @@
     "reference_detail":"Fig. 2-29, Pg. 2-53",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":250,
@@ -2825,7 +3026,8 @@
     "reference_detail":"Figure 3-1, p.g 3-6",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":251,
@@ -2839,7 +3041,8 @@
     "reference_detail":"Table 3-8, p.g 3-11",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":252,
@@ -2853,7 +3056,8 @@
     "reference_detail":"Table 3-9 pg no-3-12",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":253,
@@ -2867,7 +3071,8 @@
     "reference_detail":"Figure3-5 pg 3-14",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":254,
@@ -2881,7 +3086,8 @@
     "reference_detail":"Table 3-13 pg 3-17",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":255,
@@ -2895,7 +3101,8 @@
     "reference_detail":null,
     "latest_year":2024.0,
     "update_frequency":"Monthly",
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/passenger-travelled-count.html"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/passenger-travelled-count.html",
+    "url_sample":null
   },
   {
     "id":256,
@@ -2909,7 +3116,8 @@
     "reference_detail":"Table 2-3, Table 2-4,  Figure 2.8",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":257,
@@ -2923,7 +3131,8 @@
     "reference_detail":"Table 2-5",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":258,
@@ -2937,7 +3146,8 @@
     "reference_detail":"Table 2.6, Table 2.7, Figure 2.10",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":259,
@@ -2951,7 +3161,8 @@
     "reference_detail":"Table 2.8",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":260,
@@ -2965,7 +3176,8 @@
     "reference_detail":"Table 2.9, Figure 2.11",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":261,
@@ -2979,7 +3191,8 @@
     "reference_detail":"Table 2.10",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":262,
@@ -2993,7 +3206,8 @@
     "reference_detail":"Figure 2.13, Figure 2.14",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":263,
@@ -3007,7 +3221,8 @@
     "reference_detail":"Table 2.11,Table 2.12, Figure 2.15, Figure 2.16 ",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":264,
@@ -3021,7 +3236,8 @@
     "reference_detail":"ANNEXURE - 2, pg. 116",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":265,
@@ -3035,7 +3251,8 @@
     "reference_detail":"ANNEXURE - 2, pg. 120",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":266,
@@ -3049,7 +3266,8 @@
     "reference_detail":"ANNEXURE - 2, pg. 122",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":267,
@@ -3063,7 +3281,8 @@
     "reference_detail":"ANNEXURE - 2, pg. 124",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":268,
@@ -3077,7 +3296,8 @@
     "reference_detail":"ANNEXURE - 2, pg. 124",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":269,
@@ -3091,7 +3311,8 @@
     "reference_detail":"ANNEXURE - 2, pg. 125",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":270,
@@ -3105,7 +3326,8 @@
     "reference_detail":"ANNEXURE - 2, pg. 126",
     "latest_year":2009.0,
     "update_frequency":null,
-    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf"
+    "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
+    "url_sample":null
   },
   {
     "id":271,
@@ -3119,7 +3341,8 @@
     "reference_detail":"Table 0-1 (Egis survey)",
     "latest_year":2017.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf",
+    "url_sample":null
   },
   {
     "id":272,
@@ -3133,7 +3356,8 @@
     "reference_detail":"Table 0-2 (Estimate by Egis survey)",
     "latest_year":2017.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf",
+    "url_sample":null
   },
   {
     "id":273,
@@ -3147,7 +3371,8 @@
     "reference_detail":"Table 0-3 ( Egis survey)",
     "latest_year":2017.0,
     "update_frequency":null,
-    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf"
+    "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf",
+    "url_sample":null
   },
   {
     "id":274,
@@ -3161,7 +3386,8 @@
     "reference_detail":"pg. 29",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/cdn.cseindia.org\/userfiles\/comprehensive_mobility.pdf"
+    "url":"https:\/\/cdn.cseindia.org\/userfiles\/comprehensive_mobility.pdf",
+    "url_sample":null
   },
   {
     "id":275,
@@ -3175,7 +3401,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/publictransportmodejaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/publictransportmodejaipur",
+    "url_sample":null
   },
   {
     "id":276,
@@ -3189,7 +3416,8 @@
     "reference_detail":"Map 2-12, pg.63",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":277,
@@ -3203,7 +3431,8 @@
     "reference_detail":"Map 2-47, pg. 124",
     "latest_year":2001.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":278,
@@ -3217,7 +3446,8 @@
     "reference_detail":"Map 3-1, pg. 128",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":279,
@@ -3231,7 +3461,8 @@
     "reference_detail":"Table 6-2 Pg 6-5",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":280,
@@ -3245,7 +3476,8 @@
     "reference_detail":"Figure 6-2 pg 6-4",
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"Document not yet published"
+    "url":"Document not yet published",
+    "url_sample":null
   },
   {
     "id":281,
@@ -3259,7 +3491,8 @@
     "reference_detail":"Map 4-1, pg. 216",
     "latest_year":2011.0,
     "update_frequency":null,
-    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf"
+    "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
+    "url_sample":null
   },
   {
     "id":282,
@@ -3273,7 +3506,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwastedisposaldatajaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwastedisposaldatajaipur",
+    "url_sample":null
   },
   {
     "id":283,
@@ -3287,7 +3521,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/public-toilets-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/public-toilets-jaipur",
+    "url_sample":null
   },
   {
     "id":284,
@@ -3301,7 +3536,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwasted2dcollectionjaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwasted2dcollectionjaipur",
+    "url_sample":null
   },
   {
     "id":285,
@@ -3315,7 +3551,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/solid-waste-processing-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/solid-waste-processing-jaipur",
+    "url_sample":null
   },
   {
     "id":286,
@@ -3329,7 +3566,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwastecollectionvehiclejaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwastecollectionvehiclejaipur",
+    "url_sample":null
   },
   {
     "id":287,
@@ -3343,7 +3581,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/door-door-collection-solid-waste-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/door-door-collection-solid-waste-jaipur",
+    "url_sample":null
   },
   {
     "id":288,
@@ -3357,7 +3596,8 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwastesegregationjaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwastesegregationjaipur",
+    "url_sample":null
   },
   {
     "id":289,
@@ -3371,6 +3611,22 @@
     "reference_detail":null,
     "latest_year":2018.0,
     "update_frequency":null,
-    "url":"https:\/\/smartcities.data.gov.in\/catalog\/waste-management-revenue-expenditure-data-jaipur"
+    "url":"https:\/\/smartcities.data.gov.in\/catalog\/waste-management-revenue-expenditure-data-jaipur",
+    "url_sample":null
+  },
+  {
+    "id":0,
+    "name":"JAIPUR CENSUS DATA 2011",
+    "description":"Census data for Jaipur city from the 2011 Census of India, including demographic details such as population, literacy rates, and household information.",
+    "theme":"Demographic Profile",
+    "resolution":"District",
+    "format":"ZIP",
+    "provider":"National Statistics Office",
+    "reference":"Government of India",
+    "reference_detail":null,
+    "latest_year":2011.0,
+    "update_frequency":"Every 10 years",
+    "url":"https:\/\/censusindia.gov.in\/",
+    "url_sample":"https:\/\/orca.casa.ucl.ac.uk\/~jens\/sparc-dash\/download\/census2011.zip"
   }
 ]
