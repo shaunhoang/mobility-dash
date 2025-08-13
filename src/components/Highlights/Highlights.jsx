@@ -24,7 +24,7 @@ const Highlights = () => {
 
   // --- Data Fetching ---
   useEffect(() => {
-    fetch("https://orca.casa.ucl.ac.uk/~jens/sparc-dash/site-data/highlightsData.json")
+    fetch("https://orca.casa.ucl.ac.uk/~jens/sparc-dash/data/highlightsData.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");

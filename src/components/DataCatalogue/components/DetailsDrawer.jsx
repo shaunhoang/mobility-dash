@@ -1,4 +1,11 @@
-import { Close, Description, ExitToApp, Public, Widgets , Download } from '@mui/icons-material';
+import {
+  Close,
+  Description,
+  ExitToApp,
+  Public,
+  Widgets,
+  Download,
+} from "@mui/icons-material";
 import {
   Box,
   Button,
@@ -9,11 +16,11 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
-} from '@mui/material';
+} from "@mui/material";
 
 const DetailsDrawer = ({ item, open, onClose }) => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   if (!item) return null;
 
@@ -24,13 +31,22 @@ const DetailsDrawer = ({ item, open, onClose }) => {
       onClose={onClose}
       slotProps={{
         paper: {
-          sx: { width: isMobile ? '90%' : '40%', minWidth: 320, maxWidth: 600 },
+          sx: { width: isMobile ? "90%" : "40%", minWidth: 320, maxWidth: 600 },
         },
       }}
     >
-      <Box sx={{ p: 3, display: 'flex', flexDirection: 'column', height: '100%' }}>
+      <Box
+        sx={{ p: 3, display: "flex", flexDirection: "column", height: "100%" }}
+      >
         <Box>
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              mb: 2,
+            }}
+          >
             <Typography variant="h5" component="h2">
               Metadata
             </Typography>
@@ -40,7 +56,7 @@ const DetailsDrawer = ({ item, open, onClose }) => {
           </Box>
           <Divider sx={{ mb: 3 }} />
 
-          <Box sx={{ flexGrow: 1, overflowY: 'auto', mb: 2 }}>
+          <Box sx={{ flexGrow: 1, overflowY: "auto", mb: 2 }}>
             <Typography variant="h6" gutterBottom>
               {item.name}
             </Typography>
@@ -48,13 +64,21 @@ const DetailsDrawer = ({ item, open, onClose }) => {
               {item.description}
             </Typography>
           </Box>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 2 }}>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 1, mb: 2 }}>
             <Box>
               <Chip icon={<Widgets />} label={item.theme} variant="filled" />
             </Box>
-            <Box sx={{ display: 'flex', gap: 1 }}>
-              <Chip icon={<Description />} label={item.format} variant="filled" />
-              <Chip icon={<Public />} label={item.resolution} variant="filled" />
+            <Box sx={{ display: "flex", gap: 1 }}>
+              <Chip
+                icon={<Description />}
+                label={item.format}
+                variant="filled"
+              />
+              <Chip
+                icon={<Public />}
+                label={item.resolution}
+                variant="filled"
+              />
             </Box>
           </Box>
           <Box>
@@ -62,27 +86,40 @@ const DetailsDrawer = ({ item, open, onClose }) => {
               Source: {item.provider}
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
-              Reference: {item.reference || 'N/A'}, {item.reference_detail || 'N/A'}
+              Reference: {item.reference || "N/A"},{" "}
+              {item.reference_detail || "N/A"}
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
               Last Updated: {item.latest_year}
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
-              Update Frequency: {item.update_frequency || 'N/A'}
+              Update Frequency: {item.update_frequency || "N/A"}
             </Typography>
           </Box>
         </Box>
-        <Box sx={{ mt: 'auto', display: 'flex', flexDirection: 'column', gap: 2 }}>
+        <Box
+          sx={{ mt: "auto", display: "flex", flexDirection: "column", gap: 2 }}
+        >
           <Button
             variant="contained"
             size="large"
             endIcon={<Download />}
             fullWidth
-            disabled
-            >
+            disabled={!item.url_sample}
+            onClick={(e) => {
+              e.stopPropagation();
+              const link = document.createElement("a");
+              link.href = item.url_sample;
+              const fileName = item.url_sample.split("/").pop(); // file name
+              link.setAttribute("download", fileName || "download");
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
+          >
             Download Sample
-            </Button>
-            
+          </Button>
+
           <Button
             variant="contained"
             size="large"
@@ -90,11 +127,14 @@ const DetailsDrawer = ({ item, open, onClose }) => {
             fullWidth
             onClick={(e) => {
               e.stopPropagation();
-              const link = document.createElement('a');
+              window.open(item.url, "_blank");
+              const link = document.createElement("a");
               link.href = item.url;
-              const fileName = item.url.split('/').pop(); // file name
-              link.setAttribute('download', fileName || 'download');
-              document.body.appendChild(link);    // Append the link to the body, necessary for Firefox
+              const fileName = item.url.split("/").pop(); // file name
+              link.setAttribute("download", fileName || "download");
+              link.setAttribute("target", "_blank");
+              link.setAttribute("rel", "noopener noreferrer");
+              document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);
             }}
