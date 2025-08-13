@@ -11,6 +11,7 @@
 { "type": "Feature", "properties": { "name": "Manasarovar" }, "geometry": { "type": "Point", "coordinates": [ 75.7502389, 26.8794402 ] } },
 { "type": "Feature", "properties": { "name": "Shyam Nagar" }, "geometry": { "type": "Point", "coordinates": [ 75.7706279, 26.8964768 ] } },
 { "type": "Feature", "properties": { "name": "Vivek Vihar" }, "geometry": { "type": "Point", "coordinates": [ 75.768407, 26.8884539 ] } },
-{ "type": "Feature", "properties": { "name": "New Aatish Market" }, "geometry": { "type": "Point", "coordinates": [ 75.764466, 26.880154 ] } }
+{ "type": "Feature", "properties": { "name": "New Aatish Market" }, "geometry": { "type": "Point", "coordinates": [ 75.764466, 26.880154 ] } },
+{ "type": "Feature", "properties": { "name": "Ram Nagar" }, "geometry": { "type": "Point", "coordinates": [ 75.774653994079074, 26.901763114912598 ] } }
 ]
 }
