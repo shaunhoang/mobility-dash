@@ -29,7 +29,7 @@ const BigMap = ({ visibleLayers }) => {
   const [viewport, setViewport] = useState({
     longitude: 75.787,
     latitude: 26.912,
-    zoom: 11,
+    zoom: 10,
   });
 
   const [geoJsonData, setGeoJsonData] = useState({});
@@ -139,15 +139,30 @@ const BigMap = ({ visibleLayers }) => {
         setSelectedRouteId(null);
       }
 
-      // Handle popups for any layer
+      // If a feature was clicked, show its tooltip
       if (feature) {
-        const clickedLayer = visibleLayers.find(
+
+        const allLayers = flattenLayers(layerConfig);
+        const clickedLayer = allLayers.find(
           (l) => `${l.id}-layer` === feature.layer.id
         );
 
-        if (clickedLayer?.tooltipProperty) {
-          const { tooltipProperty, tooltipPrefix = "" } = clickedLayer;
-          const content = `${tooltipPrefix}${feature.properties[tooltipProperty]}`;
+        // Check for the new 'tooltipProperties' array
+        if (clickedLayer?.tooltipProperties) {
+          const content = (
+            <Box sx={{ p: 0.5, fontFamily: "sans-serif" }}>
+              {clickedLayer.tooltipProperties.map(
+                ({ label, property, prefix = "", suffix = "" }) => (
+                  <div key={property}>
+                    <strong>{label}:</strong> {prefix}
+                    {feature.properties[property] || "N/A"}
+                    {suffix}
+                  </div>
+                )
+              )}
+            </Box>
+          );
+
           setPopupInfo({
             longitude: event.lngLat.lng,
             latitude: event.lngLat.lat,
@@ -224,10 +239,9 @@ const BigMap = ({ visibleLayers }) => {
             latitude={popupInfo.latitude}
             onClose={() => setPopupInfo(null)}
             closeOnClick={false}
+            anchor="bottom" // A good anchor for tooltips
           >
-            <Typography variant="body1" sx={{ p: 0.5 }}>
-              {popupInfo.content}
-            </Typography>
+            {popupInfo.content}
           </Popup>
         )}
       </MapGL>

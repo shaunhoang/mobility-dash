@@ -12,8 +12,7 @@ import Map from "react-map-gl/mapbox";
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 
 const baseLayers = [
-  { label: "Streets", value: "mapbox://styles/mapbox/streets-v11" },
-  { label: "Satellite", value: "mapbox://styles/mapbox/satellite-streets-v12" },
+  { label: "Light", value: "mapbox://styles/mapbox/light-v11" },
   { label: "Dark", value: "mapbox://styles/mapbox/dark-v11" },
 ];
 
