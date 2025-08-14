@@ -35,9 +35,51 @@ const BigMap = ({ visibleLayers }) => {
   const [geoJsonData, setGeoJsonData] = useState({});
   const [isFetching, setIsFetching] = useState(false);
   const [popupInfo, setPopupInfo] = useState(null);
+  // This state is still useful for tracking, even if not used for rendering
   const [loadedIconIds, setLoadedIconIds] = useState(new Set());
-  // --- NEW STATE --- to track the selected bus route feature ID
   const [selectedRouteId, setSelectedRouteId] = useState(null);
+
+  const loadMapIcons = useCallback((map) => {
+    if (!map) return;
+
+    const allLayers = flattenLayers(layerConfig);
+    const iconsToLoad = allLayers
+      .filter((layer) => layer.type === "symbol" && layer.icon)
+      .reduce((uniqueIcons, layer) => {
+        if (!uniqueIcons.has(layer.icon.id)) {
+          uniqueIcons.set(layer.icon.id, layer.icon.url);
+        }
+        return uniqueIcons;
+      }, new Map());
+
+    const iconLoadPromises = Array.from(iconsToLoad.entries()).map(
+      ([id, url]) =>
+        new Promise((resolve, reject) => {
+          if (map.hasImage(id)) {
+            return resolve(id);
+          }
+          map.loadImage(url, (error, image) => {
+            if (error) {
+              console.error(`Failed to load icon: ${id} from ${url}`, error);
+              return reject(error);
+            }
+            if (!map.hasImage(id)) {
+              map.addImage(id, image);
+            }
+            resolve(id);
+          });
+        })
+    );
+
+    Promise.all(iconLoadPromises)
+      .then((loadedIds) => {
+        setLoadedIconIds((prevIds) => new Set([...prevIds, ...loadedIds]));
+        console.log("Custom icons loaded/verified:", loadedIds);
+      })
+      .catch((error) => {
+        console.error("An error occurred while loading icons.", error);
+      });
+  }, []);
 
   useEffect(() => {
     const fetchDataForVisibleLayers = async () => {
@@ -71,55 +113,36 @@ const BigMap = ({ visibleLayers }) => {
     fetchDataForVisibleLayers();
   }, [visibleLayers, geoJsonData]);
 
-  const handleMapLoad = useCallback(() => {
+  useEffect(() => {
     const map = mapRef.current?.getMap();
     if (!map) return;
-    map.resize();
 
-    const allLayers = flattenLayers(layerConfig);
-    const iconsToLoad = allLayers
-      .filter((layer) => layer.type === "symbol" && layer.icon)
-      .reduce((uniqueIcons, layer) => {
-        if (!uniqueIcons.has(layer.icon.id)) {
-          uniqueIcons.set(layer.icon.id, layer.icon.url);
-        }
-        return uniqueIcons;
-      }, new Map());
+    const handleLoad = () => {
+      map.resize();
+      loadMapIcons(map);
+    };
 
-    const iconLoadPromises = Array.from(iconsToLoad.entries()).map(
-      ([id, url]) =>
-        new Promise((resolve, reject) => {
-          map.loadImage(url, (error, image) => {
-            if (error) {
-              console.error(`Failed to load icon: ${id} from ${url}`, error);
-              return reject(error);
-            }
-            if (!map.hasImage(id)) {
-              map.addImage(id, image);
-            }
-            resolve(id);
-          });
-        })
-    );
+    const handleStyleData = () => {
+      if (map.isStyleLoaded()) {
+        loadMapIcons(map);
+      }
+    };
 
-    Promise.all(iconLoadPromises)
-      .then((loadedIds) => {
-        setLoadedIconIds((prevIds) => new Set([...prevIds, ...loadedIds]));
-        console.log("All custom icons loaded successfully:", loadedIds);
-      })
-      .catch((error) => {
-        console.error("An error occurred while loading icons.", error);
-      });
-  }, []);
+    map.on("style.load", handleLoad);
+    map.on("styledata", handleStyleData);
+
+    return () => {
+      map.off("style.load", handleLoad);
+      map.off("styledata", handleStyleData);
+    };
+  }, [loadMapIcons]);
 
   const handleMapClick = useCallback(
     (event) => {
       const map = mapRef.current?.getMap();
       if (!map) return;
-
       const feature = event.features?.[0];
 
-      // If a route was previously selected, unselect it
       if (selectedRouteId !== null) {
         map.setFeatureState(
           { source: "bus-routes", id: selectedRouteId },
@@ -127,7 +150,6 @@ const BigMap = ({ visibleLayers }) => {
         );
       }
 
-      // Check if the clicked feature is a bus route
       if (feature && feature.layer.id === "bus-routes-layer") {
         const newSelectedRouteId = feature.id;
         map.setFeatureState(
@@ -139,22 +161,25 @@ const BigMap = ({ visibleLayers }) => {
         setSelectedRouteId(null);
       }
 
-      // If a feature was clicked, show its tooltip
       if (feature) {
-
         const allLayers = flattenLayers(layerConfig);
         const clickedLayer = allLayers.find(
           (l) => `${l.id}-layer` === feature.layer.id
         );
 
-        // Check for the new 'tooltipProperties' array
-        if (clickedLayer?.tooltipProperties) {
-          const content = (
+        let popupContent = null;
+
+        if (
+          clickedLayer?.tooltipProperties &&
+          Array.isArray(clickedLayer.tooltipProperties)
+        ) {
+          popupContent = (
             <Box sx={{ p: 0.5, fontFamily: "sans-serif" }}>
               {clickedLayer.tooltipProperties.map(
                 ({ label, property, prefix = "", suffix = "" }) => (
                   <div key={property}>
-                    <strong>{label}:</strong> {prefix}
+                    <strong>{label}</strong>
+                    {prefix}
                     {feature.properties[property] || "N/A"}
                     {suffix}
                   </div>
@@ -162,18 +187,32 @@ const BigMap = ({ visibleLayers }) => {
               )}
             </Box>
           );
+        } else if (
+          clickedLayer?.tooltipProperty &&
+          typeof clickedLayer.tooltipProperty === "string"
+        ) {
+          const { tooltipProperty, tooltipPrefix = "" } = clickedLayer;
+          const value = feature.properties[tooltipProperty] || "N/A";
+          popupContent = (
+            <Box sx={{ p: 0.5, fontFamily: "sans-serif" }}>
+              {tooltipPrefix}
+              {value}
+            </Box>
+          );
+        }
 
+        if (popupContent) {
           setPopupInfo({
             longitude: event.lngLat.lng,
             latitude: event.lngLat.lat,
-            content,
+            content: popupContent,
           });
         }
       } else {
         setPopupInfo(null);
       }
     },
-    [visibleLayers, selectedRouteId]
+    [selectedRouteId]
   );
 
   if (!MAPBOX_TOKEN) {
@@ -197,24 +236,18 @@ const BigMap = ({ visibleLayers }) => {
         ref={mapRef}
         {...viewport}
         onMove={(evt) => setViewport(evt.viewState)}
-        onLoad={handleMapLoad}
         onClick={handleMapClick}
         style={{ width: "100%", height: "100%" }}
         mapStyle={mapStyle}
         mapboxAccessToken={MAPBOX_TOKEN}
-        interactiveLayerIds={visibleLayers.map((l) => `${l.id}-layer`)}
+        interactiveLayerIds={flattenLayers(layerConfig).map((l) => `${l.id}-layer`)}
         cursor="pointer"
       >
         {visibleLayers.map((layer) => {
           const data = geoJsonData[layer.file];
           if (!data) return null;
-          if (
-            layer.type === "symbol" &&
-            layer.icon &&
-            !loadedIconIds.has(layer.icon.id)
-          ) {
-            return null;
-          }
+
+          
           return (
             <Source
               key={layer.id}
@@ -239,7 +272,7 @@ const BigMap = ({ visibleLayers }) => {
             latitude={popupInfo.latitude}
             onClose={() => setPopupInfo(null)}
             closeOnClick={false}
-            anchor="bottom" // A good anchor for tooltips
+            anchor="bottom"
           >
             {popupInfo.content}
           </Popup>
