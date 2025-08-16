@@ -13,7 +13,7 @@ function Home() {
   const [activeLayer, setActiveLayer] = useState("map");
   const mapNavigationButtons = [
     { id: "map", text: "Mobility Map" },
-    { id: "goals", text: "Goals & Progress" },
+    { id: "goals", text: "Smart Scorecard" },
     { id: "catalogue", text: "Data Catalogue" },
     { id: "highlights", text: "News & Highlights" },
   ];

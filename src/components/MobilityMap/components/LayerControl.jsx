@@ -1,15 +1,20 @@
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+
 import {
   Box,
   Checkbox,
   Collapse,
   FormControlLabel,
   FormGroup,
+  Tooltip,
+  Paper,
   Typography,
 } from "@mui/material";
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { layerConfig } from "./mapComponents/layerConfig";
+import { LegendEAI, LegendPop } from "./mapComponents/legend";
 
 const LayerControl = ({ onLayerToggle }) => {
   const defaultLayers = useMemo(() => {
@@ -55,7 +60,6 @@ const LayerControl = ({ onLayerToggle }) => {
     defaultLayers.forEach((layer) => {
       onLayerToggle(layer, true);
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleChildChange = (layer, isChecked) => {
@@ -99,8 +103,19 @@ const LayerControl = ({ onLayerToggle }) => {
     return (
       <FormControlLabel
         key={layer.id}
-        label={layer.name}
-        sx={{ my: -0.25 }}
+        label={
+          <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+            <Typography variant="body2">{layer.name}</Typography>
+            {layer.infobox && (
+              <Tooltip title={layer.infobox} arrow>
+                <InfoOutlinedIcon
+                  sx={{ fontSize: "1rem", color: "text.secondary" }}
+                />
+              </Tooltip>
+            )}
+          </Box>
+        }
+        sx={{ my: -0.5 }}
         control={
           <Checkbox
             checked={areAllChecked}
@@ -131,8 +146,8 @@ const LayerControl = ({ onLayerToggle }) => {
               .filter((layer) => layer.showInControl !== false)
               .map((layer) => {
                 if (layer.isGroup) {
-                  const allChildIds = layer.children.flatMap(
-                    (c) => c.children.map((sc) => sc.id)
+                  const allChildIds = layer.children.flatMap((c) =>
+                    c.children.map((sc) => sc.id)
                   );
                   const checkedCount = allChildIds.filter(
                     (id) => checkedState[id]
@@ -163,12 +178,22 @@ const LayerControl = ({ onLayerToggle }) => {
                               width: "100%",
                             }}
                           >
-                            <Typography>{layer.name}</Typography>
+                            <Typography variant="body2">{layer.name}</Typography>
+                            {layer.infobox && (
+                              <Tooltip title={layer.infobox} arrow>
+                                <InfoOutlinedIcon
+                                  sx={{
+                                    fontSize: "1rem",
+                                    color: "text.secondary",
+                                  }}
+                                />
+                              </Tooltip>
+                            )}
                             <Box
                               component="span"
                               onClick={(e) => {
-                                e.preventDefault(); // Stop label click from toggling checkbox
-                                e.stopPropagation(); // Stop click from bubbling up
+                                e.preventDefault();
+                                e.stopPropagation();
                                 handleGroupToggle(layer.id);
                               }}
                               sx={{
@@ -188,7 +213,7 @@ const LayerControl = ({ onLayerToggle }) => {
                         }
                         sx={{
                           width: "100%",
-                          my: -0.25,
+                          my: -0.5,
                           mr: 0,
                           "& .MuiFormControlLabel-label": { width: "100%" },
                         }}
@@ -216,6 +241,11 @@ const LayerControl = ({ onLayerToggle }) => {
           </FormGroup>
         </Box>
       ))}
+      <Box>
+        {(checkedState["jaipur_wards_heritage"] ||
+          checkedState["jaipur_wards_greater"]) && <LegendPop />}
+      </Box>
+      <Box>{checkedState["eai-wards"] && <LegendEAI />}</Box>
     </Box>
   );
 };

@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Layer, default as MapGL, Popup, Source } from "react-map-gl/mapbox";
+import { Layer, Popup, Source, default as MapGL } from "react-map-gl/mapbox";
 import {
   flattenLayers,
   getLayerLayoutStyle,
@@ -36,6 +36,48 @@ const NorthArrow = () => (
   </svg>
 );
 
+const Legend = () => (
+  <Paper
+    elevation={3}
+    sx={{
+      position: "absolute",
+      bottom: 30,
+      left: 10,
+      padding: "10px",
+      backgroundColor: "rgba(255, 255, 255, 0.85)",
+      zIndex: 1,
+    }}
+  >
+    <Typography variant="subtitle2" sx={{ mb: 1 }}>
+      Econ Activity Index
+    </Typography>
+    <Box sx={{ display: "flex", alignItems: "center" }}>
+      <Box
+        sx={{
+          width: 20,
+          height: 120,
+          background: "linear-gradient(to top, #2f00ff, #ffffff, #c30003)",
+          border: "1px solid #ccc",
+        }}
+      />
+      <Box
+        sx={{
+          ml: 1,
+          height: 120,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          textAlign: "left",
+        }}
+      >
+        <Typography variant="caption">1 (High)</Typography>
+        <Typography variant="caption">0</Typography>
+        <Typography variant="caption">-1 (Low)</Typography>
+      </Box>
+    </Box>
+  </Paper>
+);
+
 const BigMap = ({ visibleLayers }) => {
   const [mapStyle, setMapStyle] = useState(baseLayers[0].value);
   const mapRef = useRef(null);
@@ -56,7 +98,6 @@ const BigMap = ({ visibleLayers }) => {
 
   const loadMapIcons = useCallback((map) => {
     if (!map) return;
-
     const allLayers = flattenLayers(layerConfig);
     const iconsToLoad = allLayers
       .filter((layer) => layer.type === "symbol" && layer.icon)
@@ -70,30 +111,17 @@ const BigMap = ({ visibleLayers }) => {
     const iconLoadPromises = Array.from(iconsToLoad.entries()).map(
       ([id, url]) =>
         new Promise((resolve, reject) => {
-          if (map.hasImage(id)) {
-            return resolve(id);
-          }
+          if (map.hasImage(id)) return resolve(id);
           map.loadImage(url, (error, image) => {
-            if (error) {
-              console.error(`Failed to load icon: ${id} from ${url}`, error);
-              return reject(error);
-            }
-            if (!map.hasImage(id)) {
-              map.addImage(id, image);
-            }
+            if (error) return reject(error);
+            if (!map.hasImage(id)) map.addImage(id, image);
             resolve(id);
           });
         })
     );
-
-    Promise.all(iconLoadPromises)
-      .then((loadedIds) => {
-        setLoadedIconIds((prevIds) => new Set([...prevIds, ...loadedIds]));
-        console.log("Custom icons loaded/verified:", loadedIds);
-      })
-      .catch((error) => {
-        console.error("An error occurred while loading icons.", error);
-      });
+    Promise.all(iconLoadPromises).catch((error) =>
+      console.error("An error occurred while loading icons.", error)
+    );
   }, []);
 
   useEffect(() => {
@@ -102,15 +130,11 @@ const BigMap = ({ visibleLayers }) => {
         (layer) => !geoJsonData[layer.file]
       );
       if (newLayersToFetch.length === 0) return;
-
       setIsFetching(true);
       try {
         const promises = newLayersToFetch.map((layer) =>
           fetch(layer.file)
-            .then((res) => {
-              if (!res.ok) throw new Error(`Failed to fetch ${layer.file}`);
-              return res.json();
-            })
+            .then((res) => res.json())
             .then((data) => ({ file: layer.file, data }))
         );
         const results = await Promise.all(promises);
@@ -141,26 +165,24 @@ const BigMap = ({ visibleLayers }) => {
   useEffect(() => {
     const map = mapRef.current?.getMap();
     if (!map) return;
-
     const handleStyleData = () => {
-      if (map.isStyleLoaded()) {
-        loadMapIcons(map);
+      const currentMap = mapRef.current?.getMap();
+      if (currentMap && currentMap.isStyleLoaded()) {
+        loadMapIcons(currentMap);
       }
     };
-
     map.on("styledata", handleStyleData);
-
-    return () => {
-      map.off("styledata", handleStyleData);
-    };
+    return () => map.off("styledata", handleStyleData);
   }, [loadMapIcons]);
 
+  // --- FIX: Restored the bus route selection logic ---
   const handleMapClick = useCallback(
     (event) => {
       const map = mapRef.current?.getMap();
       if (!map) return;
       const feature = event.features?.[0];
 
+      // Always clear the previously selected route first
       if (selectedRouteId !== null) {
         map.setFeatureState(
           { source: "bus-routes", id: selectedRouteId },
@@ -168,6 +190,7 @@ const BigMap = ({ visibleLayers }) => {
         );
       }
 
+      // Check if the clicked feature is a bus route
       if (feature && feature.layer.id === "bus-routes-layer") {
         const newSelectedRouteId = feature.id;
         map.setFeatureState(
@@ -176,23 +199,20 @@ const BigMap = ({ visibleLayers }) => {
         );
         setSelectedRouteId(newSelectedRouteId);
       } else {
+        // If it's not a bus route, clear the selection
         setSelectedRouteId(null);
       }
 
+      // Handle popups for any layer
       if (feature) {
         const allLayers = flattenLayers(layerConfig);
         const clickedLayer = allLayers.find(
           (l) => `${l.id}-layer` === feature.layer.id
         );
 
-        let popupContent = null;
-
-        if (
-          clickedLayer?.tooltipProperties &&
-          Array.isArray(clickedLayer.tooltipProperties)
-        ) {
-          popupContent = (
-            <Box sx={{ p: 0.5, fontFamily: "sans-serif" }}>
+        if (clickedLayer?.tooltipProperties) {
+          const content = (
+            <Box sx={{ p: 0.5 }}>
               {clickedLayer.tooltipProperties.map(
                 ({ label, property, prefix = "", suffix = "" }) => (
                   <div key={property}>
@@ -205,59 +225,30 @@ const BigMap = ({ visibleLayers }) => {
               )}
             </Box>
           );
-        } else if (
-          clickedLayer?.tooltipProperty &&
-          typeof clickedLayer.tooltipProperty === "string"
-        ) {
-          const { tooltipProperty, tooltipPrefix = "" } = clickedLayer;
-          const value = feature.properties[tooltipProperty] || "N/A";
-          popupContent = (
-            <Box sx={{ p: 0.5, fontFamily: "sans-serif" }}>
-              {tooltipPrefix}
-              {value}
-            </Box>
-          );
-        }
-
-        if (popupContent) {
           setPopupInfo({
             longitude: event.lngLat.lng,
             latitude: event.lngLat.lat,
-            content: popupContent,
+            content,
           });
+        } else {
+          setPopupInfo(null);
         }
       } else {
         setPopupInfo(null);
       }
     },
-    [selectedRouteId]
+    [selectedRouteId] // Add selectedRouteId as a dependency
   );
 
   const handleResetNorth = useCallback(() => {
     mapRef.current?.easeTo({ bearing: 0, pitch: 0 });
   }, []);
 
-  if (!MAPBOX_TOKEN) {
-    return (
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "100%",
-        }}
-      >
-        <Typography color="error">Mapbox token is missing.</Typography>
-      </Box>
-    );
-  }
-
   return (
     <Box sx={{ height: "100%", width: "100%", position: "relative" }}>
       <MapGL
         ref={mapRef}
         {...viewport}
-        // --- STEP 3: Update bearing state on move ---
         onMove={(evt) => {
           setViewport(evt.viewState);
           setBearing(evt.viewState.bearing);
@@ -275,14 +266,14 @@ const BigMap = ({ visibleLayers }) => {
         {visibleLayers.map((layer) => {
           const data = geoJsonData[layer.file];
           if (!data) return null;
-
           return (
             <Source
               key={layer.id}
               id={layer.id}
               type="geojson"
               data={data}
-              generateId={true}
+              // Bus routes need generateId for feature state to work
+              generateId={layer.id === "bus-routes"}
             >
               <Layer
                 id={`${layer.id}-layer`}
@@ -293,7 +284,6 @@ const BigMap = ({ visibleLayers }) => {
             </Source>
           );
         })}
-
         {popupInfo && (
           <Popup
             longitude={popupInfo.longitude}
@@ -309,64 +299,34 @@ const BigMap = ({ visibleLayers }) => {
 
       {/* UI Overlays */}
       {isFetching && (
-        <Box
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            zIndex: 10,
-          }}
-        >
+        <Box sx={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 10 }}>
           <CircularProgress />
         </Box>
       )}
 
-      <Paper
-        elevation={3}
-        sx={{
-          position: "absolute",
-          top: 10,
-          right: 10,
-          backgroundColor: "rgba(255, 255, 255, 0.9)",
-        }}
-      >
+      {visibleLayers.some((layer) => layer.id === "econ_activity_index") && (
+        <Legend />
+      )}
+
+      <Paper elevation={3} sx={{ position: "absolute", top: 10, right: 10, backgroundColor: "rgba(255, 255, 255, 0.9)" }}>
         <ToggleButtonGroup
           value={mapStyle}
           exclusive
           onChange={(e, newStyle) => newStyle && setMapStyle(newStyle)}
-          aria-label="map style"
           size="small"
         >
           {baseLayers.map((layer) => (
-            <ToggleButton
-              key={layer.value}
-              value={layer.value}
-              aria-label={layer.label}
-              sx={{ width: 80 }}
-            >
+            <ToggleButton key={layer.value} value={layer.value} sx={{ width: 80 }}>
               {layer.label}
             </ToggleButton>
           ))}
         </ToggleButtonGroup>
       </Paper>
 
-      <Paper
-        elevation={3}
-        sx={{
-          position: "absolute",
-          top: 60,
-          right: 10,
-          borderRadius: "50%",
-        }}
-      >
+      <Paper elevation={3} sx={{ position: "absolute", top: 60, right: 10, borderRadius: "50%" }}>
         <IconButton
           onClick={handleResetNorth}
-          aria-label="reset north"
-          sx={{
-            transform: `rotate(${bearing}deg)`,
-            transition: "transform 0.2s ease-in-out",
-          }}
+          sx={{ transform: `rotate(${bearing}deg)`, transition: "transform 0.2s ease-in-out" }}
         >
           <NorthArrow />
         </IconButton>
