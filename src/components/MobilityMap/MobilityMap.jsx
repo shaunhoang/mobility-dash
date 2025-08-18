@@ -1,7 +1,7 @@
-import { Box, Paper, IconButton } from "@mui/material";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import { Box, IconButton, Paper } from "@mui/material";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { useState } from "react";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 
 import BigMap from "./components/BigMap";
 import LayerControl from "./components/LayerControl";

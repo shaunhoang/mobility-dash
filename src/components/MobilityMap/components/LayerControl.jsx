@@ -9,12 +9,10 @@ import {
   FormControlLabel,
   FormGroup,
   Tooltip,
-  Paper,
-  Typography,
+  Typography
 } from "@mui/material";
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { layerConfig } from "./mapComponents/layerConfig";
-import { LegendEAI, LegendPop } from "./mapComponents/legend";
 
 const LayerControl = ({ onLayerToggle }) => {
   const defaultLayers = useMemo(() => {
@@ -178,7 +176,9 @@ const LayerControl = ({ onLayerToggle }) => {
                               width: "100%",
                             }}
                           >
-                            <Typography variant="body2">{layer.name}</Typography>
+                            <Typography variant="body2">
+                              {layer.name}
+                            </Typography>
                             {layer.infobox && (
                               <Tooltip title={layer.infobox} arrow>
                                 <InfoOutlinedIcon
@@ -241,11 +241,6 @@ const LayerControl = ({ onLayerToggle }) => {
           </FormGroup>
         </Box>
       ))}
-      <Box>
-        {(checkedState["jaipur_wards_heritage"] ||
-          checkedState["jaipur_wards_greater"]) && <LegendPop />}
-      </Box>
-      <Box>{checkedState["eai-wards"] && <LegendEAI />}</Box>
     </Box>
   );
 };

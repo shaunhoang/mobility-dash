@@ -280,7 +280,7 @@ export const layerConfig = [
       },
       {
         id: "parent-assembly",
-        name: "Assembly (JMC)",
+        name: "Assemblies (JMC)",
         children: [
           {
             id: "jaipur_wards_assembly",
@@ -302,7 +302,7 @@ export const layerConfig = [
       },
       {
         id: "parent-rural-towns",
-        name: "Towns (ex-JMC)",
+        name: "Villages (ex-JMC)",
         children: [
           {
             id: "jaipur_rural_towns",
@@ -317,21 +317,19 @@ export const layerConfig = [
     ],
   },
   {
-    theme: "Others",
+    theme: "Socioeconomic",
     layers: [
       {
         id: "parent-eai",
         name: "Econ Activity Index",
-        infobox: "EAI is derived from various indivators, including population, night light intensity, amenity density, and more. It is a measure of economic activity in the area.",
+        infobox:
+          "EAI is derived from various indivators, including population, night light intensity, amenity density, and more. It is a measure of economic activity in the area.",
         children: [
           {
             id: "eai-wards",
             file: "data/mapMain/jaipur_eai.geojson",
             defaultChecked: false,
-            type: "fill",
-            tooltipProperties: [
-              { label: "Score: ", property: "EPI_o" },
-            ],
+            tooltipProperties: [{ label: "Score: ", property: "EPI_o" }],
             type: "fill",
             paint: {
               "fill-color": [
@@ -346,6 +344,7 @@ export const layerConfig = [
                 "#c30003",
               ],
               "fill-opacity": 0.5,
+              "fill-outline-color": "transparent",
             },
           },
         ],
