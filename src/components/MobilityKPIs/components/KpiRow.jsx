@@ -45,8 +45,10 @@ const KpiRow = ({ kpis = [], onKpiSelect, selectedKpiCode }) => {
               sx={{
                 pt: 1,
                 pl: 1,
-                width: 275,
-                height: 60,
+                maxWidth: 270,
+                width: "100%",
+                minWidth: 250,
+                height: 55,
                 display: "flex",
                 alignItems: "center",
                 cursor: "pointer",

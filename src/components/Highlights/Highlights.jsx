@@ -32,7 +32,6 @@ const Highlights = () => {
         return response.json();
       })
       .then((data) => {
-        // Map the API data to match the drawer's expected props
         const formattedData = data.map((item) => ({
           ...item,
           name: item.title,

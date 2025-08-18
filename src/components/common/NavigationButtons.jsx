@@ -1,25 +1,38 @@
-import { Box, Button, Grid, Stack } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 
 const NavigationButtons = ({ buttons = [], onButtonClick, activeButtonId }) => {
   return (
     <Box>
-      <Stack direction="row" spacing={1}>
+      <Grid
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          gap: 1,
+          flexWrap: "wrap",
+        }}
+      >
         {buttons.map((button) => (
-          <Button
+          <Grid
+            size={{ sm: 6, md: 3 }}
+            sx={{ height: "40px",width: "100%" }}
             key={button.id}
-            variant={button.id === activeButtonId ? "contained" : "outlined"}
-            sx={{
-              flexGrow: 1,
-              height: "50px",
-              fontSize: "1.2rem",
-              lineHeight: "1.1",
-            }}
-            onClick={() => onButtonClick(button.id)}
           >
-            {button.text}
-          </Button>
+            <Button
+              key={button.id}
+              variant={button.id === activeButtonId ? "contained" : "outlined"}
+              sx={{
+                height: "100%",
+                width: "100%",
+                fontSize: "1.1rem",
+                lineHeight: "1",
+              }}
+              onClick={() => onButtonClick(button.id)}
+            >
+              {button.text}
+            </Button>
+          </Grid>
         ))}
-      </Stack>
+      </Grid>
     </Box>
   );
 };

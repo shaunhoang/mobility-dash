@@ -12,9 +12,9 @@ function Home() {
   const [activeLayer, setActiveLayer] = useState("map");
   const mapNavigationButtons = [
     { id: "map", text: "Mobility Map" },
-    { id: "goals", text: "Smart Scorecard" },
+    { id: "goals", text: "Mobility Scorecard" },
     { id: "catalogue", text: "Data Catalogue" },
-    { id: "highlights", text: "News & Highlights" },
+    { id: "highlights", text: "Highlights" },
   ];
   const handleLayerChange = (layerId) => {
     console.log("Button clicked, changing active layer to:", layerId);

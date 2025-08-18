@@ -36,6 +36,7 @@ const VerticalTabs = ({ tabs, onTabChange, activeTab }) => {
       <Paper
         sx={{
           width: "100%",
+          minWidth: 150,
           display: "flex",
           flexDirection: "column",
         }}
