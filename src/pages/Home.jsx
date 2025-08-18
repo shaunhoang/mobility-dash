@@ -3,7 +3,6 @@ import { useState } from "react";
 
 import NavigationButtons from "../components/common/NavigationButtons";
 import Title from "../components/common/Title";
-
 import DataCatalogue from "../components/DataCatalogue/DataCatalogue";
 import Highlights from "../components/Highlights/Highlights";
 import MobilityKPIs from "../components/MobilityKPIs/MobilityKPIs";

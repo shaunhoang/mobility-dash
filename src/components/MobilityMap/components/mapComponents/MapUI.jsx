@@ -1,5 +1,7 @@
 import { Box, CircularProgress, Paper, Typography } from "@mui/material";
-import { eaiLegend, popLegend } from "./legendsContent";
+import { useMemo } from "react";
+import { layerConfig } from "./layerConfig"; 
+import { legendsContent } from "./legendsContent";
 
 const Legend = ({ title, gradient, labels }) => (
   <Paper elevation={2} sx={{ p: 1, backgroundColor: "rgba(255,255,255,0.9)" }}>
@@ -14,7 +16,7 @@ const Legend = ({ title, gradient, labels }) => (
     >
       <Box
         sx={{
-          width: 250,
+          width: 200,
           height: 20,
           background: gradient,
           border: "1px solid #ccc",
@@ -58,6 +60,22 @@ const LoadingSpinner = ({ isFetching }) => {
 };
 
 const MapUI = ({ isFetching, visibleLayers }) => {
+  const activeLegends = useMemo(() => {
+    const legendKeys = new Set();
+    const allParentLayers = layerConfig.flatMap((theme) => theme.layers);
+
+    visibleLayers.forEach((visibleLayer) => {
+      const parent = allParentLayers.find((p) =>
+        p.children?.some((c) => c.id === visibleLayer.id)
+      );
+      if (parent?.legend) {
+        legendKeys.add(parent.legend);
+      }
+    });
+
+    return Array.from(legendKeys);
+  }, [visibleLayers]);
+
   return (
     <>
       <LoadingSpinner isFetching={isFetching} />
@@ -66,32 +84,26 @@ const MapUI = ({ isFetching, visibleLayers }) => {
         sx={{
           position: "absolute",
           bottom: 30,
-          left: "50%", 
-          transform: "translateX(-50%)", // Center the legends
+          left: "50%",
+          transform: "translateX(-50%)",
           zIndex: 1,
           display: "flex",
           flexDirection: "row",
           gap: 1,
         }}
       >
-        {visibleLayers.some((layer) => layer.id === "eai-wards") && (
-          <Legend
-            title={eaiLegend.title}
-            gradient={eaiLegend.gradient}
-            labels={eaiLegend.labels}
-          />
-        )}
-        {visibleLayers.some(
-          (layer) =>
-            layer.id === "jaipur_wards_heritage" ||
-            layer.id === "jaipur_wards_greater"
-        ) && (
-          <Legend
-            title={popLegend.title}
-            gradient={popLegend.gradient}
-            labels={popLegend.labels}
-          />
-        )}
+        {activeLegends.map((key) => {
+          const content = legendsContent[key];
+          if (!content) return null;
+          return (
+            <Legend
+              key={key}
+              title={content.title}
+              gradient={content.gradient}
+              labels={content.labels}
+            />
+          );
+        })}
       </Box>
     </>
   );

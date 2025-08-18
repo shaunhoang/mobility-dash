@@ -1,5 +1,6 @@
 export const layerConfig = [
   {
+    // --- base, not shown ---
     theme: "",
     layers: [
       {
@@ -56,6 +57,8 @@ export const layerConfig = [
       },
     ],
   },
+  // --- base, shown as checkboxes ---
+
   {
     theme: "Public Transport",
     layers: [
@@ -204,6 +207,7 @@ export const layerConfig = [
       },
     ],
   },
+  // --- base, shown as checkboxes ---
   {
     theme: "Administrative",
     layers: [
@@ -215,6 +219,7 @@ export const layerConfig = [
           {
             id: "parent-heritage-wards",
             name: "Heritage",
+            legend: "population",
             children: [
               {
                 id: "jaipur_wards_heritage",
@@ -247,6 +252,7 @@ export const layerConfig = [
           {
             id: "parent-greater-wards",
             name: "Greater",
+            legend: "population",
             children: [
               {
                 id: "jaipur_wards_greater",
@@ -316,14 +322,48 @@ export const layerConfig = [
       },
     ],
   },
+
+  // --- dropdown ---
   {
     theme: "Socioeconomic",
+    controlType: "dropdown",
     layers: [
+      {
+        id: "parent-pop-density",
+        name: "Population Density",
+        infobox: "",
+        legend: "popDensity",
+        children: [
+          {
+            id: "pop-density-km2",
+            file: "data/mapMain/jaipur_eai.geojson",
+            defaultChecked: false,
+            tooltipProperties: [
+              { label: "Score: ", property: "pop_density_km2" },
+            ],
+            type: "fill",
+            paint: {
+              "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "pop_density_km2"],
+                0,
+                "#ffecec",
+                60000,
+                "#550103",
+              ],
+              "fill-opacity": 0.5,
+              "fill-outline-color": "transparent",
+            },
+          },
+        ],
+      },
       {
         id: "parent-eai",
         name: "Econ Activity Index",
         infobox:
           "EAI is derived from various indivators, including population, night light intensity, amenity density, and more. It is a measure of economic activity in the area.",
+        legend: "eai",
         children: [
           {
             id: "eai-wards",
@@ -356,7 +396,6 @@ export const layerConfig = [
 export const getLayerLayoutStyle = (layer) => {
   return layer.layout || {};
 };
-
 export const getLayerPaintStyle = (layer) => {
   const defaultColor = ["coalesce", ["get", "color"], "#808080"];
   const defaultStrokeColor = "#000000";
@@ -391,7 +430,6 @@ export const getLayerPaintStyle = (layer) => {
       };
   }
 };
-
 export const flattenLayers = (config) => {
   let allLayers = [];
   config.forEach((theme) => {

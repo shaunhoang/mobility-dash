@@ -9,8 +9,8 @@ import {
   layerConfig,
 } from "./mapComponents/layerConfig";
 import MapControls from "./mapComponents/MapControls";
-import MapUI, { MapPopup } from "./mapComponents/MapUI";
-import { useMapLogic } from "./mapComponents/MapLogic"; 
+import MapUI from "./mapComponents/MapUI";
+import { useMapLogic } from "./mapComponents/MapLogic";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 
@@ -94,8 +94,17 @@ const BigMap = ({ visibleLayers }) => {
             </Source>
           );
         })}
-
-        <MapPopup popupInfo={popupInfo} onClose={() => setPopupInfo(null)} />
+        {popupInfo && (
+          <Popup
+            longitude={popupInfo.longitude}
+            latitude={popupInfo.latitude}
+            onClose={() => setPopupInfo(null)}
+            closeOnClick={false}
+            anchor="bottom"
+          >
+            {popupInfo.content}
+          </Popup>
+        )}
       </MapGL>
 
       {/* UI Overlays */}
