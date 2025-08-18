@@ -10,7 +10,7 @@ const DownloadButton = ({ data = [], filename = "results.csv" }) => {
     if (data.length === 0) {
       return [];
     }
-    const keys = Object.keys(data[0]);     // Get the keys from the first object to create the headers.
+    const keys = Object.keys(data[0]);     
     return keys.map((key) => ({
       label: key,
       key: key,

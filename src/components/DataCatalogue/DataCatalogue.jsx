@@ -17,7 +17,6 @@ import SearchBar from "./components/SearchBar";
 import ToggleFilterButton from "./components/ToggleFilterButton";
 
 const DataCatalogue = () => {
-  // useState for the fetched data, loading, and errors
   const [datasets, setDatasets] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);

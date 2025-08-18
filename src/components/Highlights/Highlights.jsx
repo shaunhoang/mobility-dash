@@ -6,25 +6,22 @@ import {
   CardMedia,
   CircularProgress,
   Grid,
-  Link,
-  Typography,
+  Typography
 } from "@mui/material";
 import { useEffect, useState } from "react";
-import HighlightsDrawer from "./components/HighlightsDrawer"; // Import the drawer component
+import HighlightsDrawer from "./components/HighlightsDrawer"; 
 
 const Highlights = () => {
-  // --- State Management ---
   const [highlightCards, setHighlightCards] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-
-  // State for the drawer
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
 
-  // --- Data Fetching ---
   useEffect(() => {
-    fetch("https://orca.casa.ucl.ac.uk/~jens/sparc-dash/data/highlightsData.json")
+    fetch(
+      "https://orca.casa.ucl.ac.uk/~jens/sparc-dash/data/highlightsData.json"
+    )
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -47,7 +44,6 @@ const Highlights = () => {
       });
   }, []);
 
-  // --- Event Handlers for the Drawer ---
   const handleCardClick = (cardData) => {
     setSelectedCard(cardData);
     setDrawerOpen(true);

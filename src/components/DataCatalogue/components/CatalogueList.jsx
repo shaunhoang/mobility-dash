@@ -11,22 +11,22 @@ import {
 
 const CatalogueListItem = ({ item, onClick }) => (
   <ListItem disablePadding divider>
-      <Grid
-        container
-        spacing ={2}
-        sx={{
-        width: '100%',
-        alignItems: 'flex-start',
-       p: 2,
-        }}
-      >
-        <Grid size={{ sm: 12, md: 8}} >
+    <Grid
+      container
+      spacing={2}
+      sx={{
+        width: "100%",
+        alignItems: "flex-start",
+        p: 2,
+      }}
+    >
+      <Grid size={{ sm: 12, md: 9 }}>
         <Box
           sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-            height: '100%',
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            height: "100%",
           }}
         >
           <Box>
@@ -34,15 +34,15 @@ const CatalogueListItem = ({ item, onClick }) => (
               {item.name}
             </Typography>
             <Typography
-              variant="body1" 
+              variant="body1"
               color="text.secondary"
               sx={{
                 mb: 1.5,
-                display: '-webkit-box',
-                WebkitLineClamp: '3', 
-                WebkitBoxOrient: 'vertical',
-                overflow: 'hidden',
-                textOverflow: 'ellipsis',
+                display: "-webkit-box",
+                WebkitLineClamp: "3",
+                WebkitBoxOrient: "vertical",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
               }}
             >
               {item.description}
@@ -51,58 +51,58 @@ const CatalogueListItem = ({ item, onClick }) => (
         </Box>
       </Grid>
 
-        <Grid size={{ sm: 12, md: 4 }} >
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              gap: 1,
-            }}
-          >
-            <Box>
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 1,
-                  mb: 0.5,
-                  flexShrink: 0,
-                }}
-              >
-                <Widgets fontSize="small" color="secondary" />
-                <Typography variant="inherit" color="text.secondary">
-                  Theme: {item.theme}
-                </Typography>
-              </Box>
-              <Box
-                sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.5 }}
-              >
-                <Description fontSize="small" color="secondary" />
-                <Typography variant="inherit" color="text.secondary">
-                  Format: {item.format}
-                </Typography>
-              </Box>
-              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                <Public fontSize="small" color="secondary" />
-                <Typography variant="inherit" color="text.secondary">
-                  Resolution: {item.resolution}
-                </Typography>
-              </Box>
-            </Box>
-
-            <Button
-              variant="contained"
-              size="small"
-              startIcon={<ExitToApp />}
-              onClick={() => onClick(item)}
-              sx={{ flexShrink: 0, mt: 0.5 }}
+      <Grid size={{ sm: 12, md: 3 }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            gap: 1,
+          }}
+        >
+          <Box>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: 1,
+                mb: 0.5,
+                flexShrink: 0,
+              }}
             >
-              Go to dataset
-            </Button>
+              <Widgets fontSize="small" color="secondary" />
+              <Typography variant="inherit" color="text.secondary">
+                Theme: {item.theme}
+              </Typography>
+            </Box>
+            <Box
+              sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.5 }}
+            >
+              <Description fontSize="small" color="secondary" />
+              <Typography variant="inherit" color="text.secondary">
+                Format: {item.format}
+              </Typography>
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+              <Public fontSize="small" color="secondary" />
+              <Typography variant="inherit" color="text.secondary">
+                Resolution: {item.resolution}
+              </Typography>
+            </Box>
           </Box>
-        </Grid>
+
+          <Button
+            variant="contained"
+            size="small"
+            startIcon={<ExitToApp />}
+            onClick={() => onClick(item)}
+            sx={{ flexShrink: 0, mt: 0.5 }}
+          >
+            Go to dataset
+          </Button>
+        </Box>
       </Grid>
+    </Grid>
   </ListItem>
 );
 
