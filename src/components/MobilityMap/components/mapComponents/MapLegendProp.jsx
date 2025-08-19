@@ -44,26 +44,39 @@ const LegendItem = ({ title, gradient, labels }) => (
 );
 
 const MapLegendProp = ({ visibleLayers }) => {
+  // Extract active legends based on visible layers...
   const activeLegends = useMemo(() => {
     const legendKeys = new Set();
-    const allParentLayers = layerConfig.flatMap((theme) => theme.layers);
+    const visibleLayerIds = new Set(visibleLayers.map((l) => l.id));
 
-    visibleLayers.forEach((visibleLayer) => {
-      const parent = allParentLayers.find((p) =>
-        p.children?.some((c) => c.id === visibleLayer.id)
-      );
-      if (parent?.legend) {
-        legendKeys.add(parent.legend);
-      }
+    layerConfig.forEach((theme) => {
+      theme.layers.forEach((parentLayer) => {
+        const processParent = (parent) => {
+          if (
+            parent.legend &&
+            parent.children?.some((child) => visibleLayerIds.has(child.id))
+          ) {
+            legendKeys.add(parent.legend);
+          }
+        };
+
+        if (parentLayer.isGroup) {
+          parentLayer.children.forEach(processParent);
+        } else {
+          processParent(parentLayer);
+        }
+      });
     });
 
     return Array.from(legendKeys);
   }, [visibleLayers]);
 
+  // If no active legends, return null
   if (activeLegends.length === 0) {
     return null;
   }
 
+  // Render the legends based on activeLegends
   return (
     <Box
       sx={{
@@ -74,7 +87,7 @@ const MapLegendProp = ({ visibleLayers }) => {
         zIndex: 1,
         display: "flex",
         flexDirection: "row",
-        gap: 1, // space multiple legends.
+        gap: 1,
       }}
     >
       {activeLegends.map((key) => {

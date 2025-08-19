@@ -16,15 +16,17 @@ const InteractiveMapMain = () => {
     );
   };
 
-  const panelWidth = 200;
+  const panelWidth = 225;
 
   return (
     <Box>
       <Paper
         elevation={2}
-        sx={{ height: "100vh",
+        sx={{ 
+          height: "90vh", // Fills 80% of the viewport height (mobile-friendly)
           position: "relative", 
-          overflow: "hidden" }}
+          overflow: "hidden",
+        }}
       >
         <Box sx={{ height: "100%", width: "100%" }}>
           <BigMap visibleLayers={visibleLayers} />
@@ -34,8 +36,9 @@ const InteractiveMapMain = () => {
           sx={{
             position: "absolute",
             top: 0,
-            left: 0,
-            height: "100%",
+            left: 5,
+            zIndex: 2,
+            height: "80%",
             display: "flex",
             alignItems: "center",
             transform: isPanelOpen

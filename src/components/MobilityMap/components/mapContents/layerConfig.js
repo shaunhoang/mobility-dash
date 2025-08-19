@@ -209,7 +209,7 @@ export const layerConfig = [
   },
   // --- base, shown as checkboxes ---
   {
-    theme: "Administrative",
+    theme: "Context",
     layers: [
       {
         id: "group-wards",
@@ -329,42 +329,12 @@ export const layerConfig = [
 
   // --- dropdown ---
   {
-    theme: "Socioeconomic",
+    theme: "",
     controlType: "dropdown",
     layers: [
       {
-        id: "parent-pop-density",
-        name: "Population Density",
-        infobox: "",
-        legend: "popDensity",
-        children: [
-          {
-            id: "pop-density-km2",
-            file: "data/mapMain/jaipur_eai.geojson",
-            defaultChecked: false,
-            tooltipProperties: [
-              { label: "Score: ", property: "pop_density_km2" },
-            ],
-            type: "fill",
-            paint: {
-              "fill-color": [
-                "interpolate",
-                ["linear"],
-                ["get", "pop_density_km2"],
-                0,
-                "#ffecec",
-                60000,
-                "#550103",
-              ],
-              "fill-opacity": 0.5,
-              "fill-outline-color": "transparent",
-            },
-          },
-        ],
-      },
-      {
         id: "parent-eai",
-        name: "Econ Activity Index",
+        name: "Econ Activity Index (EAI)",
         infobox:
           "EAI is derived from various indivators, including population, night light intensity, amenity density, and more. It is a measure of economic activity in the area.",
         legend: "eai",
@@ -387,7 +357,118 @@ export const layerConfig = [
                 1,
                 "#c30003",
               ],
-              "fill-opacity": 0.5,
+              "fill-opacity": 0.75,
+              "fill-outline-color": "transparent",
+            },
+          },
+        ],
+      },
+      {
+        id: "parent-pop-density",
+        name: "Population Density",
+        infobox: "",
+        legend: "popDensity",
+        children: [
+          {
+            id: "pop-density-km2",
+            file: "data/mapMain/jaipur_eai.geojson",
+            defaultChecked: false,
+            tooltipProperties: [{ label: "Pop: ", property: "pop_sum" }],
+            type: "fill",
+            paint: {
+              "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "pop_sum"],
+                0,
+                "#ffecec",
+                20000,
+                "#550103",
+              ],
+              "fill-opacity": 0.75,
+              "fill-outline-color": "transparent",
+            },
+          },
+        ],
+      },
+      {
+        id: "parent-eai-amenities",
+        name: "Amenities density index",
+        infobox: "",
+        legend: "eai_component_01",
+        children: [
+          {
+            id: "eai-amenities",
+            file: "data/mapMain/jaipur_eai.geojson",
+            defaultChecked: false,
+            tooltipProperties: [{ property: "amenities_poi" }],
+            type: "fill",
+            paint: {
+              "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "amenities_poi"],
+                0,
+                "#ffffff",
+                0.5,
+                "#808080",
+              ],
+              "fill-opacity": 0.75,
+              "fill-outline-color": "transparent",
+            },
+          },
+        ],
+      },
+            {
+        id: "parent-eai-office",
+        name: "Office density index",
+        infobox: "",
+        legend: "eai_component_01",
+        children: [
+          {
+            id: "eai-amenities",
+            file: "data/mapMain/jaipur_eai.geojson",
+            defaultChecked: false,
+            tooltipProperties: [{ property: "office_poi" }],
+            type: "fill",
+            paint: {
+              "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "office_poi"],
+                0,
+                "#ffffff",
+                0.5,
+                "#808080",
+              ],
+              "fill-opacity": 0.75,
+              "fill-outline-color": "transparent",
+            },
+          },
+        ],
+      },      {
+        id: "parent-eai-shop",
+        name: "Shop density index",
+        infobox: "",
+        legend: "eai_component_01",
+        children: [
+          {
+            id: "eai-shop",
+            file: "data/mapMain/jaipur_eai.geojson",
+            defaultChecked: false,
+            tooltipProperties: [{ property: "shop_poi" }],
+            type: "fill",
+            paint: {
+              "fill-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "shop_poi"],
+                0,
+                "#ffffff",
+                0.5,
+                "#808080",
+              ],
+              "fill-opacity": 0.75,
               "fill-outline-color": "transparent",
             },
           },

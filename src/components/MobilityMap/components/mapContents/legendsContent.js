@@ -10,8 +10,13 @@ export const legendsContent = {
     labels: ["-1 (Low)", "0", "1 (High)"],
   },
   popDensity: {
-    title: "Population Density (per km²)",
-    gradient: "linear-gradient(to right, #ffecec, #550103)",
-    labels: ["0", "60k"],
+    title: "Population (per cell)",
+    gradient: "linear-gradient(to right, #ffecec, #850002)",
+    labels: ["0", "20k"],
+  },
+  eai_component_01: {
+    title: "Density Index",
+    gradient: "linear-gradient(to right, #ffffff, #000000)",
+    labels: ["0 (Low)", "1 (High)"],
   },
 };

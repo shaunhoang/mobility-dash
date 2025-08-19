@@ -12,6 +12,8 @@ import {
   Select,
   Tooltip,
   Typography,
+  InputLabel,
+  Input,
 } from "@mui/material";
 import { layerConfig } from "./mapContents/layerConfig";
 import { useLayerControl } from "./mapHooks/useLayerControl";
@@ -123,9 +125,13 @@ const DropdownGroup = ({ theme, selection, onChange }) => {
   return (
     <>
       <FormControl fullWidth size="small" sx={{ mt: 2 }}>
+        <InputLabel>
+          Socioeconomic Context
+        </InputLabel>
         <Select
           value={selection}
           onChange={(e) => onChange(e, theme)}
+          label="Socioeconomic Context"
           sx={{
             "& .MuiSelect-select": {
               py: 0.75,
@@ -172,7 +178,7 @@ const LayerControl = ({ onLayerToggle }) => {
   return (
     <Box>
       {layerConfig.map((theme) => (
-        <Box key={theme.theme} sx={{ mb: 2 }}>
+        <Box key={theme.theme} sx={{ mb: 1 }}>
           <Typography
             variant="subtitle1"
             sx={{ fontWeight: "bold", color: "secondary.main" }}
