@@ -209,7 +209,7 @@ export const layerConfig = [
   },
   // --- base, shown as checkboxes ---
   {
-    theme: "Context",
+    theme: "Administrative",
     layers: [
       {
         id: "group-wards",
@@ -329,7 +329,7 @@ export const layerConfig = [
 
   // --- dropdown ---
   {
-    theme: "",
+    theme: "Economic Activity",
     controlType: "dropdown",
     layers: [
       {
@@ -365,7 +365,7 @@ export const layerConfig = [
       },
       {
         id: "parent-pop-density",
-        name: "Population Density",
+        name: "--Population Density",
         infobox: "",
         legend: "popDensity",
         children: [
@@ -393,7 +393,7 @@ export const layerConfig = [
       },
       {
         id: "parent-eai-amenities",
-        name: "Amenities density index",
+        name: "--Amenities density index",
         infobox: "",
         legend: "eai_component_01",
         children: [
@@ -421,7 +421,7 @@ export const layerConfig = [
       },
             {
         id: "parent-eai-office",
-        name: "Office density index",
+        name: "--Office density index",
         infobox: "",
         legend: "eai_component_01",
         children: [
@@ -448,7 +448,7 @@ export const layerConfig = [
         ],
       },      {
         id: "parent-eai-shop",
-        name: "Shop density index",
+        name: "--Shop density index",
         infobox: "",
         legend: "eai_component_01",
         children: [

@@ -6,7 +6,7 @@ import { useState } from "react";
 import BigMap from "./components/BigMap";
 import LayerControl from "./components/LayerControl";
 
-const InteractiveMapMain = () => {
+const MobilityMap = () => {
   const [visibleLayers, setVisibleLayers] = useState([]);
   const [isPanelOpen, setIsPanelOpen] = useState(true);
 
@@ -21,10 +21,10 @@ const InteractiveMapMain = () => {
   return (
     <Box>
       <Paper
-        elevation={2}
-        sx={{ 
+        elevation={1}
+        sx={{
           height: "90vh", // Fills 80% of the viewport height (mobile-friendly)
-          position: "relative", 
+          position: "relative",
           overflow: "hidden",
         }}
       >
@@ -35,27 +35,27 @@ const InteractiveMapMain = () => {
         <Box
           sx={{
             position: "absolute",
-            top: 0,
-            left: 5,
+            top: "50%", 
+            left: 0,
             zIndex: 2,
             height: "80%",
             display: "flex",
             alignItems: "center",
-            transform: isPanelOpen
-              ? "translateX(0)"
-              : `translateX(-${panelWidth}px)`,
+            transform: `translateX(${
+              isPanelOpen ? 0 : `-${panelWidth}px`
+            }) translateY(-50%)`,
             transition: "transform 300ms ease-in-out",
           }}
         >
           <Paper
-            elevation={3}
+            elevation={2}
             sx={{
               width: panelWidth,
               height: "100%",
               p: 2,
               mr: 1,
               overflowY: "auto",
-              borderRadius: 0,
+              borderRadius: 1,
             }}
           >
             <LayerControl onLayerToggle={handleLayerToggle} />
@@ -81,4 +81,4 @@ const InteractiveMapMain = () => {
   );
 };
 
-export default InteractiveMapMain;
+export default MobilityMap;

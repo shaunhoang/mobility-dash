@@ -126,12 +126,12 @@ const DropdownGroup = ({ theme, selection, onChange }) => {
     <>
       <FormControl fullWidth size="small" sx={{ mt: 2 }}>
         <InputLabel>
-          Socioeconomic Context
+          Select a layer
         </InputLabel>
         <Select
           value={selection}
           onChange={(e) => onChange(e, theme)}
-          label="Socioeconomic Context"
+          label="Select a layer"
           sx={{
             "& .MuiSelect-select": {
               py: 0.75,
