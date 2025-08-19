@@ -1,3 +1,4 @@
+import NavigationIcon from "@mui/icons-material/Navigation";
 import {
   Box,
   IconButton,
@@ -5,18 +6,52 @@ import {
   ToggleButton,
   ToggleButtonGroup,
 } from "@mui/material";
+import React from "react";
 
-const NorthArrow = () => (
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z" fill="#333" />
-  </svg>
+const BaseLayerSwitcher = React.memo(
+  ({ mapStyle, onStyleChange, baseLayers }) => (
+    <Paper elevation={3} sx={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}>
+      <ToggleButtonGroup
+        value={mapStyle}
+        exclusive
+        onChange={onStyleChange}
+        aria-label="map style"
+        size="small"
+      >
+        {baseLayers.map((layer) => (
+          <ToggleButton
+            key={layer.value}
+            value={layer.value}
+            aria-label={layer.label}
+            sx={{ width: 80 }}
+          >
+            {layer.label}
+          </ToggleButton>
+        ))}
+      </ToggleButtonGroup>
+    </Paper>
+  )
 );
+
+const NorthArrow = React.memo(({ onResetNorth, bearing }) => (
+  <Paper
+    elevation={3}
+    sx={{
+      borderRadius: "50%",
+    }}
+  >
+    <IconButton
+      onClick={onResetNorth}
+      aria-label="reset north"
+      sx={{
+        transform: `rotate(${bearing}deg)`,
+        transition: "transform 0.2s ease-in-out",
+      }}
+    >
+      <NavigationIcon />
+    </IconButton>
+  </Paper>
+));
 
 const MapControls = ({
   mapStyle,
@@ -35,48 +70,17 @@ const MapControls = ({
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-end",
+        gap: 1,
       }}
     >
-      <Paper elevation={3} sx={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}>
-        <ToggleButtonGroup
-          value={mapStyle}
-          exclusive
-          onChange={onStyleChange}
-          aria-label="map style"
-          size="small"
-        >
-          {baseLayers.map((layer) => (
-            <ToggleButton
-              key={layer.value}
-              value={layer.value}
-              aria-label={layer.label}
-              sx={{ width: 80 }}
-            >
-              {layer.label}
-            </ToggleButton>
-          ))}
-        </ToggleButtonGroup>
-      </Paper>
-      <Paper
-        elevation={3}
-        sx={{
-          mt: 1,
-          borderRadius: "50%",
-        }}
-      >
-        <IconButton
-          onClick={onResetNorth}
-          aria-label="reset north"
-          sx={{
-            transform: `rotate(${bearing}deg)`,
-            transition: "transform 0.2s ease-in-out",
-          }}
-        >
-          <NorthArrow />
-        </IconButton>
-      </Paper>
+      <BaseLayerSwitcher
+        mapStyle={mapStyle}
+        onStyleChange={onStyleChange}
+        baseLayers={baseLayers}
+      />
+      <NorthArrow onResetNorth={onResetNorth} bearing={bearing} />
     </Box>
   );
 };
 
-export default MapControls;
+export default React.memo(MapControls);

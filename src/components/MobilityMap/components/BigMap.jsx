@@ -1,16 +1,13 @@
-import { Box } from "@mui/material";
+import { Box, CircularProgress } from "@mui/material";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { useCallback, useRef, useState } from "react";
-import { Layer, Source, default as MapGL } from "react-map-gl/mapbox";
-import {
-  flattenLayers,
-  getLayerLayoutStyle,
-  getLayerPaintStyle,
-  layerConfig,
-} from "./mapComponents/layerConfig";
+import { default as MapGL } from "react-map-gl/mapbox";
+
 import MapControls from "./mapComponents/MapControls";
-import MapUI from "./mapComponents/MapUI";
-import { useMapLogic } from "./mapComponents/MapLogic";
+import MapLayers from "./mapComponents/MapLayers";
+import MapLegendProp from "./mapComponents/MapLegendProp";
+import { flattenLayers, layerConfig } from "./mapContents/layerConfig";
+import useMapLogic from "./mapHooks/useMapLogic";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 
@@ -18,6 +15,23 @@ const baseLayers = [
   { label: "Light", value: "mapbox://styles/mapbox/light-v11" },
   { label: "Dark", value: "mapbox://styles/mapbox/dark-v11" },
 ];
+
+const LoadingSpinner = ({ isFetching }) => {
+  if (!isFetching) return null;
+  return (
+    <Box
+      sx={{
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        zIndex: 10,
+      }}
+    >
+      <CircularProgress />
+    </Box>
+  );
+};
 
 const BigMap = ({ visibleLayers }) => {
   const mapRef = useRef(null);
@@ -56,6 +70,8 @@ const BigMap = ({ visibleLayers }) => {
 
   return (
     <Box sx={{ height: "100%", width: "100%", position: "relative" }}>
+      {/* Load map */}
+      <LoadingSpinner isFetching={isFetching} />
       <MapGL
         ref={mapRef}
         {...viewport}
@@ -68,46 +84,19 @@ const BigMap = ({ visibleLayers }) => {
         style={{ width: "100%", height: "100%" }}
         mapStyle={mapStyle}
         mapboxAccessToken={MAPBOX_TOKEN}
-        interactiveLayerIds={flattenLayers(layerConfig).map(
-          (l) => `${l.id}-layer`
-        )}
+        interactiveLayerIds={flattenLayers(layerConfig).map((l) => l.id)}
         cursor="pointer"
       >
-        {/* Map Layers */}
-        {visibleLayers.map((layer) => {
-          const data = geoJsonData[layer.file];
-          if (!data) return null;
-          return (
-            <Source
-              key={layer.id}
-              id={layer.id}
-              type="geojson"
-              data={data}
-              generateId={layer.id === "bus-routes"}
-            >
-              <Layer
-                id={`${layer.id}-layer`}
-                type={layer.type}
-                paint={getLayerPaintStyle(layer)}
-                layout={getLayerLayoutStyle(layer)}
-              />
-            </Source>
-          );
-        })}
-        {popupInfo && (
-          <Popup
-            longitude={popupInfo.longitude}
-            latitude={popupInfo.latitude}
-            onClose={() => setPopupInfo(null)}
-            closeOnClick={false}
-            anchor="bottom"
-          >
-            {popupInfo.content}
-          </Popup>
-        )}
+        {/* Draw layers + popup */}
+        <MapLayers
+          visibleLayers={visibleLayers}
+          geoJsonData={geoJsonData}
+          popupInfo={popupInfo}
+          onClosePopup={() => setPopupInfo(null)}
+        />
       </MapGL>
 
-      {/* UI Overlays */}
+      {/* Map controls and UI */}
       <MapControls
         mapStyle={mapStyle}
         onStyleChange={(e, newStyle) => newStyle && setMapStyle(newStyle)}
@@ -115,7 +104,7 @@ const BigMap = ({ visibleLayers }) => {
         onResetNorth={handleResetNorth}
         baseLayers={baseLayers}
       />
-      <MapUI isFetching={isFetching} visibleLayers={visibleLayers} />
+      <MapLegendProp visibleLayers={visibleLayers} />
     </Box>
   );
 };

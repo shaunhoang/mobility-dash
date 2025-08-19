@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useState } from "react";
-import { flattenLayers, layerConfig } from "./layerConfig";
+import { flattenLayers, layerConfig } from "../mapContents/layerConfig";
 
-export const useMapLogic = (visibleLayers, mapRef) => {
+const useMapLogic = (visibleLayers, mapRef) => {
   const [geoJsonData, setGeoJsonData] = useState({});
   const [isFetching, setIsFetching] = useState(false);
   const [popupInfo, setPopupInfo] = useState(null);
   const [selectedRouteId, setSelectedRouteId] = useState(null);
+  const [error, setError] = useState(null);
 
+  // Fetch GeoJSON data for all visible layers
   useEffect(() => {
     const fetchDataForVisibleLayers = async () => {
       const newLayersToFetch = visibleLayers.filter(
@@ -15,10 +17,16 @@ export const useMapLogic = (visibleLayers, mapRef) => {
       if (newLayersToFetch.length === 0) return;
 
       setIsFetching(true);
+      setError(null); // Reset error state on new fetch
       try {
         const promises = newLayersToFetch.map((layer) =>
           fetch(layer.file)
-            .then((res) => res.json())
+            .then((res) => {
+              if (!res.ok) {
+                throw new Error(`Failed to fetch ${layer.file}`);
+              }
+              return res.json();
+            })
             .then((data) => ({ file: layer.file, data }))
         );
         const results = await Promise.all(promises);
@@ -27,8 +35,9 @@ export const useMapLogic = (visibleLayers, mapRef) => {
           return acc;
         }, {});
         setGeoJsonData((prev) => ({ ...prev, ...newDataMap }));
-      } catch (error) {
-        console.error("Error fetching GeoJSON data:", error);
+      } catch (err) {
+        console.error("Error fetching GeoJSON data:", err);
+        setError("Could not load map data. Please try again later.");
       } finally {
         setIsFetching(false);
       }
@@ -36,6 +45,7 @@ export const useMapLogic = (visibleLayers, mapRef) => {
     fetchDataForVisibleLayers();
   }, [visibleLayers, geoJsonData]);
 
+  // Load icons for all layers
   const loadMapIcons = useCallback((map) => {
     if (!map) return;
     const allLayers = flattenLayers(layerConfig);
@@ -59,11 +69,13 @@ export const useMapLogic = (visibleLayers, mapRef) => {
           });
         })
     );
-    Promise.all(iconLoadPromises).catch((error) =>
-      console.error("An error occurred while loading icons.", error)
-    );
+    Promise.all(iconLoadPromises).catch((err) => {
+      console.error("An error occurred while loading icons.", err);
+      setError("Could not load map icons.");
+    });
   }, []);
 
+  // Handle style data event to load icons only when the map style is ready
   useEffect(() => {
     const map = mapRef.current?.getMap();
     if (!map) return;
@@ -77,58 +89,49 @@ export const useMapLogic = (visibleLayers, mapRef) => {
     return () => map.off("styledata", handleStyleData);
   }, [loadMapIcons, mapRef]);
 
+  // Handle map click to show popup and highlight bus routes
   const handleMapClick = useCallback(
     (event) => {
       const map = mapRef.current?.getMap();
-      if (!map) return;
+      if (!map || !event.features) return;
+
       const feature = event.features?.[0];
 
-      if (selectedRouteId !== null) {
+      // Always deselect the previous route first
+      if (selectedRouteId !== null && map.getSource("bus-routes")) {
         map.setFeatureState(
           { source: "bus-routes", id: selectedRouteId },
           { selected: false }
         );
+        setSelectedRouteId(null);
       }
 
-      if (feature && feature.layer.id === "bus-routes-layer") {
+      if (!feature) {
+        setPopupInfo(null);
+        return;
+      }
+
+      // Handle bus route selection
+      if (feature.layer.id === "bus-routes") {
         const newSelectedRouteId = feature.id;
         map.setFeatureState(
           { source: "bus-routes", id: newSelectedRouteId },
           { selected: true }
         );
         setSelectedRouteId(newSelectedRouteId);
-      } else {
-        setSelectedRouteId(null);
       }
 
-      if (feature) {
-        const allLayers = flattenLayers(layerConfig);
-        const clickedLayer = allLayers.find(
-          (l) => `${l.id}-layer` === feature.layer.id
-        );
-        if (clickedLayer?.tooltipProperties) {
-          const content = (
-            <Box sx={{ p: 0.5 }}>
-              {clickedLayer.tooltipProperties.map(
-                ({ label, property, prefix = "", suffix = "" }) => (
-                  <div key={property}>
-                    <strong>{label}</strong>
-                    {prefix}
-                    {feature.properties[property] || "N/A"}
-                    {suffix}
-                  </div>
-                )
-              )}
-            </Box>
-          );
-          setPopupInfo({
-            longitude: event.lngLat.lng,
-            latitude: event.lngLat.lat,
-            content,
-          });
-        } else {
-          setPopupInfo(null);
-        }
+      // Handle popup creation
+      const allLayers = flattenLayers(layerConfig);
+      const clickedLayer = allLayers.find((l) => l.id === feature.layer.id);
+
+      if (clickedLayer?.tooltipProperties) {
+        setPopupInfo({
+          longitude: event.lngLat.lng,
+          latitude: event.lngLat.lat,
+          layer: clickedLayer,
+          feature: feature,
+        });
       } else {
         setPopupInfo(null);
       }
@@ -143,5 +146,8 @@ export const useMapLogic = (visibleLayers, mapRef) => {
     setPopupInfo,
     loadMapIcons,
     handleMapClick,
+    error,
   };
 };
+
+export default useMapLogic;

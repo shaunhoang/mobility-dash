@@ -229,7 +229,7 @@ export const layerConfig = [
                   { label: "Ward: ", property: "ward_id" },
                   { label: "Assembly: ", property: "assembly" },
                   { label: "Population: ", property: "pop", prefix: "" },
-                  { label: "Density: ", property: "dens_pph", suffix: " /ha" },
+                  { label: "Density: ", property: "dens_pph", suffix: " per ha" },
                 ],
                 type: "fill",
                 paint: {
