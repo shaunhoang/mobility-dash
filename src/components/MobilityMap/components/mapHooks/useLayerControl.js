@@ -28,16 +28,14 @@ export const useLayerControl = (onLayerToggle) => {
       const dropdowns = {};
       const open = {};
 
+      // A recursive helper function to process layers
       const processLayer = (layer) => {
-        // Check the layer itself for defaultChecked status.
         if (layer.defaultChecked) {
           checked[layer.id] = true;
         }
-        // If the layer is a group, set it to be open by default.
         if (layer.isGroup) {
           open[layer.id] = true;
         }
-        // If the layer has children, process them recursively.
         if (layer.children) {
           layer.children.forEach(processLayer);
         }
@@ -77,6 +75,23 @@ export const useLayerControl = (onLayerToggle) => {
     });
     setCheckedState((prev) => ({ ...prev, ...childUpdates }));
   };
+  
+  const handleGroupChange = (groupLayer, isChecked) => {
+    const childUpdates = {};
+    groupLayer.children.forEach((subParent) => {
+      if (subParent.children) {
+        subParent.children.forEach((child) => {
+          childUpdates[child.id] = isChecked;
+          onLayerToggle(child, isChecked);
+        });
+      }
+    });
+    setCheckedState((prev) => ({ ...prev, ...childUpdates }));
+  };
+
+  const handleGroupToggle = (groupId) => {
+    setOpenGroups((prev) => ({ ...prev, [groupId]: !prev[groupId] }));
+  };
 
   const handleDropdownChange = (event, theme) => {
     const newSelectedParentId = event.target.value;
@@ -107,6 +122,8 @@ export const useLayerControl = (onLayerToggle) => {
     openGroups,
     dropdownSelection,
     handleParentChange,
+    handleGroupChange, 
+    handleGroupToggle, 
     handleDropdownChange,
   };
 };
