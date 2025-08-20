@@ -13,66 +13,40 @@ import { useEffect, useState } from "react";
 import pathConfig from "../../assets/pathConfig";
 import HighlightsDrawer from "./components/HighlightsDrawer";
 
-const teamMembers = [
-  {
-    name: "Jane Done",
-    role: "Project Lead",
-    affiliation: "MNIT, Jaipur (India)",
-    avatarUrl: "https://i.pravatar.cc/A",
-  },
-  {
-    name: "Sherlock Holmes",
-    role: "Lead Developer",
-    affiliation: "UCL, London (UK)",
-    avatarUrl: "https://i.pravatar.cc/B",
-  },
-  {
-    name: "Charlie Brown",
-    role: "UX/UI Designer",
-    affiliation: "UCL, London (UK)",
-    avatarUrl: "https://i.pravatar.cc/C",
-  },
-  {
-    name: "Diana Edinburgh",
-    role: "Data Scientist",
-    affiliation: "Dept of Transportation (UK)",
-    avatarUrl: "https://i.pravatar.cc/D",
-  },
-    {
-    name: "Eddie Murphy",
-    role: "Community Manager",
-    affiliation: "MNIT, Jaipur (India)",
-    avatarUrl: "https://i.pravatar.cc/E",
-  },
-];
-
 const Highlights = () => {
   const [highlightCards, setHighlightCards] = useState([]);
+  const [aboutData, setAboutData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
 
   useEffect(() => {
-    fetch(pathConfig.HIGHLIGHTS_PATH)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
+    Promise.all([
+      fetch(pathConfig.HIGHLIGHTS_PATH),
+      fetch(pathConfig.ABOUT_PATH),
+    ])
+      .then(async ([highlightsResponse, aboutResponse]) => {
+        if (!highlightsResponse.ok || !aboutResponse.ok) {
+          throw new Error("Network response was not ok for one or more files.");
         }
-        return response.json();
+        const highlightsData = await highlightsResponse.json();
+        const aboutData = await aboutResponse.json();
+        return [highlightsData, aboutData];
       })
-      .then((data) => {
-        const formattedData = data.map((item) => ({
+      .then(([highlightsData, aboutData]) => {
+        const formattedHighlights = highlightsData.map((item) => ({
           ...item,
           name: item.title,
           image_url: item.image,
         }));
-        setHighlightCards(formattedData);
+        setHighlightCards(formattedHighlights);
+        setAboutData(aboutData);
         setIsLoading(false);
       })
       .catch((fetchError) => {
-        console.error("Failed to fetch highlights data:", fetchError);
-        setError("Could not load highlights. Please try again later.");
+        console.error("Failed to fetch page data:", fetchError);
+        setError("Could not load page content. Please try again later.");
         setIsLoading(false);
       });
   }, []);
@@ -170,7 +144,7 @@ const Highlights = () => {
           <Typography variant="h5" gutterBottom sx={{ color: "primary.dark" }}>
             Project Team
           </Typography>
-          {teamMembers.map((member, index) => (
+          {aboutData.map((member, index) => (
             <Box
               key={index}
               sx={{ display: "flex", alignItems: "center", my: 2 }}

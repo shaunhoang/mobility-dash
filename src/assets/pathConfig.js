@@ -10,6 +10,7 @@ const pathConfig = {
   DATA_CATALOGUE_PATH: `${BASE_URL}datacatalogue.json`,
   // Highlights
   HIGHLIGHTS_PATH: `${BASE_URL}highlightsData.json`,
+  ABOUT_PATH: `${BASE_URL}aboutData.json`,
 };
 
 export default pathConfig;

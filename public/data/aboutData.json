@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Jane Done",
+    "role": "Project Lead",
+    "affiliation": "MNIT, Jaipur (India)",
+    "avatarUrl": "https://i.pravatar.cc/A"
+  },
+  {
+    "name": "Sherlock Holmes",
+    "role": "Lead Developer",
+    "affiliation": "UCL, London (UK)",
+    "avatarUrl": "https://i.pravatar.cc/B"
+  },
+  {
+    "name": "Charlie Brown",
+    "role": "UX/UI Designer",
+    "affiliation": "UCL, London (UK)",
+    "avatarUrl": "https://i.pravatar.cc/C"
+  },
+  {
+    "name": "Diana Edinburgh",
+    "role": "Data Scientist",
+    "affiliation": "Dept of Transportation (UK)",
+    "avatarUrl": "https://i.pravatar.cc/D"
+  },
+  {
+    "name": "Eddie Murphy",
+    "role": "Community Manager",
+    "affiliation": "MNIT, Jaipur (India)",
+    "avatarUrl": "https://i.pravatar.cc/E"
+  }
+]

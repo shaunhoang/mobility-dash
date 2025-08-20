@@ -47,7 +47,7 @@ const MobilityKPIs = () => {
         setError("Could not load required data. Please try again later.");
         setIsLoading(false);
       });
-  }, []); // Run once
+  }, []); 
 
   // --- Color and Data Augmentation ---
   const domainColorMap = useMemo(
