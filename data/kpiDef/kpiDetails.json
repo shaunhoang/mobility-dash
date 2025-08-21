@@ -3,7 +3,7 @@
     "code": "A01",
     "title": "Public transport fleet supply",
     "description": "Measures the number of public transport vehicles relative to the population. A sufficient supply is crucial for reducing wait times, preventing overcrowding, and ensuring the system can meet public demand.",
-    "stat": "2000",
+    "stat": "200",
     "unit": "buses/1M",
     "target": "2000 buses per 1 million people"
   },
