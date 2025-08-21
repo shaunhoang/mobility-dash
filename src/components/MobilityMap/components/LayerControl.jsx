@@ -15,7 +15,7 @@ import {
   InputLabel,
   Input,
 } from "@mui/material";
-import { layerConfig } from "./mapContents/layerConfig";
+import { layerConfig } from "../../../config/map/mainLayerConfig";
 import { useLayerControl } from "./mapHooks/useLayerControl";
 
 const ParentLayerControl = ({ layer, checkedState, onParentChange }) => {

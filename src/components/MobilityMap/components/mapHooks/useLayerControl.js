@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { layerConfig } from "../mapContents/layerConfig";
+import { layerConfig } from "../../../../config/map/mainLayerConfig";
 
 const findLayerById = (id) => {
   for (const theme of layerConfig) {

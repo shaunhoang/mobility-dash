@@ -6,7 +6,7 @@ import { default as MapGL } from "react-map-gl/mapbox";
 import MapControls from "./mapComponents/MapControls";
 import MapLayers from "./mapComponents/MapLayers";
 import MapLegendProp from "./mapComponents/MapLegendProp";
-import { flattenLayers, layerConfig } from "./mapContents/layerConfig";
+import { flattenLayers, layerConfig } from "../../../config/map/mainLayerConfig";
 import useMapLogic from "./mapHooks/useMapLogic";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
@@ -104,7 +104,7 @@ const BigMap = ({ visibleLayers }) => {
         onResetNorth={handleResetNorth}
         baseLayers={baseLayers}
       />
-      <MapLegendProp visibleLayers={visibleLayers} />
+      {/* <MapLegendProp visibleLayers={visibleLayers} /> */}
     </Box>
   );
 };

@@ -10,8 +10,10 @@ import {
   Typography,
 } from "@mui/material";
 import { useEffect, useState } from "react";
-import pathConfig from "../../assets/pathConfig";
+
 import HighlightsDrawer from "./components/HighlightsDrawer";
+
+import pathConfig from "../../config/path/pathConfig";
 
 const Highlights = () => {
   const [highlightCards, setHighlightCards] = useState([]);

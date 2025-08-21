@@ -10,7 +10,8 @@ import { useEffect, useMemo, useState } from "react";
 import KpiDetailBox from "./components/KpiDetailBox";
 import InfoAreaRow from "./components/KpiRow";
 import VerticalTabs from "./components/VerticalTabs";
-import pathConfig from "../../assets/pathConfig";
+
+import pathConfig from "../../config/path/pathConfig";
 
 const MobilityKPIs = () => {
   const theme = useTheme();
@@ -134,7 +135,6 @@ const MobilityKPIs = () => {
       <Grid container spacing={2}>
         {/* Left Column for Tabs */}
         <Grid
-          item
           size={{ xs: 12, sm: 2 }}
           sx={{ display: "flex", flexDirection: "column", flexShrink: 0 }}
         >
@@ -147,7 +147,6 @@ const MobilityKPIs = () => {
 
         {/* Right Column */}
         <Grid
-          item
           size={{ xs: 12, sm: 10 }}
           sx={{ display: "flex", flexDirection: "column" }}
         >

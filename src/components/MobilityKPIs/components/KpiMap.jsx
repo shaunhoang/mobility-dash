@@ -1,14 +1,11 @@
-import {
-  Box,
-  IconButton, // Import IconButton
-  Paper,
-  ToggleButton,
-  ToggleButtonGroup,
-  Typography,
-} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import Map from "react-map-gl/mapbox";
+
+import MapControls from "../../MobilityMap/components/mapComponents/MapControls";
+import MapLayers from "../../MobilityMap/components/mapComponents/MapLayers";
+import { layerConfig } from "../../../config/map/kpiLayerConfig";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 
@@ -17,42 +14,81 @@ const baseLayers = [
   { label: "Dark", value: "mapbox://styles/mapbox/dark-v11" },
 ];
 
-// SVG for the compass needle
-const NorthArrow = () => (
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71L12 2z" fill="#333" />
-  </svg>
-);
-
-const WebMap = ({ kpi }) => {
-  const [mapStyle, setMapStyle] = useState(baseLayers[0].value);
+const KpiMap = ({ data: geojsonData, kpicode }) => {
   const mapRef = useRef(null);
+  const [mapStyle, setMapStyle] = useState(baseLayers[0].value);
   const [viewport, setViewport] = useState({
     longitude: 75.7873,
     latitude: 26.9124,
     zoom: 11,
-    bearing: 0, // Initialize bearing
-    pitch: 0, // Initialize pitch
+    bearing: 0,
+    pitch: 0,
   });
-
-  // --- STEP 1: Add state to track the map's bearing ---
   const [bearing, setBearing] = useState(0);
+  const [popupInfo, setPopupInfo] = useState(null);
 
-  const handleStyleChange = (event, newStyle) => {
+  const visibleLayers = useMemo(() => {
+    if (!geojsonData || !kpicode) {
+      return [];
+    }
+
+    const defaultConfig = {
+      id: "data-layer",
+      type: "fill",
+      file: "kpiData",
+      paint: {
+        "fill-color": "#d16363",
+        "fill-opacity": 0.5,
+        "fill-outline-color": "#000000",
+      },
+      tooltipProperties: [
+        {
+          label: "Value: ",
+          property: "kpi_value",
+        },
+      ],
+    };
+
+    const config = layerConfig[kpicode] || defaultConfig;
+
+    if (!layerConfig[kpicode]) {
+      console.log(
+        `No specific layer configuration for KPI code: ${kpicode}. Using default style.`
+      );
+    }
+    return [config];
+  }, [geojsonData, kpicode]);
+
+  const handleStyleChange = useCallback((event, newStyle) => {
     if (newStyle !== null) {
       setMapStyle(newStyle);
     }
-  };
+  }, []);
 
-  // --- STEP 2: Create a function to reset the map's bearing ---
   const handleResetNorth = useCallback(() => {
     mapRef.current?.easeTo({ bearing: 0, pitch: 0 });
+  }, []);
+
+  const handleMapClick = useCallback(
+    (event) => {
+      const clickedFeature = event.features && event.features[0];
+      if (clickedFeature) {
+        const layer = visibleLayers.find(
+          (l) => l.id === clickedFeature.layer.id
+        );
+        setPopupInfo({
+          longitude: event.lngLat.lng,
+          latitude: event.lngLat.lat,
+          feature: clickedFeature,
+          layer: layer,
+        });
+      }
+    },
+    [visibleLayers]
+  );
+
+  const handleClosePopup = useCallback(() => {
+    setPopupInfo(null);
   }, []);
 
   if (!MAPBOX_TOKEN) {
@@ -88,82 +124,29 @@ const WebMap = ({ kpi }) => {
           setViewport(evt.viewState);
           setBearing(evt.viewState.bearing);
         }}
-        style={{
-          width: "100%",
-          height: "100%",
-        }}
+        onClick={handleMapClick}
+        interactiveLayerIds={visibleLayers.map((l) => l.id)}
+        style={{ width: "100%", height: "100%" }}
         mapStyle={mapStyle}
         mapboxAccessToken={MAPBOX_TOKEN}
-      ></Map>
-
-      {/* Base Layer Switcher */}
-      <Paper
-        elevation={3}
-        sx={{
-          position: "absolute",
-          top: 10,
-          right: 10,
-          backgroundColor: "rgba(255, 255, 255, 0.9)",
-        }}
       >
-        <ToggleButtonGroup
-          value={mapStyle}
-          exclusive
-          onChange={handleStyleChange}
-          aria-label="map style"
-          size="small"
-        >
-          {baseLayers.map((layer) => (
-            <ToggleButton
-              key={layer.value}
-              value={layer.value}
-              aria-label={layer.label}
-              sx={{ width: 80 }}
-            >
-              {layer.label}
-            </ToggleButton>
-          ))}
-        </ToggleButtonGroup>
-      </Paper>
+        <MapLayers
+          visibleLayers={visibleLayers}
+          geoJsonData={{ kpiData: geojsonData }}
+          popupInfo={popupInfo}
+          onClosePopup={handleClosePopup}
+        />
+      </Map>
 
-      <Paper
-        elevation={3}
-        sx={{
-          position: "absolute",
-          top: 60,
-          right: 10,
-          borderRadius: "50%",
-        }}
-      >
-        <IconButton
-          onClick={handleResetNorth}
-          aria-label="reset north"
-          sx={{
-            transform: `rotate(${bearing}deg)`,
-            transition: "transform 0.2s ease-in-out",
-          }}
-        >
-          <NorthArrow />
-        </IconButton>
-      </Paper>
-
-      {kpi && (
-        <Box
-          sx={{
-            position: "absolute",
-            top: 10,
-            left: 10,
-            padding: 1,
-            backgroundColor: "yellow",
-            opacity: 0.5,
-            fontFamily: "monospace",
-          }}
-        >
-          <Typography variant="caption">Active KPI: {kpi.code}</Typography>
-        </Box>
-      )}
+      <MapControls
+        mapStyle={mapStyle}
+        onStyleChange={handleStyleChange}
+        bearing={bearing}
+        onResetNorth={handleResetNorth}
+        baseLayers={baseLayers}
+      />
     </Box>
   );
 };
 
-export default WebMap;
+export default KpiMap;

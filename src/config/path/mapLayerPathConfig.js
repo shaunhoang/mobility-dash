@@ -22,7 +22,7 @@ const GEOJSON_FILES = {
 export const getGeoJsonPath = (fileKey) => {
   const fileName = GEOJSON_FILES[fileKey];
   if (!fileName) {
-    console.warn(`[mapLayerPathConfig] GeoJSON file key not found: ${fileKey}`);
+    console.warn(`GeoJSON file key not found: ${fileKey}`);
     return "";
   }
   return `${GEOJSON_BASE_URL}${fileName}`;

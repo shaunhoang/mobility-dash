@@ -10,14 +10,15 @@ import {
   Typography,
 } from "@mui/material";
 import { useEffect, useState } from "react";
+import pathConfig from "../../../config/path/pathConfig";
 import KpiChart from "./KpiChart";
-import WebMap from "./KpiMap";
-import pathConfig from "../../../assets/pathConfig";
+import KpiMap from "./KpiMap";
 
 const KpiDetailBox = ({ kpi }) => {
   const [chartData, setChartData] = useState(null);
+  const [mapData, setMapData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [viewMode, setViewMode] = useState("chart");
+  const [viewMode, setViewMode] = useState(null);
   const [error, setError] = useState(null);
 
   const handleViewChange = (event, newView) => {
@@ -25,35 +26,51 @@ const KpiDetailBox = ({ kpi }) => {
       setViewMode(newView);
     }
   };
-  useEffect(() => {
-    if (kpi) {
-      setIsLoading(true);
-      setError(null);
-      setChartData(null);
 
-      // Fetch the JSON file
-      fetch(`${pathConfig.KPI_CHARTS_FOLDER_PATH}${kpi.code}.json`)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error("Cannot connect to the server");
+  useEffect(() => {
+    setChartData(null);
+    setMapData(null);
+    setError(null);
+    setViewMode(null);
+
+    if (kpi && kpi.code) {
+      setIsLoading(true);
+      const chartUrl = `${pathConfig.KPI_CHARTS_FOLDER_PATH}${kpi.code}.json`;
+      const mapUrl = `${pathConfig.KPI_MAPS_FOLDER_PATH}${kpi.code}.geojson`;
+
+      const safeFetch = (url, type) =>
+        fetch(url)
+          .then((res) => {
+            if (!res.ok) {
+              console.log(
+                `No such file for ${type}: ${kpi.code} (Status: ${res.status})`
+              );
+              return null;
+            }
+            return res.json();
+          })
+          .catch(() => {
+            return null;
+          });
+
+      Promise.all([safeFetch(chartUrl, "chart"), safeFetch(mapUrl, "map")])
+        .then(([chartResult, mapResult]) => {
+          setChartData(chartResult);
+          setMapData(mapResult);
+
+          if (mapResult) {
+            setViewMode("map");
+          } else if (chartResult) {
+            setViewMode("chart");
+          } else {
+            setError("No chart or map data available for this card");
           }
-          return response.json();
         })
-        .then((data) => {
-          setChartData(data);
-          setIsLoading(false);
-        })
-        .catch((fetchError) => {
-          console.error("Failed to fetch chart data:", fetchError);
-          setError("Failed to load chart data or no chart data available");
+        .finally(() => {
           setIsLoading(false);
         });
-    } else {
-      setChartData(null);
-      setError(null);
-      setIsLoading(false);
     }
-  }, [kpi]); // re-runs every time the selected KPI changes
+  }, [kpi]);
 
   if (!kpi) {
     return (
@@ -76,34 +93,36 @@ const KpiDetailBox = ({ kpi }) => {
     >
       <Grid
         container
-        spacing={5}
+        spacing={2}
         sx={{
           width: "100%",
-          display: "flex",
-          flexDirection: "row",
           alignItems: "flex-end",
-          flexWrap: "nowrap",
+          mb: 2,
         }}
       >
-        <Grid item>
-          {/* Toggle */}
-          <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-            <ToggleButtonGroup
-              value={viewMode}
-              exclusive
-              onChange={handleViewChange}
-              aria-label="view mode"
+        {/* Toggle Buttons */}
+        <Grid>
+          <ToggleButtonGroup
+            value={viewMode}
+            exclusive
+            onChange={handleViewChange}
+            aria-label="view mode"
+          >
+            <ToggleButton
+              value="chart"
+              aria-label="chart view"
+              disabled={!chartData}
             >
-              <ToggleButton value="chart" aria-label="chart view">
-                <BarChartIcon />
-              </ToggleButton>
-              <ToggleButton value="map" aria-label="map view">
-                <MapIcon />
-              </ToggleButton>
-            </ToggleButtonGroup>
-          </Box>
+              <BarChartIcon />
+            </ToggleButton>
+            <ToggleButton value="map" aria-label="map view" disabled={!mapData}>
+              <MapIcon />
+            </ToggleButton>
+          </ToggleButtonGroup>
         </Grid>
-        <Grid item size={10}>
+
+        {/* KPI Info */}
+        <Grid>
           <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1 }}>
             {kpi.title}
           </Typography>
@@ -137,34 +156,32 @@ const KpiDetailBox = ({ kpi }) => {
         </Grid>
       </Grid>
 
+      {/* Content Area */}
       <Box
         sx={{
           width: "100%",
+          minHeight: "300px",
           display: "flex",
-          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        {viewMode === "chart" ? (
-          <>
-            {isLoading && (
-              <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
-                <CircularProgress />
-              </Box>
-            )}
-            {error && (
-              <Typography color="error" sx={{ my: 2, textAlign: "center" }}>
-                {error}
-              </Typography>
-            )}
-            {chartData && <KpiChart data={chartData} />}
-            {!isLoading && !error && !chartData && (
-              <Typography sx={{ mt: 2 }} color="text.secondary">
-                No chart data available for this KPI.
-              </Typography>
-            )}
-          </>
+        {isLoading ? (
+          <CircularProgress />
+        ) : error ? (
+          <Typography color="error" sx={{ my: 2, textAlign: "center" }}>
+            {error}
+          </Typography>
+        ) : viewMode === "chart" ? (
+          <Box sx={{ width: "100%", height: "100%" }}>
+            <KpiChart data={chartData} />
+          </Box>
+        ) : viewMode === "map" ? (
+          <Box sx={{ width: "100%", height: "100%" }}>
+            <KpiMap data={mapData} kpicode={kpi.code}/>
+          </Box>
         ) : (
-          <WebMap kpi={kpi} />
+          <Typography color="text.secondary">Please select a view.</Typography>
         )}
       </Box>
     </Paper>

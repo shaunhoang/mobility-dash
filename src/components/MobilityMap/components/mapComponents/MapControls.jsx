@@ -10,7 +10,7 @@ import React from "react";
 
 const BaseLayerSwitcher = React.memo(
   ({ mapStyle, onStyleChange, baseLayers }) => (
-    <Paper elevation={3} sx={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}>
+    <Paper elevation={3}>
       <ToggleButtonGroup
         value={mapStyle}
         exclusive

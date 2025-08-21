@@ -1,7 +1,7 @@
 import { Box, Paper, Typography } from "@mui/material";
 import { useMemo } from "react";
-import { layerConfig } from "../mapContents/layerConfig";
-import { legendsContent } from "../mapContents/legendsContent";
+import { layerConfig } from "../../../../config/map/mainLayerConfig";
+import { legendsContent } from "../../../../config/map/legendsContent";
 
 const LegendItem = ({ title, gradient, labels }) => (
   <Paper elevation={2} sx={{ p: 1, backgroundColor: "rgba(255,255,255,0.9)" }}>

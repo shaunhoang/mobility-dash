@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { flattenLayers, layerConfig } from "../mapContents/layerConfig";
+import { flattenLayers, layerConfig } from "../../../../config/map/mainLayerConfig";
 
 const useMapLogic = (visibleLayers, mapRef) => {
   const [geoJsonData, setGeoJsonData] = useState({});

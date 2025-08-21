@@ -4,17 +4,18 @@ import {
   Divider,
   Grid,
   TablePagination,
-  Typography
+  Typography,
 } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 
-import pathConfig from "../../assets/pathConfig";
 import CatalogueList from "./components/CatalogueList";
 import DetailsDrawer from "./components/DetailsDrawer";
 import DownloadButton from "./components/DownloadButton";
 import FilterBar from "./components/FilterBar";
 import SearchBar from "./components/SearchBar";
 import ToggleFilterButton from "./components/ToggleFilterButton";
+
+import pathConfig from "../../config/path/pathConfig";
 
 const DataCatalogue = () => {
   const [datasets, setDatasets] = useState([]);
