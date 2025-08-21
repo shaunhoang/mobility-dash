@@ -82,7 +82,7 @@ const Highlights = () => {
             {!isLoading &&
               !error &&
               highlightCards.map((card) => (
-                <Grid item size={{ sm: 12, md: 4 }} key={card.name}>
+                <Grid size={{ sm: 12, md: 4 }} key={card.name}>
                   <Card
                     sx={{
                       height: "100%",
