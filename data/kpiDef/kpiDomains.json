@@ -2,12 +2,12 @@
   {
     "id": 1,
     "label": "Stronger Foundations",
-    "kpis": ["A01", "A03", "A04", "A05", "A07"]
+    "kpis": ["A01","A02","A03", "A04", "A05", "A07"]
   },
   {
     "id": 2,
     "label": "Smoother Journeys",
-    "kpis": ["A02", "A06", "A08", "A09", "A10"]
+    "kpis": [ "A06", "A08", "A09", "A10"]
   },
   {
     "id": 3,
