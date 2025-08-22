@@ -14,7 +14,6 @@ import DownloadButton from "./components/DownloadButton";
 import FilterBar from "./components/FilterBar";
 import SearchBar from "./components/SearchBar";
 import ToggleFilterButton from "./components/ToggleFilterButton";
-
 import pathConfig from "../../config/path/pathConfig";
 
 const DataCatalogue = () => {
@@ -53,7 +52,6 @@ const DataCatalogue = () => {
       });
   }, []);
 
-  // useMemo to compute filter options based on the fetched datasets
   const filterOptions = useMemo(() => {
     if (!datasets || datasets.length === 0) {
       return { formats: [], granularities: [], sectors: [], lastupdates: [] };
@@ -83,7 +81,6 @@ const DataCatalogue = () => {
     };
   }, [datasets]);
 
-  // Handlers for interactions
   const handleItemClick = (item) => {
     setSelectedDataset(item);
     setDrawerOpen(true);

@@ -13,10 +13,7 @@ import {
 } from "@mui/material";
 
 const FilterBar = ({ filters, onFilterChange, filterOptions }) => {
-  const { format, granularity, sector, lastupdate } = filters;
-  const { formats, granularities, sectors, lastupdates } = filterOptions;
-
-  // Handler for filter changes
+  // Handler for individual chip deletion
   const handleDelete = (filterName, valueToDelete) => () => {
     onFilterChange({
       ...filters,
@@ -25,178 +22,82 @@ const FilterBar = ({ filters, onFilterChange, filterOptions }) => {
       ),
     });
   };
+
+  // Handler for the main select input change
   const handleChange = (event) => {
     const { name, value } = event.target;
     onFilterChange({
       ...filters,
+      // The value from MUI's multiple select is an array
       [name]: typeof value === "string" ? value.split(",") : value,
     });
   };
 
+  // Handler for clearing all filters
   const handleClearAll = () => {
-    onFilterChange({
-      format: [],
-      granularity: [],
-      sector: [],
-      lastupdate: [],
-    });
+    const clearedFilters = Object.keys(filters).reduce((acc, key) => {
+      acc[key] = [];
+      return acc;
+    }, {});
+    onFilterChange(clearedFilters);
   };
+  
+  const filterConfigs = [
+    { name: 'sector', label: 'Sector', options: filterOptions.sectors },
+    { name: 'granularity', label: 'Granularity', options: filterOptions.granularities },
+    { name: 'lastupdate', label: 'Last Updated', options: filterOptions.lastupdates },
+    { name: 'format', label: 'Format', options: filterOptions.formats },
+  ];
+
+  const isClearAllDisabled = Object.values(filters).every(arr => arr.length === 0);
 
   return (
     <Box>
       <Grid container sx={{ display: "flex", mt: 2 }} spacing={2}>
-        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-          <FormControl fullWidth size="small">
-            <InputLabel id="sector-select-label">Sector</InputLabel>
-            <Select
-              labelId="sector-select-label"
-              id="sector-select"
-              name="sector"
-              value={sector}
-              label="Sector"
-              multiple
-              onChange={handleChange}
-              renderValue={(selected) => (
-                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.2 }}>
-                  {selected.map((value) => (
-                    <Chip
-                      key={value}
-                      label={value}
-                      size="small"
-                      onDelete={handleDelete("sector", value)}
-                      onMouseDown={(event) => event.stopPropagation()}
-                    />
-                  ))}
-                </Box>
-              )}
-            >
-              {sectors.map((option) => (
-                <MenuItem key={option} value={option}>
-                  <Checkbox checked={sector.includes(option)} />
-                  <ListItemText primary={option} />
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
-        </Grid>
-
-        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-          <FormControl fullWidth size="small">
-            <InputLabel id="granularity-select-label">Granularity</InputLabel>
-            <Select
-              labelId="granularity-select-label"
-              id="granularity-select"
-              name="granularity"
-              value={granularity}
-              label="Granularity"
-              multiple
-              onChange={handleChange}
-              renderValue={(selected) => (
-                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                  {selected.map((value) => (
-                    <Chip
-                      key={value}
-                      label={value}
-                      size="small"
-                      onDelete={handleDelete("granularity", value)}
-                      onMouseDown={(event) => event.stopPropagation()}
-                    />
-                  ))}
-                </Box>
-              )}
-            >
-              {granularities.map((option) => (
-                <MenuItem key={option} value={option}>
-                  <Checkbox checked={granularity.includes(option)} />
-                  <ListItemText primary={option} />
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
-        </Grid>
-
-        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-          <FormControl fullWidth size="small">
-            <InputLabel id="lastupdate-select-label">Last Updated</InputLabel>
-            <Select
-              labelId="lastupdate-select-label"
-              id="lastupdate-select"
-              name="lastupdate"
-              value={lastupdate}
-              label="Last Updated"
-              multiple
-              onChange={handleChange}
-              renderValue={(selected) => (
-                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.2 }}>
-                  {selected.map((value) => (
-                    <Chip
-                      key={value}
-                      label={value}
-                      size="small"
-                      onDelete={handleDelete("lastupdate", value)}
-                      onMouseDown={(event) => event.stopPropagation()}
-                    />
-                  ))}
-                </Box>
-              )}
-            >
-              {lastupdates.map((option) => (
-                <MenuItem key={option} value={option}>
-                  <Checkbox checked={lastupdate.includes(option)} />
-                  <ListItemText primary={option} />
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
-        </Grid>
-
-        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-          <FormControl fullWidth size="small">
-            <InputLabel id="format-select-label">Format</InputLabel>
-            <Select
-              labelId="format-select-label"
-              id="format-select"
-              name="format"
-              value={format}
-              label="Format"
-              multiple
-              onChange={handleChange}
-              renderValue={(selected) => (
-                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                  {selected.map((value) => (
-                    <Chip
-                      key={value}
-                      label={value}
-                      size="small"
-                      onDelete={handleDelete("format", value)}
-                      onMouseDown={(event) => event.stopPropagation()}
-                    />
-                  ))}
-                </Box>
-              )}
-            >
-              {formats.map((option) => (
-                <MenuItem key={option} value={option}>
-                  <Checkbox checked={format.includes(option)} />
-                  <ListItemText primary={option} />
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
-        </Grid>
-
+        {filterConfigs.map((config) => (
+          <Grid item size={{xs:12,sm:6,md:3}} key={config.name}>
+            <FormControl fullWidth size="small">
+              <InputLabel id={`${config.name}-select-label`}>{config.label}</InputLabel>
+              <Select
+                labelId={`${config.name}-select-label`}
+                id={`${config.name}-select`}
+                name={config.name}
+                value={filters[config.name]} 
+                label={config.label}
+                multiple
+                onChange={handleChange}
+                renderValue={(selected) => (
+                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+                    {selected.map((value) => (
+                      <Chip
+                        key={value}
+                        label={value}
+                        size="small"
+                        onDelete={handleDelete(config.name, value)}
+                        onMouseDown={(event) => event.stopPropagation()}
+                      />
+                    ))}
+                  </Box>
+                )}
+              >
+                {/* Map over the options for the current filter */}
+                {config.options.map((option) => (
+                  <MenuItem key={option} value={option}>
+                    <Checkbox checked={filters[config.name].includes(option)} />
+                    <ListItemText primary={option} />
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </Grid>
+        ))}
       </Grid>
-      <Box>
+      <Box sx={{mt: 2}}>
         <Button
           variant="text"
           onClick={handleClearAll}
           startIcon={<ClearAllIcon />}
-          disabled={
-            filters.format.length === 0 &&
-            filters.granularity.length === 0 &&
-            filters.sector.length === 0 &&
-            filters.lastupdate.length === 0
-          }
+          disabled={isClearAllDisabled}
         >
           Clear All
         </Button>
