@@ -48,9 +48,6 @@ const DetailsDrawer = ({ item, open, onClose }) => {
               mb: 2,
             }}
           >
-            {/* <Typography variant="h5" component="h2">
-              Metadata
-            </Typography> */}
             <IconButton onClick={onClose}>
               <Close />
             </IconButton>
@@ -58,45 +55,16 @@ const DetailsDrawer = ({ item, open, onClose }) => {
           <Divider sx={{ mb: 3 }} />
 
           <Box sx={{ flexGrow: 1, overflowY: "auto", mb: 2 }}>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="body1" color="text.secondary">
+              <span style={{ fontWeight: "bold" }}>Title: </span>
               {item.title}
             </Typography>
             <Typography variant="body1" color="text.secondary">
+              <span style={{ fontWeight: "bold" }}>Description: </span>
               {item.description}
             </Typography>
           </Box>
-
-          {/* <Box sx={{ display: "flex", flexDirection: "column", gap: 1, mb: 2 }}>
-            <Box>
-              <Chip icon={<Widgets />} label={item.sector} variant="filled" />
-            </Box>
-            <Box sx={{ display: "flex", gap: 1 }}>
-              <Chip
-                icon={<Description />}
-                label={item.format}
-                variant="filled"
-              />
-              <Chip
-                icon={<Public />}
-                label={item.granularity_spatial}
-                variant="filled"
-              />
-            </Box>
-          </Box>
-          <Box>
-            <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
-              Source: {item.provider || "N/A"}
-            </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
-              Reference: {item.reference || "N/A"}
-            </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-              Last Updated: {item.year_latest || "N/A"}
-            </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
-              Update Frequency: {item.frequency || "N/A"}
-            </Typography>
-          </Box> */}
+          
           <Box>
             <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
               Metadata

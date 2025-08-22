@@ -83,11 +83,10 @@ const KpiDetailBox = ({ kpi }) => {
   return (
     <Paper
       sx={{
-        p: 2,
+        p: 4,
         mt: 4,
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
         userSelect: "none",
       }}
     >
@@ -96,31 +95,11 @@ const KpiDetailBox = ({ kpi }) => {
         spacing={2}
         sx={{
           width: "100%",
-          alignItems: "flex-end",
           mb: 2,
+          display: "flex",
+          flexDirection: "column",
         }}
       >
-        {/* Toggle Buttons */}
-        <Grid>
-          <ToggleButtonGroup
-            value={viewMode}
-            exclusive
-            onChange={handleViewChange}
-            aria-label="view mode"
-          >
-            <ToggleButton
-              value="chart"
-              aria-label="chart view"
-              disabled={!chartData}
-            >
-              <BarChartIcon />
-            </ToggleButton>
-            <ToggleButton value="map" aria-label="map view" disabled={!mapData}>
-              <MapIcon />
-            </ToggleButton>
-          </ToggleButtonGroup>
-        </Grid>
-
         {/* KPI Info */}
         <Grid>
           <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1 }}>
@@ -142,7 +121,7 @@ const KpiDetailBox = ({ kpi }) => {
             >
               {"Target: "}
             </Box>
-            {kpi.target ? `${kpi.target} ${kpi.unit}` : "No target set"}
+            {kpi.target ? `${kpi.target}` : "No target set"}
           </Typography>
           <Typography variant="body1" color="text.secondary">
             <Box
@@ -154,6 +133,27 @@ const KpiDetailBox = ({ kpi }) => {
             {kpi.stat ? `${kpi.stat} ${kpi.unit}` : "No stats"}
           </Typography>
         </Grid>
+      </Grid>
+
+      {/* Toggle Buttons */}
+      <Grid>
+        <ToggleButtonGroup
+          value={viewMode}
+          exclusive
+          onChange={handleViewChange}
+          aria-label="view mode"
+        >
+          <ToggleButton
+            value="chart"
+            aria-label="chart view"
+            disabled={!chartData}
+          >
+            <BarChartIcon />
+          </ToggleButton>
+          <ToggleButton value="map" aria-label="map view" disabled={!mapData}>
+            <MapIcon />
+          </ToggleButton>
+        </ToggleButtonGroup>
       </Grid>
 
       {/* Content Area */}
@@ -178,7 +178,7 @@ const KpiDetailBox = ({ kpi }) => {
           </Box>
         ) : viewMode === "map" ? (
           <Box sx={{ width: "100%", height: "100%" }}>
-            <KpiMap data={mapData} kpicode={kpi.code}/>
+            <KpiMap data={mapData} kpicode={kpi.code} />
           </Box>
         ) : (
           <Typography color="text.secondary">Please select a view.</Typography>

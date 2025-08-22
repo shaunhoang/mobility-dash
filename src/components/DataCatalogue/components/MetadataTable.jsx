@@ -18,6 +18,7 @@ const MetadataTable = ({ item }) => {
     "description",
     "url",
     "url_download",
+    "lastupdate",
   ];
   const displayAttributes = Object.keys(item).filter(
     (key) => !excludedAttributes.includes(key)
@@ -29,21 +30,19 @@ const MetadataTable = ({ item }) => {
         <TableBody>
           {displayAttributes.map((key) => {
             const value = item[key];
-            if (value) {
-              return (
-                <TableRow key={key}>
-                  <TableCell
-                    component="th"
-                    scope="row"
-                    sx={{ fontWeight: "bold", width: "40%" }}
-                  >
-                    {key}
-                  </TableCell>
-                  <TableCell>{value || "N/A"}</TableCell>
-                </TableRow>
-              );
-            }
-            return null;
+            return (
+              <TableRow key={key}>
+                <TableCell
+                  scope="row"
+                  sx={{ fontWeight: "bold", width: "30%" }}
+                >
+                  {key}
+                </TableCell>
+                <TableCell sx={{ color: value ? "text.primary" : "grey.300" }}>
+                  {value || "N/A"}
+                </TableCell>
+              </TableRow>
+            );
           })}
         </TableBody>
       </Table>
