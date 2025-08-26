@@ -146,7 +146,7 @@ export const layerConfig = [
         children: [
           {
             id: "parent-metro",
-            name: "Current",
+            name: "In Service",
             children: [
               {
                 id: "metro-routes",
