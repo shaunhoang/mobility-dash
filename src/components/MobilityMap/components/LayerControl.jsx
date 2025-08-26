@@ -66,7 +66,7 @@ const Row = ({
   return (
     <>
       <FormControlLabel
-        sx={{ width: "100%", my: -0.5 }}
+        sx={{ width: "100%", my: -0.8 }}
         control={control}
         label={label}
       />
@@ -135,14 +135,14 @@ const LayerControl = ({ onLayerToggle }) => {
           {theme.theme && (
             <Typography
               variant="subtitle1"
-              sx={{ fontWeight: "bold", color: "secondary.main", mb: 0.5 }}
+              sx={{ fontWeight: "bold", color: "secondary.main", mb: 1 }}
             >
               {theme.theme}
             </Typography>
           )}
           {/* If type === dropdown */}
           {theme.controlType === "dropdown" ? (
-            <FormControl fullWidth size="small" sx={{ mt: 1 }}>
+            <FormControl fullWidth size="small" sx={{ mt: 1.5}}>
               <InputLabel>Select a layer</InputLabel>
               <Select
                 label="Select a layer"
@@ -169,7 +169,7 @@ const LayerControl = ({ onLayerToggle }) => {
                   <Typography
                     variant="caption"
                     color="text.secondary"
-                    sx={{ mt: 1, display: "block", px: "8px", lineHeight: 1.2 }}
+                    sx={{ mt: 1, display: "block", px: "8px", lineHeight: 1.1 }}
                   >
                     {selectedParent.infobox}
                   </Typography>
