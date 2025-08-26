@@ -1,32 +1,98 @@
 [
   {
-    "name": "Jane Done",
-    "role": "Project Lead",
-    "affiliation": "MNIT, Jaipur (India)",
-    "avatarUrl": "https://i.pravatar.cc/A"
+    "name": "Jens Kandt",
+    "role": "Project Lead & Principal Investigator",
+    "affiliation": "CASA, University College London",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=J"
   },
   {
-    "name": "Sherlock Holmes",
+    "name": "Nand Kumar",
+    "role": "Project Lead & Principal Investigator",
+    "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=N"
+  },
+  {
+    "name": "Shaun Hoang",
     "role": "Lead Developer",
-    "affiliation": "UCL, London (UK)",
-    "avatarUrl": "https://i.pravatar.cc/B"
+    "affiliation": "CASA, University College London",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=S"
   },
   {
-    "name": "Charlie Brown",
-    "role": "UX/UI Designer",
-    "affiliation": "UCL, London (UK)",
-    "avatarUrl": "https://i.pravatar.cc/C"
+    "name": "Krishna Goala",
+    "role": "Research Assistant",
+    "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=K"
   },
   {
-    "name": "Diana Edinburgh",
-    "role": "Data Scientist",
-    "affiliation": "Dept of Transportation (UK)",
-    "avatarUrl": "https://i.pravatar.cc/D"
+    "name": "Khoimu Singh",
+    "role": "Student Assistant",
+    "affiliation": "Department of Civil Engineering, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=K"
   },
   {
-    "name": "Eddie Murphy",
-    "role": "Community Manager",
-    "affiliation": "MNIT, Jaipur (India)",
-    "avatarUrl": "https://i.pravatar.cc/E"
+    "name": "Miaoyi Li",
+    "role": "Student Assistant",
+    "affiliation": "CASA, University College London",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=M"
+  },
+  {
+    "name": "Mahesh Jat Kumar",
+    "role": "Co-Investigator",
+    "affiliation": "Department of Civil Engineering, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=M"
+  },
+  {
+    "name": "Avinash Awasthi",
+    "role": "Research Assistant",
+    "affiliation": "Department of Computer Science, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=A"
+  },
+  {
+    "name": "Pritam",
+    "role": "Research Assistant",
+    "affiliation": "Department of Computer Science, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=P"
+  },
+  {
+    "name": "Deepika",
+    "role": "System Analyst",
+    "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=D"
+  },
+  {
+    "name": "Ramesh Battula",
+    "role": "Project Advisor",
+    "affiliation": "Department of Computer Science, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=R"
+  },
+  {
+    "name": "Joana Barros",
+    "role": "Project Advisor & Fieldwork Lead",
+    "affiliation": "CASA, University College London",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=J"
+  },
+  {
+    "name": "Mehran Eskandari Torbaghan",
+    "role": "Co-Investigator",
+    "affiliation": "Department of Civil Engineering, University of Birmingham",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=M"
+  },
+  {
+    "name": "Imran Muhammad",
+    "role": "Co-Investigator",
+    "affiliation": "School of People, Environment and Planning, Massey University (NZ)",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=I"
+  },
+  {
+    "name": "Satish Pipralia",
+    "role": "Co-Investigator",
+    "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=S"
+  },
+  {
+    "name": "Jon Reades",
+    "role": "Co-Investigator",
+    "affiliation": "CASA, University College London",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=J"
   }
 ]
