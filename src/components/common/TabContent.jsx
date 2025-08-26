@@ -84,7 +84,7 @@ const tabContent = {
           evidence-based decision-making.
         </Typography>
         <Typography variant="body1" color="text.primary" gutterBottom>
-          At its core, the tool offers a comprehensive catalogue of 241 mobility
+          At its core, the tool offers a comprehensive catalogue of more than 200 mobility
           and urban planning datasets sourced from city reports and
           publications. This is the first-of-its-kind effort to map and share
           the urban data landscape for one of India's smart cities. In parallel,
