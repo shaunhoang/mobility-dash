@@ -7,9 +7,8 @@ import {
   useTheme,
   Typography,
 } from "@mui/material";
-import tabContent from "./TabContent";
 
-const NavigationButtons = ({ onButtonClick, activeButtonId }) => {
+const NavigationButtons = ({ onButtonClick, activeButtonId , tabContent }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const buttons = Object.values(tabContent);

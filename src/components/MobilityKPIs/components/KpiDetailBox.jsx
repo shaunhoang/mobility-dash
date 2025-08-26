@@ -3,7 +3,6 @@ import MapIcon from "@mui/icons-material/Map";
 import {
   Box,
   CircularProgress,
-  Grid,
   Paper,
   ToggleButton,
   ToggleButtonGroup,
@@ -83,16 +82,15 @@ const KpiDetailBox = ({ kpi }) => {
   return (
     <Paper
       sx={{
-        p: 4,
-        mt: 4,
+        p: 2,
+        mt: 2,
         display: "flex",
         flexDirection: "column",
         userSelect: "none",
       }}
     >
-      <Grid
-        container
-        spacing={2}
+      {/* KPI Info */}
+      <Box
         sx={{
           width: "100%",
           mb: 2,
@@ -100,61 +98,37 @@ const KpiDetailBox = ({ kpi }) => {
           flexDirection: "column",
         }}
       >
-        {/* KPI Info */}
-        <Grid>
-          <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1 }}>
-            {kpi.title}
-          </Typography>
-          <Typography variant="body1" color="text.secondary" sx={{ mb: 1 }}>
-            <Box
-              component="span"
-              sx={{ fontWeight: "bold", color: "text.primary" }}
-            >
-              {"Description: "}
-            </Box>
-            {kpi.description || "No description available."}
-          </Typography>
-          <Typography variant="body1" color="text.secondary">
-            <Box
-              component="span"
-              sx={{ fontWeight: "bold", color: "text.primary" }}
-            >
-              {"Target: "}
-            </Box>
-            {kpi.target ? `${kpi.target}` : "No target set"}
-          </Typography>
-          <Typography variant="body1" color="text.secondary">
-            <Box
-              component="span"
-              sx={{ fontWeight: "bold", color: "text.primary" }}
-            >
-              {"Progress (a/o '25): "}
-            </Box>
-            {kpi.stat ? `${kpi.stat} ${kpi.unit}` : "No stats"}
-          </Typography>
-        </Grid>
-      </Grid>
-
-      {/* Toggle Buttons */}
-      <Grid>
-        <ToggleButtonGroup
-          value={viewMode}
-          exclusive
-          onChange={handleViewChange}
-          aria-label="view mode"
-        >
-          <ToggleButton
-            value="chart"
-            aria-label="chart view"
-            disabled={!chartData}
+        <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
+          {kpi.title}
+        </Typography>
+        <Typography variant="body1" color="text.secondary" sx={{ mb: 1 }}>
+          <Box
+            component="span"
+            sx={{ fontWeight: "bold", color: "text.primary" }}
           >
-            <BarChartIcon />
-          </ToggleButton>
-          <ToggleButton value="map" aria-label="map view" disabled={!mapData}>
-            <MapIcon />
-          </ToggleButton>
-        </ToggleButtonGroup>
-      </Grid>
+            {"Description: "}
+          </Box>
+          {kpi.description || "No description available."}
+        </Typography>
+        <Typography variant="body1" color="text.secondary">
+          <Box
+            component="span"
+            sx={{ fontWeight: "bold", color: "text.primary" }}
+          >
+            {"Target: "}
+          </Box>
+          {kpi.target ? `${kpi.target}` : "No target set"}
+        </Typography>
+        <Typography variant="body1" color="text.secondary">
+          <Box
+            component="span"
+            sx={{ fontWeight: "bold", color: "text.primary" }}
+          >
+            {"Progress (a/o '25): "}
+          </Box>
+          {kpi.stat ? `${kpi.stat} ${kpi.unit}` : "No stats"}
+        </Typography>
+      </Box>
 
       {/* Content Area */}
       <Box
@@ -162,10 +136,37 @@ const KpiDetailBox = ({ kpi }) => {
           width: "100%",
           minHeight: "300px",
           display: "flex",
-          justifyContent: "center",
           alignItems: "center",
+          flexDirection: "column",
         }}
       >
+        {/* Toggle Buttons */}
+        <Box
+          sx={{
+            backgroundColor: "background.paper",
+            borderRadius: 1,
+          }}
+        >
+          <ToggleButtonGroup
+            value={viewMode}
+            exclusive
+            onChange={handleViewChange}
+            aria-label="view mode"
+          >
+            <ToggleButton
+              value="chart"
+              aria-label="chart view"
+              disabled={!chartData}
+            >
+              <BarChartIcon />
+            </ToggleButton>
+            <ToggleButton value="map" aria-label="map view" disabled={!mapData}>
+              <MapIcon />
+            </ToggleButton>
+          </ToggleButtonGroup>
+        </Box>
+
+        {/* Chart or map */}
         {isLoading ? (
           <CircularProgress />
         ) : error ? (

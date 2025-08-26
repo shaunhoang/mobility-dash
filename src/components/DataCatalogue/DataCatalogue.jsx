@@ -184,7 +184,6 @@ const DataCatalogue = () => {
         {/* Search Bar and Filtering */}
         <SearchBar query={searchQuery} onQueryChange={setSearchQuery} />
         <Box
-          container
           sx={{
             display: "flex",
             alignItems: "center",

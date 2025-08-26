@@ -33,6 +33,7 @@ function Home() {
         <NavigationButtons
           onButtonClick={handleLayerChange}
           activeButtonId={activeLayer}
+          tabContent={tabContent}
         />
       </Box>
 

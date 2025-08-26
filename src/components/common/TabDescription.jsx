@@ -1,7 +1,7 @@
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import { Box, Typography } from "@mui/material";
 
-const TabDescription = ({ activeLayer: activeLayer , tabContent: tabContent }
+const TabDescription = ({ activeLayer , tabContent }
 ) => {
   const activeContent = tabContent[activeLayer];
   if (!activeContent) return null;
