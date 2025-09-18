@@ -3,96 +3,113 @@
     "name": "Jens Kandt",
     "role": "Project Lead & Principal Investigator",
     "affiliation": "CASA, University College London",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=J"
+    "avatarUrl": "assets/profile/jenskandt.jpg",
+    "type": "core"
   },
   {
     "name": "Nand Kumar",
     "role": "Project Lead & Principal Investigator",
     "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=N"
+    "avatarUrl": "assets/profile/nandkumar.jpg",
+    "type": "core"
+
   },
   {
     "name": "Shaun Hoang",
     "role": "Lead Developer",
     "affiliation": "CASA, University College London",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=S"
+    "avatarUrl": "assets/profile/shaunhoang.jpg",
+    "type": "core"
   },
   {
     "name": "Krishna Goala",
     "role": "Research Assistant",
     "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=K"
+    "avatarUrl": "assets/profile/krishnagoala.jpg",
+    "type": "core"
   },
   {
     "name": "Khoimu Singh",
     "role": "Student Assistant",
     "affiliation": "Department of Civil Engineering, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=K"
+    "avatarUrl": "assets/profile/khoimusingh.jpg",
+    "type": "core"
   },
   {
     "name": "Miaoyi Li",
     "role": "Student Assistant",
     "affiliation": "CASA, University College London",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=M"
+    "avatarUrl": "assets/profile/miaoyili.jpg",
+    "type": "core"
   },
   {
     "name": "Mahesh Jat Kumar",
     "role": "Co-Investigator",
     "affiliation": "Department of Civil Engineering, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=M"
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=M",
+    "type": "core"
   },
   {
     "name": "Avinash Awasthi",
     "role": "Research Assistant",
     "affiliation": "Department of Computer Science, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=A"
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=A",
+    "type": "core"
   },
   {
     "name": "Pritam Vediya",
     "role": "Research Assistant",
     "affiliation": "Department of Computer Science, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=P"
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=P",
+    "type": "core"
   },
   {
     "name": "Deepika Verma",
     "role": "System Analyst",
     "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=D"
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=D",
+    "type": "core"
   },
   {
     "name": "Ramesh Battula",
     "role": "Project Advisor",
     "affiliation": "Department of Computer Science, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=R"
+    "avatarUrl": "assets/profile/rameshbattula.png",
+    "type": "core"
   },
   {
     "name": "Joana Barros",
     "role": "Project Advisor & Fieldwork Lead",
     "affiliation": "CASA, University College London",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=J"
+    "avatarUrl": "assets/profile/joanabarros.jpg",
+    "type": "extended"
   },
   {
     "name": "Mehran Eskandari Torbaghan",
     "role": "Co-Investigator",
     "affiliation": "Department of Civil Engineering, University of Birmingham",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=M"
+    "avatarUrl": "assets/profile/mehrantorbaghan.jpg",
+    "type": "extended"
   },
   {
     "name": "Imran Muhammad",
     "role": "Co-Investigator",
     "affiliation": "School of People, Environment and Planning, Massey University (NZ)",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=I"
+    "avatarUrl": "assets/profile/imranmuhammad.jpg",
+    "type": "extended"
   },
   {
     "name": "Satish Pipralia",
     "role": "Co-Investigator",
     "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=S"
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=S",
+    "type": "extended"
   },
   {
     "name": "Jon Reades",
     "role": "Co-Investigator",
     "affiliation": "CASA, University College London",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=J"
+    "avatarUrl": "assets/profile/jonreades.jpg",
+    "type": "extended"
   }
 ]

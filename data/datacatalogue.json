@@ -17,6 +17,7 @@
         "reference":"Survey of India (2024) Online Maps Portal, NA",
         "url":"https:\/\/onlinemaps.surveyofindia.gov.in\/Digital_Product_Show.aspx",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"administrative; boundaries"
@@ -39,6 +40,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, pg. 12",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"panchayat aamit; gram panchayats; census towns"
@@ -61,6 +63,7 @@
         "reference":"Bhunaksha, NA",
         "url":"https:\/\/bhunaksha.rajasthan.gov.in\/",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"cadastal map"
@@ -83,6 +86,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 6-1, Pg 6-2",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"built up; urban area; urban growth"
@@ -105,6 +109,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-3, pg. 131",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"gram panchayat; boundaries"
@@ -127,6 +132,7 @@
         "reference":"JDA (2009) Key Maps, NA",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02,A08,A09",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"base map"
@@ -149,6 +155,7 @@
         "reference":"JDA (2018) Zonal Development Plan, NA",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/zonal-development-plan.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"boundaries"
@@ -171,6 +178,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Table 2-39, pg. 121",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"towns; population; connectivity"
@@ -193,6 +201,7 @@
         "reference":"JDA (2011) Key Maps, NA",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"administrative; boundaries"
@@ -215,6 +224,7 @@
         "reference":"JDA (2011) Key Maps, NA",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"administrative; boundaries"
@@ -237,6 +247,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 2-8, pg.2-12",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A01",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"population"
@@ -259,6 +270,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 2-6, pg. 2-10",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A01",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"population"
@@ -281,6 +293,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Heading 2.8, map on pg no. 109",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"villages; administrative"
@@ -303,6 +316,7 @@
         "reference":"JDA (1987) Key Maps, NA",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/raj\/udh\/jda---jaipur\/en\/town-planning\/key-maps.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02,A03,A08",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"administrative; boundaries"
@@ -325,6 +339,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 2-7, pg. 2-11",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A01",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"population; wards; adminstrative; boundaries"
@@ -347,6 +362,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-2, pg. 130",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02,A03,A04,A05,A10,B01,B03,B04,B05,B06",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"administrative; boundaries"
@@ -369,6 +385,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-35, pg no. 110",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"planning; administrative; baoundaries"
@@ -391,6 +408,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Table 2-9, pg.56",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02,A06",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"age; gender"
@@ -413,6 +431,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, T01_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"population; tehsils"
@@ -435,6 +454,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 6-5 pg 6-7",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"population; growth"
@@ -457,6 +477,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Table 2-10, pg. 56",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"gender; sex"
@@ -479,6 +500,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, pg. 14-15",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A06,A07",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"population; census; urban rural"
@@ -501,6 +523,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, T35_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"economic activity; gender; sex"
@@ -523,6 +546,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 4-6, pg. 219",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"population; wards; census"
@@ -545,6 +569,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 4-5, pg.219",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"population; wards; census"
@@ -567,6 +592,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, T23_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"literacy; gender; sex; caste"
@@ -589,6 +615,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, T32_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"workers; gender; sex"
@@ -611,6 +638,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Table 3-2, pg. 133",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"satellite towns; growth; settlements; census"
@@ -633,6 +661,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, T13_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"caste; tribes"
@@ -655,6 +684,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, T17_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"caste; tribes"
@@ -677,6 +707,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 6-3, pg 6-6",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"population; growth"
@@ -699,6 +730,7 @@
         "reference":"Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/demographic-profile-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"population; households"
@@ -721,6 +753,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, T44_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"settlements; slums"
@@ -743,6 +776,7 @@
         "reference":"Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/registered-voters-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A06",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"voters"
@@ -765,6 +799,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, T42_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"education; facilities"
@@ -787,6 +822,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, pg. 24-25, pg. 30-31",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,B04",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"age; gender; sex; literacy; workforce; occupation; employment; industry; census"
@@ -809,6 +845,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, pg. 26-27, pg. 32-33",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"workers; industry"
@@ -831,6 +868,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, pg. 28-29, pg. 34-35",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"workers; industry"
@@ -853,6 +891,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, Town Statement-I_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"population; growth; settlements"
@@ -875,6 +914,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, pg. 38-189",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"population; caste; tribes; administrative"
@@ -897,6 +937,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, pg.540-551",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3290\/DH_2011_0812_PART_B_DCHB_JAIPUR.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"workers; industry"
@@ -919,6 +960,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, T08_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"gender; sex"
@@ -941,6 +983,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, T19_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"gender; sex; caste; tribes"
@@ -963,6 +1006,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, T12_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A06",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"gender; sex; age"
@@ -985,6 +1029,7 @@
         "reference":"Census of India website",
         "url":"https:\/\/censusindia.gov.in\/census.website\/data\/census-tables",
         "access_method":"Go to source URL",
+        "linked_to_kpi":null,
         "url_download":"https:\/\/orca.casa.ucl.ac.uk\/~jens\/sparc-dash\/download\/census2011.zip",
         "lastupdate":"Last 15 yrs",
         "keywords":"age; gender; sex; literacy; workers; industry; census"
@@ -1007,6 +1052,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-4, pg. 143",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"industries; settlement; land use"
@@ -1029,6 +1075,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Table 2-12, pg.59",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"occupations\n"
@@ -1051,6 +1098,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-36 , pg. 112",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"tourism"
@@ -1073,6 +1121,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-17 (pg. 69)",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"economy; industries"
@@ -1095,6 +1144,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 2-11, p.g 2-25",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"tourism"
@@ -1117,6 +1167,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Table 2-13, Table 2-14, Table 2-15, pg.60-61",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"workers"
@@ -1139,6 +1190,7 @@
         "reference":"Cental Pollution Control Board (2024) Central Control Room for Air Quality Management, NA",
         "url":"https:\/\/airquality.cpcb.gov.in\/ccr\/#\/caaqm-dashboard-all\/caaqm-landing\/caaqm-data-repository",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"air quality; CPCB; PM2.5; PM10; NO2; CO; O3"
@@ -1161,6 +1213,7 @@
         "reference":"Rajasthan State Pollution Control Board (2024), NA",
         "url":"https:\/\/environment.rajasthan.gov.in\/content\/environment\/en\/rajasthan-state-pollution-control-board\/EnvironmentalReport\/DownloadableAirQualityIndexCAAQMS.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"air quality; CAAQMS; PM2.5; PM10; NO2; CO; O3"
@@ -1183,6 +1236,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Table 3-25, pg.191",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"climate; temperature; rainfall"
@@ -1205,6 +1259,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/natural-landscape-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"topography"
@@ -1227,6 +1282,7 @@
         "reference":"Rajasthan State Pollution Control Board (2024), NA",
         "url":"https:\/\/environment.rajasthan.gov.in\/content\/environment\/en\/rajasthan-state-pollution-control-board\/EnvironmentalReport\/noise-monitoring-report.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"noise; decibel elvels"
@@ -1249,6 +1305,7 @@
         "reference":"Survey of India (2024) Online Maps Portal, NA",
         "url":"https:\/\/onlinemaps.surveyofindia.gov.in\/FreeMapSpecification.aspx",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A05,A09,A10,B04,B05",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"map; land cover"
@@ -1271,6 +1328,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, Town Statement-II_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"topography; settlements"
@@ -1293,6 +1351,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 3-14 pg 3-52",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B06",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"intermediate public transport; three wheelers"
@@ -1315,6 +1374,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, website, Mapbook 1",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B04,B06",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"base map; land use"
@@ -1337,6 +1397,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, website, Mapbook 2",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook2.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B04,B06",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"land use"
@@ -1359,6 +1420,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, website, Mapbook 4",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook4.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"land use"
@@ -1381,6 +1443,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, website, Mapbook 3",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Mapbook3.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B04,B06",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"land utilization; land use"
@@ -1403,6 +1466,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Table 2-5, Chart 2-1, pg.48",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04,B05,B06",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"land utilization; land use"
@@ -1425,6 +1489,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, Table -9, pg-569",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B04",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"bicycles"
@@ -1447,6 +1512,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, Table -9, pg-569",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B01",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"cars; jeeps; vans; four wheelers"
@@ -1469,6 +1535,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, Table -9, pg-569",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B01",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"scooter; motorbikes; two wheelers"
@@ -1491,6 +1558,7 @@
         "reference":"Master Development Plan 2025 (2011), vol1, Table 2-30, pg. 94",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B01",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"vehicle regisrations"
@@ -1513,6 +1581,7 @@
         "reference":"Transport Department, Government of Rajasthan (2020-21) STATISTICAL YEAR BOOK, Table 5.5, Table 5.6",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/Statistical%20abstract%202020-21\/Transport_Dept_Year_Book.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B01",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"vehicle regisrations"
@@ -1535,6 +1604,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 3-8 pg 3-34",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B01",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"vehicle ownership"
@@ -1557,6 +1627,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/vehicle-registrations-data-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B01",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"vehicle regisrations"
@@ -1579,6 +1650,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/budget-open-spaces-development-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A07",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"municipal budget"
@@ -1601,6 +1673,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/financial-health-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A07",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"finance; expenditure; revenue"
@@ -1623,6 +1696,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/vat-gst-collection-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A07",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"tax; VAT; GST; revenue"
@@ -1645,6 +1719,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/water-taxjaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"tax; water tax"
@@ -1667,6 +1742,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol2, Fig 2-32 (pg 2-56, CMP 2018)",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B03",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"road accidents"
@@ -1689,6 +1765,7 @@
         "reference":"State Road Safety Cell, Department of Transport and Road Safety, Rajasthan, NA",
         "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=UUp2TU8ySXR4SDB0QklrbFN6Q084UT09",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B03",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"road accidents"
@@ -1711,6 +1788,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/crimes-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"crime"
@@ -1733,6 +1811,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol2, Fig 2-31 (pg 2-55, CMP 2018)",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B03",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"road accidents"
@@ -1755,6 +1834,7 @@
         "reference":"Cuts International (n.d.) Jaipur City Mobility Plan, pg. no 8",
         "url":"https:\/\/cuts-ccier.org\/pdf\/jaipur-city-mobility-plan.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B03",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"road accidents; faltalities"
@@ -1777,6 +1857,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/injuries-and-fatalities",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B03",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"road accidents; faltalities"
@@ -1799,6 +1880,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/mortality-rate-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"live events"
@@ -1821,6 +1903,7 @@
         "reference":"Road Accidents in Rajasthan, Transport Department, Government of Rajasthan, Table 1.2, pg-17, row no-16",
         "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/roadsafty\/Road%20Accidents%20in%20Rajasthan%202018.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B03",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"road accidents"
@@ -1843,6 +1926,7 @@
         "reference":"Road Accidents in Rajasthan, Transport Department, Government of Rajasthan, Table 1:3, pg-20, row no-16",
         "url":"https:\/\/www.tourism.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/roadsafty\/Road%20Accidents%20in%20Rajasthan%202018.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B03",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"road accidents"
@@ -1865,6 +1949,7 @@
         "reference":"State Road Safety Cell, Department of Transport and Road Safety, Rajasthan, NA",
         "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=TXFXZzE0R0RxVlppTmlNVi9PSFlOUT09",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B03",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"road accidents"
@@ -1887,6 +1972,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol2, ANNEXURE - 2-1, pg. 1 of 2-1",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"cameras; monitoring"
@@ -1909,6 +1995,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol2, ANNEXURE-2-1, pg 1 of 2-1",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"traffic signals"
@@ -1931,6 +2018,7 @@
         "reference":"State Road Safety Cell, Department of Transport and Road Safety, Rajasthan, NA",
         "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=d3doM0tvbjVvNmVEbkJRM2YycHVUdz09",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"trauma; road accidents; emergency services"
@@ -1953,6 +2041,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-15, pg. 169",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"public transport; buses"
@@ -1975,6 +2064,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 2-25, pg. 2-43",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport; buses"
@@ -1997,6 +2087,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 2-26, pg. 2-44",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport; buses"
@@ -2019,6 +2110,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/buses-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport; buses"
@@ -2041,6 +2133,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol2, ANNEXURE-2-1, pg 1 of 2-1",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B05",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport; buses; ridership"
@@ -2063,6 +2156,7 @@
         "reference":"Jaipur City Transport Services Limited (n.d.), NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/jaipurbus\/image\/Jaipur%20Bus%20Map%20Final_01.05.23.jpg",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"public transport; buses"
@@ -2085,6 +2179,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, ANNEXURE - 2, pg. 113",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"public transport; buses; level of services"
@@ -2107,6 +2202,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/earningsfrombustripsjaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A07",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport; buses; finance"
@@ -2129,6 +2225,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 7-21, Pg. 7-25",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"public transport; buses"
@@ -2151,6 +2248,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 7-52, Pg. 7-77",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02,A09",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"public transport; buses; stations"
@@ -2173,6 +2271,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 7-54, Pg. 7-79",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02,A09",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"public transport; buses; depots"
@@ -2195,6 +2294,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 7-59, Pg. 7-85",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"public transport; buses; level of services"
@@ -2217,6 +2317,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 2-21, pg. 2-35",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport; buses"
@@ -2239,6 +2340,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 2-23, pg. 2-39",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport; buses; stations; depots"
@@ -2261,6 +2363,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 2-22, pg. 2-38",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport; buses; stations; depots"
@@ -2283,6 +2386,7 @@
         "reference":"Transport Department Of Rajasthan website, NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/jaipur-bus\/fares-tickets\/fare-chart.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A07,B05",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"public transport; buses; fares"
@@ -2305,6 +2409,7 @@
         "reference":"Jaipur City Transport Services Limited (n.d.), NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/jaipur-bus\/schedules-maps\/bus-routes.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A08,A09",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"public transport; buses"
@@ -2327,6 +2432,7 @@
         "reference":"Jaipur Metro Rail Corporation Ltd. (2020), NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Passenger%20Information\/MetroFares\/Notification%20Fare%20structure%20of%20metro%20operation%20by%20JMRC%20dtd_11.09.2020.pdf.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A07,B05",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"public transport; metro; fares"
@@ -2349,6 +2455,7 @@
         "reference":"Jaipur Metro Rail Corporation Ltd. (2024), NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/MetroStations.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"public transport; metro"
@@ -2371,6 +2478,7 @@
         "reference":"Jaipur Metro Rail Corporation Ltd. (2023), NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Passenger%20Information\/Metro%20time%20Table\/Salient%20Features%20of%20Time%20Table%20w.e.f.%2030.01.2023.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"public transport; metro"
@@ -2393,6 +2501,7 @@
         "reference":"Indian urban data exchange (2023) IUDX, NA",
         "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/91e116be-03bd-4f3d-a60b-e9db59bf48f0",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"safety; women's safety"
@@ -2415,6 +2524,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 7-70, Pg. 7-111",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"public transport; buses; BRT"
@@ -2437,6 +2547,7 @@
         "reference":"Jaipur Metro Rail Corporation Ltd. (2024), NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/ParkingatMetroStations.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A10",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"public transport; metro; parking"
@@ -2459,6 +2570,7 @@
         "reference":"Jaipur Metro Rail Corporation Ltd. (2024), NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/PASSENGERAMENITIESNEARMETROSTATIONS.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"public transport; metro; amenities"
@@ -2481,6 +2593,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/publictransportaccessjaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport; accessibility; level of service"
@@ -2503,6 +2616,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 6-7 pg 6-15",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"public transport; buses"
@@ -2525,6 +2639,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 6-8 pg 6-15",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"public transport; buses"
@@ -2547,6 +2662,7 @@
         "reference":"Comprehensive Mobility Plan, Urban Transport Sector Assessment Report jaipur, fig 0-2",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport; metro"
@@ -2569,6 +2685,7 @@
         "reference":"Jaipur Metro Rail Corporation Ltd. (2024), NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/MetroStations.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport; metro"
@@ -2591,6 +2708,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-16, pg. 170",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B06",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"public transport; buses"
@@ -2613,6 +2731,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/electricity-consumption-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"energy; electricity; utilities"
@@ -2635,6 +2754,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/water-consumption-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"water; utilities"
@@ -2657,6 +2777,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B04,B06",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"satellite images; Cartosat"
@@ -2679,6 +2800,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"satellite images; Cartosat"
@@ -2701,6 +2823,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"satellite images; Cartosat"
@@ -2723,6 +2846,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Cartosat"
@@ -2745,6 +2869,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Cartosat"
@@ -2767,6 +2892,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Cartosat"
@@ -2789,6 +2915,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Cartosat"
@@ -2811,6 +2938,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Cartosat"
@@ -2833,6 +2961,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Cartosat"
@@ -2855,6 +2984,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; EOS"
@@ -2877,6 +3007,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Kompsat"
@@ -2899,6 +3030,7 @@
         "reference":"US Geological Survey (2024) USGS Earth Explorer, NA",
         "url":"https:\/\/earthexplorer.usgs.gov\/",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"satellite images; Landsat"
@@ -2921,6 +3053,7 @@
         "reference":"US Geological Survey (2024) USGS Earth Explorer, NA",
         "url":"https:\/\/earthexplorer.usgs.gov\/",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"satellite images; Landsat"
@@ -2943,6 +3076,7 @@
         "reference":"US Geological Survey (2024) USGS Earth Explorer, NA",
         "url":"https:\/\/earthexplorer.usgs.gov\/",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"satellite images; Landsat"
@@ -2965,6 +3099,7 @@
         "reference":"US Geological Survey (2024) USGS Earth Explorer, NA",
         "url":"https:\/\/earthexplorer.usgs.gov\/",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"satellite images; Landsat"
@@ -2987,6 +3122,7 @@
         "reference":"US Geological Survey (2024) USGS Earth Explorer, NA",
         "url":"https:\/\/earthexplorer.usgs.gov\/",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"satellite images; Landsat"
@@ -3009,6 +3145,7 @@
         "reference":"US Geological Survey (2024) USGS Earth Explorer, NA",
         "url":"https:\/\/earthexplorer.usgs.gov\/",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"satellite images; Landsat"
@@ -3031,6 +3168,7 @@
         "reference":"US Geological Survey (2024) USGS Earth Explorer, NA",
         "url":"https:\/\/earthexplorer.usgs.gov\/",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Landsat"
@@ -3053,6 +3191,7 @@
         "reference":"US Geological Survey (2024) USGS Earth Explorer, NA",
         "url":"https:\/\/earthexplorer.usgs.gov\/",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Landsat"
@@ -3075,6 +3214,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Novasar"
@@ -3097,6 +3237,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A06,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Resourcesat"
@@ -3119,6 +3260,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Resourcesat"
@@ -3141,6 +3283,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Resourcesat"
@@ -3163,6 +3306,7 @@
         "reference":"ISRO (2024) Bhoonidhi, NA",
         "url":"https:\/\/bhoonidhi.nrsc.gov.in\/bhoonidhi\/index.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"satellite images; Risat"
@@ -3185,6 +3329,7 @@
         "reference":"Copernicus Browser (2024) Copernicus Browser, NA",
         "url":"browser.dataspace.copernicus.eu\/?zoom=12&lat=26.8887&lng=75.83126",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A08,A09,A10,B01,B02,B03,B04",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"satellite images; Sentinel"
@@ -3207,6 +3352,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-11, pg.165",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"hospitals; health care"
@@ -3229,6 +3375,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-8, pg. 162",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"colleges; schools"
@@ -3251,6 +3398,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-10, pg.164",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"health care"
@@ -3273,6 +3421,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-7, pg. 161",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"schools"
@@ -3295,6 +3444,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-13, pg. 167",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"financial services"
@@ -3317,6 +3467,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-14, pg. 168",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"postal services"
@@ -3339,6 +3490,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-6, pg.160",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"schools"
@@ -3361,6 +3513,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-12, pg.166",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"financial services"
@@ -3383,6 +3536,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/citizen-facilities-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"citizen facilities"
@@ -3405,6 +3559,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, Town Statement-VII_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A05",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"slums; amenities"
@@ -3427,6 +3582,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, Town Statement-III_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A05",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"amenities"
@@ -3449,6 +3605,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/community-facilities-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"community facilities"
@@ -3471,6 +3628,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/culturalheritagejaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"heritage"
@@ -3493,6 +3651,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/digital-payments-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A07,A10",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"financial services"
@@ -3515,6 +3674,7 @@
         "reference":"Master Development Plan 2025 (2011), vol1, Table 3-17, pg.153",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"education; schools"
@@ -3537,6 +3697,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, Town Statement-V_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"education; cultural facilities; recreation"
@@ -3559,6 +3720,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, Town Statement-VI_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"industries; financial services"
@@ -3581,6 +3743,7 @@
         "reference":"Directorate of Census Operations, Rajasthan (2014) Census of India 2011 - Rajasthan - Series 09 - Part XII B - District Census Handbook, Jaipur, Town Statement-IV_0812",
         "url":"https:\/\/censusindia.gov.in\/nada\/index.php\/catalog\/1069\/download\/3291\/DH_2011_0812-Jaipur.zip",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"health care"
@@ -3603,6 +3766,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/digital-availability-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"governance"
@@ -3625,6 +3789,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 7-38, Pg. 7-54",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A03",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"transport; non-motorised; footpath; road transport"
@@ -3647,6 +3812,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 7-8, Pg. 7-12",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A09",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"transport; road markings; road transport"
@@ -3669,6 +3835,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 7-9, Pg. 7-12",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A09",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"transport; signage; road transport"
@@ -3691,6 +3858,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-37, pg. 113",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"cultural trails; road transport"
@@ -3713,6 +3881,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 6-4 pg 6-11",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02,A08,A10",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"transport; boundaries"
@@ -3735,6 +3904,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-42, pg.119",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02,A08,A09,B02",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"road transport"
@@ -3757,6 +3927,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-43, pg. 119",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02,A08,B02",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"road transport"
@@ -3779,6 +3950,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-44, pg. 120",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02,A08,B02",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"road transport"
@@ -3801,6 +3973,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-24, pg.88",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02,A08,B02",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"road transport"
@@ -3823,6 +3996,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-41, pg.118",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02,A08,A09,B02",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"road transport"
@@ -3845,6 +4019,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 7-49, Pg. 7-68",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"transport; non-motorised; footpath; road transport"
@@ -3867,6 +4042,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-38, pg. 114",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"transport; non-motorised; footpath; road transport"
@@ -3889,6 +4065,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 2-1, pg. 2-3",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02,A08,A09,B02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"road transport"
@@ -3911,6 +4088,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-39, pg. 115",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"transport; non-motorised; footpath; road transport"
@@ -3933,6 +4111,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Table 4-21, pg.254",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"road transport"
@@ -3955,6 +4134,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 6-6 pg 6-14",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02,A08,B02",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"road transport"
@@ -3977,6 +4157,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 6-5 pg 6-13",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"A02,A08,B02",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"road transport"
@@ -3999,6 +4180,7 @@
         "reference":"State Road Safety Cell, Department of Transport and Road Safety, Rajasthan, NA",
         "url":"https:\/\/roadsafetycell.rkcl.in\/pageView\/token=Q2twNXhhZk9IaklESkMwMGxoaTgwdz09",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A02,A08,A09,B02",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"road transport"
@@ -4021,6 +4203,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-25, pg. 89",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"transport; settlements"
@@ -4043,6 +4226,7 @@
         "reference":"Indian urban data exchange (2023) IUDX, NA",
         "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A08,A09,B02",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"cameras; monitoring; ANPR"
@@ -4065,6 +4249,7 @@
         "reference":"Indian urban data exchange (2023) IUDX, NA",
         "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"sensors; monitoring"
@@ -4087,6 +4272,7 @@
         "reference":"Bureau of Energy Efficiency (2024), NA",
         "url":"https:\/\/evyatra.beeindia.gov.in\/public-charging-stations\/",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"road transport; EV charging"
@@ -4109,6 +4295,7 @@
         "reference":"Indian urban data exchange (2023) IUDX, NA",
         "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/e2e88fc3-95b2-4fcf-91d1-7c81a9a461d6",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"road transport; utilities"
@@ -4131,6 +4318,7 @@
         "reference":"Indian urban data exchange (2023) IUDX, NA",
         "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"road transport; utilities"
@@ -4153,6 +4341,7 @@
         "reference":"Management of Parking Spaces in the Walled City of Jaipur , Table 2, Table 5, Fig 3",
         "url":"https:\/\/old.ccs.in\/internship_papers\/2011\/245_riddhima_management-of-parking-spaces-in-the-walled-city-of-jaipur_second.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A10",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"road transport; parking"
@@ -4175,6 +4364,7 @@
         "reference":"Management of Parking Spaces in the Walled City of Jaipur , Table 1, Table 4, Fig 1",
         "url":"https:\/\/old.ccs.in\/internship_papers\/2011\/245_riddhima_management-of-parking-spaces-in-the-walled-city-of-jaipur_second.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A10",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"road transport; parking"
@@ -4197,6 +4387,7 @@
         "reference":"Indian urban data exchange (2023) IUDX, NA",
         "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A10",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"road transport; parking"
@@ -4219,6 +4410,7 @@
         "reference":"Indian urban data exchange (2023) IUDX, NA",
         "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"road transport; smart poles; utilities"
@@ -4241,6 +4433,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/street-lights-data-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"road transport; street lighting; utilities"
@@ -4263,6 +4456,7 @@
         "reference":"Indian urban data exchange (2023) IUDX, NA",
         "url":"https:\/\/catalogue.cos.iudx.org.in\/jaipur\/dataset\/5004baa8-a1ca-45f0-b639-4cef1ec6b089",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A08,A09,B02",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"road transport; VCC system"
@@ -4285,6 +4479,7 @@
         "reference":"Annual administrative report (2022-23), NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/Statistical-abstract2022-23\/prashasnik%20prativedan%202022-23.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A06,A08,A09,A10,B01,B02,B03,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"transport; road transport"
@@ -4307,6 +4502,7 @@
         "reference":"Transport Anuual Progress Report, NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/transport\/organisation\/AnnualProgressReport.html.html#annualProgressReport",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A06,A08,A09,A10,B01,B02,B03,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"transport; road transport"
@@ -4329,6 +4525,7 @@
         "reference":"STATISTICAL ABSTRACT website, NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/transport\/organisation\/statistical-information.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A06,A08,A09,A10,B01,B02,B03,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"transport; road transport"
@@ -4351,6 +4548,7 @@
         "reference":"Transport Department, Government of Rajasthan (2018-19) STATISTICAL ABSTRACT, NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/statistical-abstract2018-19\/Trasport%20Department%20Abstract%20Book%2018-19.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A06,A08,A09,A10,B01,B02,B04,B05",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"transport; road transport"
@@ -4373,6 +4571,7 @@
         "reference":"Transport Department, Government of Rajasthan (2019-20) STATISTICAL YEAR BOOK, NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/statistical2015-16\/Transport%20Dept.%20Statistical%20Year%20Book.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A06,A07,A08,A09,A10,B01,B02,B03,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"transport; road transport"
@@ -4395,6 +4594,7 @@
         "reference":"Transport Department, Government of Rajasthan (2020-21) STATISTICAL YEAR BOOK, NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/transport-dept\/pdf\/Statistical%20abstract%202020-21\/Transport_Dept_Year_Book.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A01,A02,A03,A04,A05,A06,A07,A08,A09,A10,B01,B02,B03,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 5 yrs",
         "keywords":"transport; road transport"
@@ -4417,6 +4617,7 @@
         "reference":"Traffic Study by Wilbur Smith Associates-2010, ANNEXURE - 2, pg. 125",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02,B05",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; occupancy"
@@ -4439,6 +4640,7 @@
         "reference":"JMRCL(2018) Comprehensive Mobility Plan - Urban Transport Sector Assessment Report for Jaipur City\r, Table 0-3 ( Egis survey)",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"transport; road transport; travel demand"
@@ -4461,6 +4663,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 3-1, p.g 3-6",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"transport; road transport; travel demand"
@@ -4483,6 +4686,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, ANNEXURE - 2, pg. 124",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand"
@@ -4505,6 +4709,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, Table 2.6, Table 2.7, Figure 2.10",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand"
@@ -4527,6 +4732,7 @@
         "reference":"CMP ppt (n.d), pg. 29",
         "url":"https:\/\/cdn.cseindia.org\/userfiles\/comprehensive_mobility.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"transport; road transport; travel demand; mode shares"
@@ -4549,6 +4755,7 @@
         "reference":"JMRCL(2018) Comprehensive Mobility Plan - Urban Transport Sector Assessment Report for Jaipur City\r, Table 0-1 (Egis survey)",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"transport; road transport; travel demand; mode shares"
@@ -4571,6 +4778,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 3-13 pg 3-17",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"transport; road transport; travel demand"
@@ -4593,6 +4801,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, Table 2.9, Figure 2.11",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand"
@@ -4615,6 +4824,7 @@
         "reference":"Jaipur Metro Rail Corporation Ltd. (2024), NA",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/transportportal\/en\/metro\/PassengerInformation\/passenger-travelled-count.html",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B05",
         "url_download":null,
         "lastupdate":"Last 2 yrs",
         "keywords":"transport; road transport; travel demand"
@@ -4637,6 +4847,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, ANNEXURE - 2, pg. 124",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4659,6 +4870,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, Table 2.10",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4681,6 +4893,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, Table 2.8",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4703,6 +4916,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, Table 2-5",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4725,6 +4939,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 3-8, p.g 3-11",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4747,6 +4962,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, ANNEXURE - 2, pg. 122",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4769,6 +4985,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, ANNEXURE - 2, pg. 120",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4791,6 +5008,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, ANNEXURE - 2, pg. 116",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4813,6 +5031,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/publictransportmodejaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A03,B02,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"public transport"
@@ -4835,6 +5054,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, Table 2-3, Table 2-4,  Figure 2.8",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4857,6 +5077,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, ANNEXURE - 2, pg. 126",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4879,6 +5100,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, Figure 2.13, Figure 2.14",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4901,6 +5123,7 @@
         "reference":"JMRCL(2018) Comprehensive Mobility Plan - Urban Transport Sector Assessment Report for Jaipur City\r, Table 0-2 (Estimate by Egis survey)",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/DPR%20Phase%20II\/CMP%20Executive%20Summary%20Final.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"A07,B05",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"transport; road transport; travel demand; mode shares"
@@ -4923,6 +5146,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 3-9 pg no-3-12",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4945,6 +5169,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure3-5 pg 3-14",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"transport; road transport; travel demand; traffic"
@@ -4967,6 +5192,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Fig. 2-29, Pg. 2-53",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"B02",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"transport; road transport; freight; traffic"
@@ -4989,6 +5215,7 @@
         "reference":"Wilbur Smith Associates(2010) Traffic and Transportation Study for Detailed Project Report for Proposed Jaipur Metro, Table 2.11,Table 2.12, Figure 2.15, Figure 2.16 ",
         "url":"https:\/\/transport.rajasthan.gov.in\/content\/dam\/transport\/metro\/Project\/Traffic%20Study%20by%20Wilbur%20Smith%20Associates-2010\/Traffic%20and%20Transportation%20Study%20For%20DPR%20For%20Proposed%20Jaipur%20Metro%20Feb%202010.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"B02,B04,B05,B06",
         "url_download":null,
         "lastupdate":"Last 20 yrs",
         "keywords":"transport; road transport; travel demand; mode shares"
@@ -5011,6 +5238,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-12, pg.63",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"infrastructure; planning; growth; settlements"
@@ -5033,6 +5261,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 4-1, pg. 216",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"infrastructure; settlements; planning"
@@ -5055,6 +5284,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Figure 6-2 pg 6-4",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"planning; growth; settlements"
@@ -5077,6 +5307,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 2-47, pg. 124",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"21 yrs or older",
         "keywords":"planning; growth; settlements"
@@ -5099,6 +5330,7 @@
         "reference":"JDA (2011) Master Development Plan 2025, vol1, Map 3-1, pg. 128",
         "url":"https:\/\/jda.rajasthan.gov.in\/content\/dam\/raj\/udh\/development-authority\/jda-jaipur\/pdf\/MDP\/Vol1.pdf",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 15 yrs",
         "keywords":"planning; growth; settlements"
@@ -5121,6 +5353,7 @@
         "reference":"L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 6-2 Pg 6-5",
         "url":null,
         "access_method":null,
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"planning; growth; settlements"
@@ -5143,6 +5376,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/door-door-collection-solid-waste-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"solid waste; waste collection"
@@ -5165,6 +5399,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/public-toilets-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"sanitation"
@@ -5187,6 +5422,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwastecollectionvehiclejaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"solid waste; waste collection"
@@ -5209,6 +5445,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwasted2dcollectionjaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"solid waste; waste collection"
@@ -5231,6 +5468,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwastedisposaldatajaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"solid waste; waste disposal"
@@ -5253,6 +5491,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/solid-waste-processing-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"solid waste; waste processing"
@@ -5275,6 +5514,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/solidwastesegregationjaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"solid waste; waste segregation"
@@ -5297,6 +5537,7 @@
         "reference":"JSCL (2019) Ministry of housing and urban affairs,smart city data catalogue, NA",
         "url":"https:\/\/smartcities.data.gov.in\/catalog\/waste-management-revenue-expenditure-data-jaipur",
         "access_method":"Go to source URL",
+        "linked_to_kpi":"",
         "url_download":null,
         "lastupdate":"Last 10 yrs",
         "keywords":"solid waste; finance"
