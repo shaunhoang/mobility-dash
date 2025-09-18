@@ -71,10 +71,12 @@ const TeamAbout = () => {
           gutterBottom
           sx={{ color: "primary.main", mb: 2 }}
         >
-          Contributors
+          Core Team
         </Typography>
         <Grid container spacing={2}>
-          {aboutData.map((member, index) => (
+          {aboutData
+          .filter(member => member.type === "core")
+          .map((member, index) => (
             <Grid
               key={index}
               sx={{
@@ -82,7 +84,52 @@ const TeamAbout = () => {
                 flexDirection: "row",
                 my: 2,
               }}
-              size={{ xs: 12, sm: 6, md: 4, lg: 3 }}
+              size={{ xs: 12, sm: 6, md: 4}}
+            >
+              <Avatar
+                alt={member.name}
+                src={member.avatarUrl}
+                sx={{ width: 80, height: 80, mr: 2 , boxShadow: 2}}
+              />
+              <Box>
+                <Typography
+                  variant="body1"
+                  sx={{ fontWeight: "bold" }}
+                >
+                  {member.name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {member.role}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {member.affiliation}
+                </Typography>
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+
+      <Box sx={{ mb: 4 }}>
+        <Typography
+          variant="h5"
+          gutterBottom
+          sx={{ color: "primary.main", mb: 2 }}
+        >
+          Extended Team
+        </Typography>
+        <Grid container spacing={2}>
+          {aboutData
+          .filter(member => member.type === "extended")
+          .map((member, index) => (
+            <Grid
+              key={index}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                my: 2,
+              }}
+              size={{ xs: 12, sm: 6, md: 4}}
             >
               <Avatar
                 alt={member.name}
@@ -92,7 +139,6 @@ const TeamAbout = () => {
               <Box>
                 <Typography
                   variant="body1"
-                  color="primary."
                   sx={{ fontWeight: "bold" }}
                 >
                   {member.name}
@@ -130,7 +176,7 @@ const TeamAbout = () => {
             {!isLoading &&
               !error &&
               highlightCards.map((card) => (
-                <Grid size={{ sm: 12, md: 3 }} key={card.name}>
+                <Grid size={{ sm: 12, md: 4 }} key={card.name}>
                   <Card
                     sx={{
                       height: "100%",

@@ -17,7 +17,7 @@ const kpiCategoryColors = {
   terracotta: "#C47A69",
 };
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     primary: {
       light: roseShades.lighter,
@@ -84,6 +84,15 @@ const theme = createTheme({
       },
     },
   },
+});
+
+theme = createTheme(theme, {
+  kpiColorMap: {
+    1: theme.palette.kpi.terracotta,
+    2: theme.palette.kpi.slate,
+    3: theme.palette.kpi.sage,
+    4: theme.palette.kpi.ochre,
+  }
 });
 
 export default theme;

@@ -123,7 +123,7 @@ const DataCatalogue = () => {
         ? item.title.toLowerCase().includes(query) ||
           item.description.toLowerCase().includes(query) ||
           item.sector.toLowerCase().includes(query) ||
-          item.keywords.toLowerCase().includes(query)
+          item.keywords.toLowerCase().includes(query) 
         : true;
 
       return (

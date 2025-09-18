@@ -50,15 +50,7 @@ const MobilityKPIs = () => {
   }, []);
 
   // Color and Data Augmentation for tabs and KPIs
-  const domainColorMap = useMemo(
-    () => ({
-      1: theme.palette.kpi.terracotta,
-      2: theme.palette.kpi.slate,
-      3: theme.palette.kpi.sage,
-      4: theme.palette.kpi.ochre,
-    }),
-    [theme]
-  );
+  const domainColorMap = theme.kpiColorMap;
   const tabsWithColor = useMemo(
     () =>
       kpiDomains.map((domain) => ({

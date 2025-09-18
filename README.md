@@ -129,9 +129,10 @@ Stores information about project team members for display on the "Contributors" 
 | Field Name | Data Type | Description | Example | Constraints / Notes |
 |------------|-----------|-------------|---------|-------------------|
 | name | String | The full name of the team member | "Jens Kandt" | Required |
-| role | String | The team member's official role in the project | "Project Lead & Principal Investigator" | Required |
-| affiliation | String | The team member's institutional affiliation | "CASA, University College London" | Required |
-| avatarUrl | String (URL) | A URL to the team member's profile image or placeholder | "https://placehold.co/.../text=J" | Required |
+| role | String | The team member's official role | "Project Lead & Principal Investigator" | Required |
+| affiliation | String | The team member's  affiliation | "CASA, University College London" | Required |
+| avatarUrl | String (URL) | A URL to the team member's profile image | "https://placehold.co/.../text=J" | Required |
+| type | String | Whether the team member belongs to the core or extended project team | "core" or "extended" | Required |
 
 ---
 #### `highlightsData.json`  

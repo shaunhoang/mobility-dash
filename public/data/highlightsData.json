@@ -19,26 +19,5 @@
     "description": "Read about the outcomes and key findings from our recent community workshop.",
     "date": "2024-03-10",
     "image": "https://placehold.co/600x300/E8D1C5/FFFFFF?text=Workshop"
-  },
-  {
-    "id": 4,
-    "title": "Interactive Data Map",
-    "description": "Explore real-time mobility data across the city with our interactive mapping tool.",
-    "date": "2024-04-05",
-    "image": "https://placehold.co/600x300/9DB5B2/FFFFFF?text=Interactive+Map"
-  },
-  {
-    "id": 5,
-    "title": "Community Workshop Findings",
-    "description": "Read about the outcomes and key findings from our recent community workshop.",
-    "date": "2024-03-10",
-    "image": "https://placehold.co/600x300/E8D1C5/FFFFFF?text=Workshop"
-  },
-  {
-    "id": 6,
-    "title": "Interactive Data Map Launch",
-    "description": "Explore real-time mobility data across the city with our interactive mapping tool.",
-    "date": "2024-04-05",
-    "image": "https://placehold.co/600x300/9DB5B2/FFFFFF?text=Interactive+Map"
   }
 ]

@@ -62,7 +62,7 @@ const tabContent = {
     description: (
       <>
         <Typography color="text.primary" gutterBottom>
-          Jaipur Mobility Observatory is a collaboration between the{" "}
+          Jaipur Mobility Insights Hub is a collaboration between the{" "}
           <Link
             href="https://www.ucl.ac.uk/bartlett/casa"
             target="_blank"
@@ -95,7 +95,7 @@ const tabContent = {
           This foundational work enables planners and policymakers to identify
           both existing data resources and critical gaps that hinder tracking of
           progress and effective decision-making. Ultimately, the Jaipur
-          Mobility Observatory aims to spark a city-wide conversation about data
+          Mobility Insights Hub aims to spark a city-wide conversation about data
           sharing and collaboration to advance sustainable, inclusive and
           'datasmart' mobility in Jaipur.
         </Typography>

@@ -52,7 +52,7 @@ const TitleBanner = () => {
                 textShadow: "1px 1px 3px rgba(0, 0, 0, 0.6)",
               }}
             >
-              Jaipur Mobility Observatory
+              Jaipur Mobility Insights Hub
             </Typography>
 
             <Box component="section">

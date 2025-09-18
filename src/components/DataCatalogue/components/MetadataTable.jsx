@@ -20,6 +20,7 @@ const MetadataTable = ({ item }) => {
     "url_download",
     "lastupdate",
     "keywords",
+    "linked_to_kpi",
   ];
   const displayAttributes = Object.keys(item).filter(
     (key) => !excludedAttributes.includes(key)
