@@ -192,10 +192,11 @@ Contains a comprehensive catalogue of all datasets related to mobility, planning
 | provider | String | The organization that created or published the data. | "Survey of India" |  |
 | reference | String | The citation or source document for the data. | "Survey of India (2024)..." |  |
 | access_method | String | Instructions on how to access the data. | "Go to source URL" | |
-| url | String (URL) | A link to the source webpage or data portal. | "https://onlinemaps.surveyofindia.gov.in/..." |Required |
+| url | String (URL) | A link to the source webpage or data portal. | "https://onlinemaps.surveyofindia.gov.in/..." | Required |
 | url_download | String (URL) | A direct download link for the data file, if available. | "https://orca.casa.ucl.ac.uk/..." | if available |
 | lastupdate | String | A human-readable description of the data's freshness | "Last 2 yrs" | This variable is calculated in the notebook from date__latest |
 | keywords | String | A list of relevant search terms for filtering | "administrative; boundaries" | Keywords are separated by semicolons |
+| linked_to_kpi | String | A list of KPI codes the dataset is associated with | "A01, B06" | Keywords are separated by comma |
 
 ---
 
