@@ -12,10 +12,9 @@
     "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
     "avatarUrl": "assets/profile/nandkumar.jpg",
     "type": "core"
-
   },
   {
-    "name": "Shaun Hoang",
+    "name": "Shaun The-huan Hoang",
     "role": "Lead Developer",
     "affiliation": "CASA, University College London",
     "avatarUrl": "assets/profile/shaunhoang.jpg",
@@ -26,57 +25,58 @@
     "role": "Research Assistant",
     "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
     "avatarUrl": "assets/profile/krishnagoala.jpg",
-    "type": "core"
+    "type": "support"
   },
   {
     "name": "Khoimu Singh",
     "role": "Student Assistant",
     "affiliation": "Department of Civil Engineering, MNIT Jaipur",
     "avatarUrl": "assets/profile/khoimusingh.jpg",
-    "type": "core"
+    "type": "support"
   },
   {
     "name": "Miaoyi Li",
     "role": "Student Assistant",
     "affiliation": "CASA, University College London",
     "avatarUrl": "assets/profile/miaoyili.jpg",
-    "type": "core"
+    "type": "support"
   },
   {
     "name": "Mahesh Jat Kumar",
     "role": "Co-Investigator",
     "affiliation": "Department of Civil Engineering, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=M",
-    "type": "core"
-  },
-  {
-    "name": "Avinash Awasthi",
-    "role": "Research Assistant",
-    "affiliation": "Department of Computer Science, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=A",
-    "type": "core"
-  },
-  {
-    "name": "Pritam Vediya",
-    "role": "Research Assistant",
-    "affiliation": "Department of Computer Science, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=P",
-    "type": "core"
-  },
-  {
-    "name": "Deepika Verma",
-    "role": "System Analyst",
-    "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=D",
-    "type": "core"
+    "avatarUrl": "assets/profile/maheshjatkumar.png",
+    "type": "support"
   },
   {
     "name": "Ramesh Battula",
     "role": "Project Advisor",
     "affiliation": "Department of Computer Science, MNIT Jaipur",
     "avatarUrl": "assets/profile/rameshbattula.png",
-    "type": "core"
+    "type": "support"
   },
+  {
+    "name": "Avinash Awasthi",
+    "role": "Research Assistant",
+    "affiliation": "Department of Computer Science, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=A",
+    "type": "support"
+  },
+  {
+    "name": "Pritam Vediya",
+    "role": "Research Assistant",
+    "affiliation": "Department of Computer Science, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=P",
+    "type": "support"
+  },
+  {
+    "name": "Deepika Verma",
+    "role": "System Analyst",
+    "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
+    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=D",
+    "type": "support"
+  },
+
   {
     "name": "Joana Barros",
     "role": "Project Advisor & Fieldwork Lead",
@@ -102,7 +102,7 @@
     "name": "Satish Pipralia",
     "role": "Co-Investigator",
     "affiliation": "Department for Architecture and Planning, MNIT Jaipur",
-    "avatarUrl": "https://placehold.co/150x150/EFEFEF/333333?text=S",
+    "avatarUrl": "assets/profile/satishpipralia.png",
     "type": "extended"
   },
   {
