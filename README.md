@@ -132,7 +132,7 @@ Stores information about project team members for display on the "Contributors" 
 | role | String | The team member's official role | "Project Lead & Principal Investigator" | Required |
 | affiliation | String | The team member's  affiliation | "CASA, University College London" | Required |
 | avatarUrl | String (URL) | A URL to the team member's profile image | "https://placehold.co/.../text=J" | Required |
-| type | String | Whether the team member belongs to the core or extended project team | "core" or "extended" | Required |
+| type | String | Whether the team member belongs to the core, support or extended project team | "core", "support", "extended" | Required |
 
 ---
 #### `highlightsData.json`  

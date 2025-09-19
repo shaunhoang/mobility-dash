@@ -66,93 +66,125 @@ const TeamAbout = () => {
     <Box>
       {/* Team */}
       <Box sx={{ mb: 4 }}>
-        <Typography
-          variant="h5"
-          gutterBottom
-          sx={{ color: "primary.main", mb: 2 }}
-        >
-          Core Team
+        <Typography variant="h5" gutterBottom sx={{ color: "primary.main" }}>
+          Contributors
         </Typography>
-        <Grid container spacing={2}>
-          {aboutData
-          .filter(member => member.type === "core")
-          .map((member, index) => (
-            <Grid
-              key={index}
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                my: 2,
-              }}
-              size={{ xs: 12, sm: 6, md: 4}}
-            >
-              <Avatar
-                alt={member.name}
-                src={member.avatarUrl}
-                sx={{ width: 80, height: 80, mr: 2 , boxShadow: 2}}
-              />
-              <Box>
-                <Typography
-                  variant="body1"
-                  sx={{ fontWeight: "bold" }}
-                >
-                  {member.name}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {member.role}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {member.affiliation}
-                </Typography>
-              </Box>
-            </Grid>
-          ))}
-        </Grid>
       </Box>
-
-      <Box sx={{ mb: 4 }}>
-        <Typography
-          variant="h5"
-          gutterBottom
-          sx={{ color: "primary.main", mb: 2 }}
-        >
-          Extended Team
-        </Typography>
-        <Grid container spacing={2}>
-          {aboutData
-          .filter(member => member.type === "extended")
-          .map((member, index) => (
-            <Grid
-              key={index}
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                my: 2,
-              }}
-              size={{ xs: 12, sm: 6, md: 4}}
-            >
-              <Avatar
-                alt={member.name}
-                src={member.avatarUrl}
-                sx={{ width: 80, height: 80, mr: 2 }}
-              />
-              <Box>
-                <Typography
-                  variant="body1"
-                  sx={{ fontWeight: "bold" }}
+      <Box sx={{ ml: 4 }}>
+        {/* Core Team*/}
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h6" gutterBottom sx={{ color: "primary.dark" }}>
+            Core Development Team
+          </Typography>
+          <Grid container spacing={2}>
+            {aboutData
+              .filter((member) => member.type === "core")
+              .map((member, index) => (
+                <Grid
+                  key={index}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    my: 2,
+                  }}
+                  size={{ xs: 12, sm: 6, md: 4 }}
                 >
-                  {member.name}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {member.role}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {member.affiliation}
-                </Typography>
-              </Box>
-            </Grid>
-          ))}
-        </Grid>
+                  <Avatar
+                    alt={member.name}
+                    src={member.avatarUrl}
+                    sx={{ width: 80, height: 80, mr: 2, boxShadow: 2 }}
+                  />
+                  <Box>
+                    <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                      {member.name}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {member.role}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {member.affiliation}
+                    </Typography>
+                  </Box>
+                </Grid>
+              ))}
+          </Grid>
+        </Box>
+        {/* Support Team*/}
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h6" gutterBottom sx={{ color: "primary.dark" }}>
+            Research and Technical Support Team
+          </Typography>
+          <Grid container spacing={2}>
+            {aboutData
+              .filter((member) => member.type === "support")
+              .map((member, index) => (
+                <Grid
+                  key={index}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    my: 2,
+                  }}
+                  size={{ xs: 12, sm: 6, md: 4 }}
+                >
+                  <Avatar
+                    alt={member.name}
+                    src={member.avatarUrl}
+                    sx={{ width: 80, height: 80, mr: 2, boxShadow: 2 }}
+                  />
+                  <Box>
+                    <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                      {member.name}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {member.role}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {member.affiliation}
+                    </Typography>
+                  </Box>
+                </Grid>
+              ))}
+          </Grid>
+        </Box>
+        {/* Extended Team*/}
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h6" gutterBottom sx={{ color: "primary.dark" }}>
+            Extended Project Team
+          </Typography>
+          <Grid container spacing={2}>
+            {aboutData
+              .filter((member) => member.type === "extended")
+              .map((member, index) => (
+                <Grid
+                  key={index}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    my: 2,
+                  }}
+                  size={{ xs: 12, sm: 6, md: 4 }}
+                >
+                  <Avatar
+                    alt={member.name}
+                    src={member.avatarUrl}
+                    sx={{ width: 80, height: 80, mr: 2 }}
+                  />
+                  <Box>
+                    <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                      {member.name}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {member.role}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {member.affiliation}
+                    </Typography>
+                  </Box>
+                </Grid>
+              ))}
+          </Grid>
+        </Box>
       </Box>
 
       {/* Highlights */}

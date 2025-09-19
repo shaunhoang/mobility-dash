@@ -76,8 +76,12 @@ const HighlightsDrawer = ({ item, open, onClose }) => {
                 })}
               </Typography>
             )}
-            <Typography variant="body1" color="text.secondary">
-              {item.description}               {/* Replace {item.content} when available*/}
+            <Typography
+              variant="body1"
+              color="text.secondary"
+              sx={{ whiteSpace: "pre-wrap" }}
+            >
+              {item.description} {/* Replace {item.content} when available*/}
             </Typography>
           </Box>
         </Box>

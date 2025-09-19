@@ -14,7 +14,7 @@ const TooltipContent = ({ layer, feature }) => {
           <div key={property}>
             <strong>{label}</strong>
             {prefix}
-            {feature.properties[property] || "N/A"}
+            {feature.properties[property] ?? "N/A"}
             {suffix}
           </div>
         )

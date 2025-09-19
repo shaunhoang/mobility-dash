@@ -1,34 +1,32 @@
 export const layerConfig = {
-
-  "A02": {
+  A02: {
     id: "data-layer",
     type: "fill",
-    file: "kpiData", 
+    file: "kpiData",
     paint: {
       "fill-color": [
         "interpolate",
         ["linear"],
         ["get", "pct_accessible"],
-        10, "#f7fbff",
-        20, "#deebf7",
-        30, "#c6dbef",
-        40, "#9ecae1",
-        50, "#6baed6",
-        60, "#4292c6",
-        70, "#2171b5",
-        80, "#08519c",
-        90, "#08306b"
+        25,
+        "#deebf7",
+        50,
+        "#6baed6",
+        75,
+        "#08519c",
       ],
       "fill-opacity": 0.8,
       "fill-outline-color": "#333333",
     },
     tooltipProperties: [
+      { label: "Ward: ", property: "ward_id" },
+      { label: "Assembly: ", property: "assembly" },
+      { label: "Population: ", property: "pop"},
       {
-        label: "Pop% with transit access: ",
+        label: "Pop% within 500m of transit: ",
         property: "pct_accessible",
-        suffix: "%"
+        suffix: "%",
       },
     ],
   },
-  
 };
