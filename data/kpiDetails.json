@@ -19,7 +19,7 @@
     "code": "A03",
     "title": "Pedestrian friendly streets",
     "description": "The provision of walking facilities at a minimum level of quality. This includes footpaths, crossings, signalling at junctions and access to PT stops. This indicator should be expanded to consider step-free access and inclusive design.",
-    "stat": "xx%",
+    "stat": "19.3%",
     "unit": "",
     "target": "85% of major roads equipped with continuous footpaths"
   },
@@ -27,7 +27,7 @@
     "code": "A04",
     "title": "Cycling infrastructure coverage",
     "description": "The provision of cycling facilities at a minimum level of quality, including cycling lanes and storage.",
-    "stat": "xx",
+    "stat": "150",
     "unit": "km",
     "target": "200km of protected cycling lanes"
   },
