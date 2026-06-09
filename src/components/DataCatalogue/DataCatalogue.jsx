@@ -180,10 +180,9 @@ const DataCatalogue = () => {
 
       // Search query logic (searches title and description and sector and keywords)
       const searchMatch = query
-        ? item.title.toLowerCase().includes(query) ||
-          item.description.toLowerCase().includes(query) ||
-          item.sector.toLowerCase().includes(query) ||
-          item.keywords.toLowerCase().includes(query)
+        ? [item.title, item.description, item.sector, item.keywords]
+            .filter(Boolean)
+            .some((field) => field.toLowerCase().includes(query))
         : true;
 
       return (
