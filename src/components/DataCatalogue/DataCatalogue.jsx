@@ -135,7 +135,7 @@ const DataCatalogue = () => {
         return numA - numB;
       }),
     };
-  }, [datasets, kpiDetails]);
+  }, [datasets, kpiDetails, kpiDomains]);
 
   // Event handlers
   const handleItemClick = (item) => {

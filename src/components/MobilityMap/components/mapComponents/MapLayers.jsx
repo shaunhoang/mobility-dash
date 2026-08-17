@@ -1,27 +1,189 @@
 import { Box } from "@mui/material";
 import { Layer, Popup, Source } from "react-map-gl/mapbox";
 
+// // Tooltip content for the popup
+// const TooltipContent = ({ layer, feature }) => {
+//   if (!layer?.tooltipProperties || !feature?.properties) {
+//     return null;
+//   }
+
+//   return (
+//     <Box sx={{ p: 0.5, maxWidth: 240 }}>
+//       {layer.tooltipProperties.map(
+//         ({ label, property, prefix = "", suffix = "" }) => (
+//           <div key={property}>
+//             <strong>{label}</strong>
+//             {prefix}
+//             {feature.properties[property] ?? "N/A"}
+//             {suffix}
+//           </div>
+//         )
+//       )}
+//     </Box>
+//   );
+// };
+
 // Tooltip content for the popup
 const TooltipContent = ({ layer, feature }) => {
   if (!layer?.tooltipProperties || !feature?.properties) {
     return null;
   }
 
+  // Function to check if a string is a valid URL
+  const isUrl = (str) => {
+    if (typeof str !== 'string') return false;
+    try {
+      new URL(str);
+      return true;
+    } catch {
+      return false;
+    }
+  };
+
+  // Handle link click
+  const handleLinkClick = (e, url) => {
+    e.preventDefault();
+    e.stopPropagation();
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <Box sx={{ p: 0.5, maxWidth: 240 }}>
+    <Box sx={{ p: 0.5, maxWidth: 240, pointerEvents: 'auto' }}>
       {layer.tooltipProperties.map(
-        ({ label, property, prefix = "", suffix = "" }) => (
-          <div key={property}>
-            <strong>{label}</strong>
-            {prefix}
-            {feature.properties[property] ?? "N/A"}
-            {suffix}
-          </div>
-        )
+        ({ label, property, prefix = "", suffix = "", isLink = false }) => {
+          const value = feature.properties[property];
+          const displayValue = value ?? "N/A";
+          
+          // Check if this should be rendered as a link
+          if (isLink || isUrl(displayValue)) {
+            return (
+              <div key={property} style={{ pointerEvents: 'auto' }}>
+                <strong>{label}</strong>
+                {prefix}
+                <button
+                  onClick={(e) => handleLinkClick(e, displayValue)}
+                  style={{ 
+                    color: '#0066cc', 
+                    textDecoration: 'underline',
+                    cursor: 'pointer',
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    font: 'inherit',
+                    pointerEvents: 'auto'
+                  }}
+                  title={displayValue}
+                >
+                  Open Image
+                </button>
+                {suffix}
+              </div>
+            );
+          }
+          
+          // Regular text display
+          return (
+            <div key={property} style={{ pointerEvents: 'auto' }}>
+              <strong>{label}</strong>
+              {prefix}
+              {displayValue}
+              {suffix}
+            </div>
+          );
+        }
       )}
     </Box>
   );
 };
+
+
+// // Tooltip content for the popup
+// const TooltipContent = ({ layer, feature }) => {
+//   if (!layer?.tooltipProperties || !feature?.properties) {
+//     return null;
+//   }
+
+//   // Function to check if a string is a valid URL
+//   const isUrl = (str) => {
+//     if (typeof str !== 'string') return false;
+//     try {
+//       new URL(str);
+//       return true;
+//     } catch {
+//       return false;
+//     }
+//   };
+
+//   // Handle link click
+//   const handleLinkClick = (e, url) => {
+//     e.preventDefault();
+//     e.stopPropagation();
+//     window.open(url, '_blank', 'noopener,noreferrer');
+//   };
+
+//   return (
+//     <Box sx={{ p: 0.5, maxWidth: 240, pointerEvents: 'auto' }}>
+//       {layer.tooltipProperties.map(
+//         ({ label, property, prefix = "", suffix = "", render }) => {
+//           const value = feature.properties[property];
+//           const displayValue = value ?? "N/A";
+          
+//           // Check if custom render function exists
+//           if (render && typeof render === 'function') {
+//             // Use the custom render function
+//             const renderedContent = render(displayValue);
+            
+//             // If render returns a string that looks like a URL, make it clickable
+//             if (isLink || isUrl(displayValue)) {
+//               return (
+//                 <div key={property} style={{ pointerEvents: 'auto' }}>
+//                   <strong>{label}</strong>
+//                   {prefix}
+//                   <button
+//                     onClick={(e) => handleLinkClick(e, displayValue)}
+//                     style={{ 
+//                       color: '#0066cc', 
+//                       textDecoration: 'underline',
+//                       cursor: 'pointer',
+//                       background: 'none',
+//                       border: 'none',
+//                       padding: 0,
+//                       font: 'inherit',
+//                       pointerEvents: 'auto'
+//                     }}
+//                     title={displayValue}
+//                   >
+//                     {renderedContent === displayValue ? 'View Image' : renderedContent}
+//                   </button>
+//                   {suffix}
+//                 </div>
+//               );
+//             }
+            
+//             return (
+//               <div key={property} style={{ pointerEvents: 'auto' }}>
+//                 <strong>{label}</strong>
+//                 {prefix}
+//                 <div dangerouslySetInnerHTML={{ __html: renderedContent }} />
+//                 {suffix}
+//               </div>
+//             );
+//           }
+          
+//           // Regular text display (fallback)
+//           return (
+//             <div key={property} style={{ pointerEvents: 'auto' }}>
+//               <strong>{label}</strong>
+//               {prefix}
+//               {displayValue}
+//               {suffix}
+//             </div>
+//           );
+//         }
+//       )}
+//     </Box>
+//   );
+// };
 
 // Default Layout styles for layers
 const getLayerLayoutStyle = (layer) => {

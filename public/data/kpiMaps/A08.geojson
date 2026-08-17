@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "A08",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID_1": 94.0, "OBJECTID": 184.0, "osm_id": "6966458473", "code": 5208.0, "fclass": "speed_camera", "name": null }, "geometry": { "type": "Point", "coordinates": [ 75.85244030007982, 26.840046599870732 ] } },
+{ "type": "Feature", "properties": { "OBJECTID_1": 95.0, "OBJECTID": 185.0, "osm_id": "6966458474", "code": 5208.0, "fclass": "speed_camera", "name": null }, "geometry": { "type": "Point", "coordinates": [ 75.806849099706255, 26.86244389976622 ] } },
+{ "type": "Feature", "properties": { "OBJECTID_1": 96.0, "OBJECTID": 186.0, "osm_id": "6966458475", "code": 5208.0, "fclass": "speed_camera", "name": null }, "geometry": { "type": "Point", "coordinates": [ 75.812047000368807, 26.883171899663466 ] } },
+{ "type": "Feature", "properties": { "OBJECTID_1": 97.0, "OBJECTID": 187.0, "osm_id": "6966458476", "code": 5208.0, "fclass": "speed_camera", "name": null }, "geometry": { "type": "Point", "coordinates": [ 75.78789719969609, 26.83852719977051 ] } },
+{ "type": "Feature", "properties": { "OBJECTID_1": 98.0, "OBJECTID": 188.0, "osm_id": "6966458477", "code": 5208.0, "fclass": "speed_camera", "name": null }, "geometry": { "type": "Point", "coordinates": [ 75.826535699962619, 26.779679299959753 ] } },
+{ "type": "Feature", "properties": { "OBJECTID_1": 99.0, "OBJECTID": 189.0, "osm_id": "6966458478", "code": 5208.0, "fclass": "speed_camera", "name": null }, "geometry": { "type": "Point", "coordinates": [ 75.800157300119338, 26.814651800240426 ] } },
+{ "type": "Feature", "properties": { "OBJECTID_1": 100.0, "OBJECTID": 190.0, "osm_id": "6966458479", "code": 5208.0, "fclass": "speed_camera", "name": null }, "geometry": { "type": "Point", "coordinates": [ 75.766420599631033, 26.842043399683178 ] } },
+{ "type": "Feature", "properties": { "OBJECTID_1": 101.0, "OBJECTID": 191.0, "osm_id": "6966458480", "code": 5208.0, "fclass": "speed_camera", "name": null }, "geometry": { "type": "Point", "coordinates": [ 75.749696500193409, 26.872597699824041 ] } },
+{ "type": "Feature", "properties": { "OBJECTID_1": 102.0, "OBJECTID": 192.0, "osm_id": "6966458482", "code": 5208.0, "fclass": "speed_camera", "name": null }, "geometry": { "type": "Point", "coordinates": [ 75.797966000330689, 26.83930530039936 ] } },
+{ "type": "Feature", "properties": { "OBJECTID_1": 136.0, "OBJECTID": 228.0, "osm_id": "7085921264", "code": 5208.0, "fclass": "speed_camera", "name": null }, "geometry": { "type": "Point", "coordinates": [ 75.733584699674225, 26.89536530006859 ] } }
+]
+}

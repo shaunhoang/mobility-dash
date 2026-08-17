@@ -5,8 +5,8 @@
     "description": "The supply of public buses indicates the capacity of public transport given the population. If other public transport modes are available (e.g. metro), these could be converted into bus equivalents.",
     "stat": "3.5",
     "unit": "per 100k people",
-    "target": "60 buses per 100k people",
-    "datasets": "Buses Jaipur (2015-2017), smartcities.gov.in; Buses in Jaipur, Department of Transport Rajasthan"
+    "target": "60 buses per 100k people (Comprehensive Mobility Plan, Jaipur, 2010)",
+    "datasets": "'Buses Jaipur (2015-2017)' dataset, smartcities.gov.in; 'Buses in Jaipur' dataset, Department of Transport Rajasthan"
   },
   "A02": {
     "code": "A02",
@@ -14,8 +14,8 @@
     "description": "The level of service and coverage of public transport networks. The policy goal in Jaipur is to supply 60% of people and 50% of jobs with high-frequency services within 500m.",
     "stat": "45",
     "unit": "per cent",
-    "target": "50% of population within 500m of public transit",
-    "datasets": "openstreetmap.org"
+    "target": "50% of population within 500m of public transit (Comprehensive Mobility Plan, Jaipur, 2010)",
+    "datasets": "OpenStreetMap.org; 'Population and Households' dataset"
   },
   "A03": {
     "code": "A03",
@@ -23,8 +23,8 @@
     "description": "The provision of walking facilities at a minimum level of quality. This includes footpaths, crossings, signalling at junctions and access to PT stops. This indicator should be expanded to consider step-free access and inclusive design.",
     "stat": "19.3",
     "unit": "per cent",
-    "target": "85% of major roads equipped with continuous footpaths",
-    "datasets": "Coming soon..."
+    "target": "100% footpath length / road length (Comprehensive Mobility Plan, Jaipur, 2010)",
+    "datasets": "L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 3-70, pg. 3-74"
   },
   "A04": {
     "code": "A04",
@@ -32,53 +32,54 @@
     "description": "The provision of cycling facilities at a minimum level of quality, including cycling lanes and storage.",
     "stat": "3.3",
     "unit": "per cent",
-    "target": "200km of protected cycling lanes",
-    "datasets": "Coming soon..."
+    "target": "No public target",
+    "datasets": "OpenStreetMap.org"
   },
   "A05": {
     "code": "A05",
     "title": "Drainage system coverage",
     "description": "The provision of sufficient drainage to avoid disruptions that primarily affect non-motorised modes and thus encourage acquisition of a private vehicle.",
-    "stat": "15",
-    "unit": "per cent",
-    "target": "90% coverage of arterial roads with modern drainage",
-    "datasets": "Coming soon..."
-  },
-  "A06": {
-    "code": "A06",
-    "title": "Trained motor vehicle drivers",
-    "description": "Driver training is important for safe driving, which includes being considerate to non-motorised transport users.",
-    "stat": "N/A",
+    "stat": "n/a",
     "unit": "",
-    "target": "100% of drivers certified in safety protocols",
-    "datasets": "None currently available"
+    "target": "No public target",
+    "datasets": "Geospatial data obtained from Jaipur Development Authority (JDA), see also 'Land Use' dataset"
   },
   "A07": {
     "code": "A07",
     "title": "Transport budget",
     "description": "Expenditure on transport indicates to which extent an efficient transport system can be developed and maintained.",
-    "stat": "1.39",
-    "unit": "INR lakh",
-    "target": "",
-    "datasets": "?"
+    "stat": "n/a",
+    "unit": "",
+    "target": "No public investment target",
+    "datasets": "None currently available"
   },
-  "A08": {
+  "A06": {
+    "code": "A06",
+    "title": "Trained motor vehicle drivers",
+    "description": "Driver training is important for safe driving, which includes being considerate to non-motorised transport users.",
+    "stat": "n/a",
+    "unit": "",
+    "target": "100% of drivers certified in safety protocols",
+    "datasets": "None currently available"
+  },
+  "A08": { 
     "code": "A08",
     "title": "Local traffic flows",
     "description": "Enforcement of traffic rules and regulations will ensure less traffic disorders at locations with high density of activities. Data about traffic flow can be collected more easily using sensors and cameras.",
-    "stat": "117",
-    "unit": "seconds",
+    "stat": "n/a", 
+    "unit": "", 
     "target": "",
-    "datasets": "Coming soon..."
+    "datasets": "None currently available. The map shows the location of speed cameras in 2026 from OpenStreetMap.org",
+    "previous value": "117 seconds"
   },
   "A09": {
     "code": "A09",
     "title": "Organised road use",
     "description": "This is the share of encroached footpaths by vendings stall, parking, debris or shop extension. Obstructions cause local traffic disorder on both footpaths and carraigeways.",
-    "stat": "23.7",
+    "stat": "62",
     "unit": "per cent",
     "target": "0% of unobstructed footpaths.",
-    "datasets": "Coming soon..."
+    "datasets": "L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 3-61, pg.3-70"
   },
   "A10": {
     "code": "A10",
@@ -86,8 +87,17 @@
     "description": "Managed parking spcaes. Parking rules enforcement is important to avoid local traffic disorder and protect and promote uninhibted non-motorised road use.",
     "stat": "13.1",
     "unit": "per 1k people",
-    "target": "100 car-equivalent managed parking spaces with fee collection",
-    "datasets": "Coming soon..."
+    "target": "100 car-equivalent managed parking spaces with fee collection (Comprehensive Mobility Plan, Jaipur, 2010)",
+    "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.61, pg. 2-58; Geospatial data obtained from Jaipur Development Authority (JDA), see also 'Land Use' dataset"
+  },
+  "A11": {
+    "code": "A11",
+    "title": "Well-lit streets",
+    "description": "Well-lit streets contribute to safety for vulnerable groups.",
+    "stat": "32.9",
+    "unit": "per cent",
+    "target": "100 of the road network to be well-lit",
+    "datasets": "'SafetiPin' dataset"
   },
   "B01": {
     "code": "B01",
@@ -96,7 +106,7 @@
     "stat": "963",
     "unit": "per 1,000 people",
     "target": "",
-    "datasets": "No of registered vehicles in Jaipur city, Mehta (2019)"
+    "datasets": "'No of Registered Vehicles in Jaipur City' dataset"
   },
   "B02": {
     "code": "B02",
@@ -104,17 +114,17 @@
     "description": "Traffic volumes relative to capacity at critical points in the network. A reduction in motor vehicle traffic reduces the risk of congestion across the network.",
     "stat": "1.49",
     "unit": "volume/capacity",
-    "target": "A ratio of 1.1 in peak hours.",
-    "datasets": "Coming soon..."
+    "target": "No official target",
+    "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.23, pg. 2-35. The map shows the traffic composition at Inner Cordon Locations estimated in the L&T Infra Engineering (2022) Comprehensive Traffic and Transportation Study for Jaipur Region, vol1, Table 3-9, p.3-12. See also: 'Classified Traffic Volume' dataset."
   },
   "B03": {
     "code": "B03",
     "title": "Decline in accidents",
     "description": "Accident rates result from the degree to which the transport system is well managed and regulations are enforced. Accidents should be broken down by socio-demographic groups. To calculate annual rates, population values have been linearly interpolated between Census years 2011-2021.",
-    "stat": "10.5",
+    "stat": "4.8",
     "unit": "per 10k people",
-    "target": "2 accidents per 10,000 people per year",
-    "datasets": "Coming soon..."
+    "target": "No official target",
+    "datasets": "Rites (2026) Comprehensive Mobility Plan for Jaipur City - Draft CMP report, Table 2.7, pg. 2-12; see 'Road Accidents' dataset."
   },
   "B04": {
     "code": "B04",
@@ -122,8 +132,8 @@
     "description": "Uptake of walking and cycling is a desirable mobility outcome.",
     "stat": "22",
     "unit": "per cent",
-    "target": "35% of all trips involve walking and/or cycling",
-    "datasets": "Modal Share Of Transport, CMP ppt (n.d); Mode Distribution In Jaipur (Including Walk), JMRCL (2018)"
+    "target": "31% of all trips involve walking and/or cycling (Comprehensive Mobility Plan, Jaipur, 2010)",
+    "datasets": "'Modal Share Of Transport' dataset, CMP ppt (n.d); 'Mode Distribution In Jaipur (Including Walk)' dataset, JMRCL (2018)"
   },
   "B05": {
     "code": "B05",
@@ -131,8 +141,8 @@
     "description": "Public transport ridership suports the efficiency and environmental sustainability of travel. It is heavily affected by the level of services afforded by the transport system.",
     "stat": "19",
     "unit": "per cent",
-    "target": "50% of all trips made by public transport",
-    "datasets": "Modal Share Of Transport, CMP ppt (n.d); Mode Distribution In Jaipur (Including Walk), JMRCL (2018)"
+    "target": "50% of all trips made by public transport (Comprehensive Mobility Plan, Jaipur, 2010)",
+    "datasets": "'Modal Share Of Transport' dataset, CMP ppt (n.d); 'Mode Distribution In Jaipur (Including Walk)' dataset, JMRCL (2018)"
   },
   "B06": {
     "code": "B06",
@@ -140,7 +150,7 @@
     "description": "Trips made by Intermediate Public Transport (IPT, e.g. auto rickshaws) relative to trips made by public tranpsort (PT). IPT should fill service gaps and offer last-mile mobility. Ideally, IPT is used for access and egress of public transport users.",
     "stat": "4.6",
     "unit": "per 10 PT trips",
-    "target": "2 trips made by intermediate public transport per PT trip ",
-    "datasets": "Modal Share Of Transport, CMP ppt (n.d); Mode Distribution In Jaipur (Including Walk), JMRCL (2018)"
+    "target": "No target",
+    "datasets": "'Modal Share Of Transport' dataset, CMP ppt (n.d); 'Mode Distribution In Jaipur (Including Walk)' dataset, JMRCL (2018)"
   }
 }

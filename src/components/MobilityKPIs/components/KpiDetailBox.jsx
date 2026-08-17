@@ -135,7 +135,7 @@ const KpiDetailBox = ({ kpi }) => {
           >
             {"Dataset(s): "}
           </Box>
-          {kpi.datasets || "Coming soon..."}2
+          {kpi.datasets || "Coming soon..."}
         </Typography>
       </Box>
 
